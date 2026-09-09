@@ -1,1532 +1,770 @@
-<!doctype html>
-<html lang="ko">
-<head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<title>취업 말고 커리어 · AI 시대, 테크 업계에서 커리어 시작하기</title>
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+KR:wght@400;500;600;700&display=swap" rel="stylesheet">
-<style>
-:root{
-  --violet:#7C3AED;          /* primary */
-  --violet-600:#7C3AED;
-  --violet-500:#8B5CF6;
-  --violet-700:#6D28D9;
-  --violet-800:#5B21B6;
-  --violet-50:#F6F4FF;
-  --violet-100:#EDE9FE;
-  --violet-line:#E4DBFA;
-  --ink:#1C1830;
-  --ink-2:#3A3550;
-  --muted:#8A84A0;
-  --muted-2:#B4AEC6;
-  --paper:#FFFFFF;
-  --paper-2:#FBFAFF;
-  --card:#FFFFFF;
-  --card-soft:#F7F5FD;
-  --shadow:0 18px 48px -20px rgba(76,29,149,.28), 0 6px 18px -10px rgba(76,29,149,.18);
-  --shadow-sm:0 10px 26px -16px rgba(76,29,149,.30);
+<!doctype html><html lang="ko"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>JTOCOM — Vertical AI Studio</title><meta name="description" content="제이투컴은 기업의 일을 AI로 바꾸는 Vertical AI Studio입니다."><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+KR:wght@400;500;600;700;800&display=swap" rel="stylesheet"><style>
+:root{--navy:#0b1830;--ink:#111b2d;--muted:#64748b;--line:#dce4ec;--soft:#f4f7fa;--blue:#168ac2;--cyan:#65d6e7;--purple:#7164e8;--max:1560px;--pad:clamp(20px,5vw,80px)}*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;font-family:'IBM Plex Sans KR',sans-serif;color:var(--ink);line-height:1.6;letter-spacing:-.02em}a{text-decoration:none;color:inherit}button{font:inherit;cursor:pointer}.wrap{max-width:var(--max);margin:auto;padding:0 var(--pad)}.nav{height:76px;position:sticky;top:0;z-index:20;background:#fff;border-bottom:1px solid var(--line);display:flex;align-items:center}.nav .wrap{width:100%;display:flex;align-items:center;justify-content:space-between}.logo img{width:118px}.navlinks{display:flex;gap:22px;font-size:14px;font-weight:600;color:#526274}.navlinks a:hover{color:var(--blue)}.btn{display:inline-flex;align-items:center;justify-content:center;border:0;border-radius:999px;padding:13px 22px;font-weight:700}.primary{background:var(--navy);color:#fff}.outline{background:#fff;color:var(--ink);border:1px solid var(--line)}section{padding:clamp(80px,9vw,140px) 0}.eyebrow{font-size:12px;font-weight:800;letter-spacing:.13em;text-transform:uppercase;color:var(--blue)}.sectionhead{max-width:820px;margin-bottom:42px}.sectionhead h2{font-size:clamp(32px,4.8vw,62px);line-height:1.12;letter-spacing:-.06em;margin:12px 0}.sectionhead p{color:var(--muted);font-size:17px}.grad{background:linear-gradient(110deg,var(--blue),var(--purple));-webkit-background-clip:text;background-clip:text;color:transparent}.hero{min-height:650px;padding:clamp(90px,12vw,170px) 0 110px;position:relative;overflow:hidden;background:radial-gradient(circle at 80% 15%,#dff6fb,transparent 28%),linear-gradient(135deg,#fff,#f6fbfd)}.hero h1{font-size:clamp(40px,6.3vw,86px);line-height:1.08;letter-spacing:-.07em;white-space:nowrap;margin:22px 0}.hero p{max-width:610px;font-size:clamp(17px,2vw,21px);color:#526274}.actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:32px}.hero-visual{position:absolute;right:7%;top:25%;width:380px;height:280px}.vcard{position:absolute;background:rgba(255,255,255,.9);border:1px solid #bde4ee;border-radius:18px;padding:17px 20px;box-shadow:0 18px 45px rgba(22,74,106,.14);font-weight:700}.vcard small{display:block;color:var(--muted);font-weight:400;margin-top:4px}.vcard:nth-of-type(1){left:0;top:0;animation:float1 5s infinite}.vcard:nth-of-type(2){right:0;top:100px;animation:float2 5s .6s infinite}.vcard:nth-of-type(3){left:55px;bottom:0;animation:float3 5s 1.2s infinite}.vline{position:absolute;width:145px;height:1px;background:linear-gradient(90deg,var(--cyan),var(--purple));transform:rotate(20deg);left:150px;top:70px;animation:line 2.5s infinite}.vline:nth-of-type(5){transform:rotate(150deg);top:180px;left:120px}@keyframes float1{50%{transform:translate(8px,-8px)}}@keyframes float2{50%{transform:translate(-8px,8px)}}@keyframes float3{50%{transform:translate(8px,3px)}}@keyframes line{50%{opacity:1;transform:scaleX(1.2) rotate(20deg)}}.dark{background:var(--navy);color:#fff}.dark .sectionhead p{color:#b4c2d1}.twocol{display:grid;grid-template-columns:1fr 1fr;gap:clamp(30px,7vw,100px)}.signals{display:grid;gap:14px}.signal{padding:20px;border:1px solid rgba(255,255,255,.15);border-radius:16px;color:#cbd6e3}.signal b{display:block;color:#fff;font-size:19px;margin-bottom:5px}.cards{display:grid;grid-template-columns:repeat(4,1fr);gap:16px}.card{border:1px solid var(--line);border-radius:20px;padding:25px;background:#fff;min-height:260px}.card h3{font-size:21px;line-height:1.3;margin:26px 0 10px}.card p{font-size:14px;color:var(--muted)}.num{font-size:12px;color:var(--blue);font-weight:800;letter-spacing:.1em}.lab{background:linear-gradient(135deg,#eafaff,#f2f0ff)}.labtrack,.porttrack{display:flex;gap:14px;overflow:hidden;padding:8px 0 18px}.labtrack{animation:roll 42s linear infinite}.labtrack:hover,.porttrack:hover{animation-play-state:paused}.labcard{flex:0 0 210px;padding:20px;border-radius:18px;background:#fff;border:1px solid #cde6ed}.labcard b{display:block}.labcard small{display:block;color:var(--muted);margin-top:7px}@keyframes roll{to{transform:translateX(-50%)}}.bundle{background:#fff}.edu-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:16px}.edu-card{border:1px solid var(--line);border-radius:18px;overflow:hidden;background:#fff}.edu-card[hidden]{display:none}.edu-card img{display:block;width:100%;height:150px;object-fit:cover;background:#eef5f8}.edu-body{padding:17px}.edu-body small{color:var(--purple);font-size:11px;font-weight:800}.edu-body h3{font-size:16px;line-height:1.35;margin:9px 0 0}.more{margin-top:24px}.history{background:var(--navy);color:#fff}.history .sectionhead p{color:#b4c2d1}.historyrow{display:grid;grid-template-columns:90px 1fr;gap:22px;padding:20px 0;border-top:1px solid rgba(255,255,255,.15)}.historyrow b{color:#78dce8}.historyrow h3{margin:0 0 5px;font-size:18px}.historyrow p{margin:0;color:#b4c2d1;font-size:14px}.portfolio{background:var(--soft)}.porttrack{animation:roll 36s linear infinite}.portcard{flex:0 0 clamp(270px,24vw,340px);background:#fff;border:1px solid var(--line);border-radius:18px;overflow:hidden}.portcard img{width:100%;aspect-ratio:16/10;object-fit:cover;display:block}.portcard div{padding:15px}.portcard b{display:block}.portcard span{font-size:13px;color:var(--muted)}.consult{background:#eef8fb}.consultgrid{display:grid;grid-template-columns:minmax(0,1.2fr) minmax(300px,.8fr);gap:26px}.form,.aside{background:#fff;border:1px solid var(--line);border-radius:22px;padding:clamp(22px,3vw,40px)}.field{display:grid;gap:6px;margin-bottom:14px}.field label{font-size:13px;font-weight:700}.field input,.field textarea{width:100%;padding:13px;border:1px solid var(--line);border-radius:11px;font:inherit}.field textarea{min-height:140px}.aside{background:var(--navy);color:#fff}.aside h3{font-size:24px;margin:0 0 14px}.aside p,.aside li{color:#b4c2d1;font-size:14px}.aside ul{list-style:none;padding:0;margin:22px 0;display:grid;gap:14px}.aside li{border-top:1px solid rgba(255,255,255,.15);padding-top:12px}.aside strong{display:block;color:#78dce8}.top{position:fixed;right:24px;bottom:24px;width:46px;height:46px;border:0;border-radius:50%;background:var(--navy);color:#fff;z-index:30;display:none}.top.show{display:block}@media(max-width:1000px){.hero-visual{opacity:.45;right:-50px}.cards{grid-template-columns:1fr 1fr}.edu-grid{grid-template-columns:repeat(2,1fr)}.twocol,.consultgrid{grid-template-columns:1fr}}@media(max-width:600px){.navlinks{display:none}.hero h1{white-space:normal;font-size:clamp(40px,11vw,60px)}.hero-visual{position:relative;right:auto;top:auto;width:100%;height:240px;margin-top:35px;opacity:1}.cards,.edu-grid{grid-template-columns:1fr}.historyrow{grid-template-columns:65px 1fr}}
 
-  --DW:1280px;               /* design width  */
-  --DH:905px;                /* design height (≈842:595) */
+section{scroll-margin-top:76px}
+.archive-heading{display:flex;justify-content:space-between;align-items:center;gap:24px}
+.archive-plus{flex-shrink:0;width:52px;height:52px;border:1px solid var(--line);border-radius:50%;display:grid;place-items:center;font-size:30px;background:white}
+.archive-plus:hover{background:var(--navy);color:white}
+.preview-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:20px}
+.work-preview{display:flex;flex-direction:column;min-height:200px;padding:28px;background:white;border:1px solid var(--line);border-radius:18px}
+.work-preview small{color:var(--blue);font-weight:700}.work-preview h3{font-size:20px;line-height:1.5;margin:14px 0 24px}.work-preview span{margin-top:auto;color:var(--muted);font-size:13px}
+.original-history .tl__i{display:grid;grid-template-columns:100px 1fr;gap:28px;border-top:1px solid #ffffff26;padding:24px 0}
+.original-history .tl__i b{color:#78dce8}.original-history .small{color:white!important;margin:0}.original-history .tiny{color:#b4c2d1;margin-bottom:0}
+.lab-window{overflow:hidden}.labtrack{width:max-content;overflow:visible;animation:lab-loop 60s linear infinite}.lab-window:hover .labtrack{animation-play-state:paused}@keyframes lab-loop{to{transform:translateX(calc(-50% - 7px))}}
+.hero .wrap{position:relative}.hero h1{font-size:clamp(36px,4.5vw,68px)}.hero-visual{right:0;width:340px}
+@media(max-width:1200px){.hero-visual{position:relative;right:auto;top:auto;margin-top:36px;opacity:1}.preview-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:600px){.preview-grid{grid-template-columns:1fr}.hero h1{font-size:clamp(27px,6.3vw,38px);white-space:nowrap}}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.labtrack,.vcard,.vline{animation:none}.lab-window{overflow-x:auto}}
+.expanded-records[hidden]{display:none!important}.expanded-records{margin-top:20px}.more-row{display:flex;justify-content:center;margin-top:30px}.archive-toggle{min-width:160px;gap:12px}
+
+.labcard{flex:0 0 340px;min-height:296px;padding:28px;display:flex;flex-direction:column;white-space:normal}
+.lab-category{font-size:12px;font-weight:700;color:#168ac2;letter-spacing:.03em}
+.labcard h3{font-size:21px;line-height:1.4;margin:18px 0 12px;letter-spacing:-.035em}
+.labcard p{font-size:14px;line-height:1.85;color:#526274;margin:0 0 22px}
+.lab-scope{margin-top:auto;padding-top:16px;border-top:1px solid #dce4ec;font-size:12px;color:#526274}
+.labtrack{animation-duration:120s}
+#lab .sectionhead small{display:block;font-size:13px;margin-top:16px;color:#64748b}
+@media(max-width:600px){.labcard{flex-basis:290px;padding:22px}}
+
+.expanded-records > [hidden],.archive-toggle[hidden]{display:none!important}
+.archive-complete{color:var(--muted);font-size:13px;margin:0}
+.record-enter{animation:recordEnter .35s ease-out}
+@keyframes recordEnter{from{opacity:0;transform:translateY(12px)}to{opacity:1;transform:none}}
+.history{position:relative;overflow:hidden;background:radial-gradient(ellipse at 90% 20%,#183957,transparent 60%),#0b1830}
+.history .wrap{position:relative}
+.history .eyebrow{color:#78dce8}
+.original-history{position:relative;max-width:1150px;margin:0 auto;padding:12px 0}
+.original-history:before{content:"";position:absolute;left:50%;top:0;bottom:0;width:2px;background:linear-gradient(#65d6e7,#7164e8,#65d6e733)}
+.original-history .tl__i{position:relative;width:calc(50% - 42px);display:block;border:1px solid #ffffff24;border-radius:22px;padding:28px;margin:0 0 20px;background:linear-gradient(125deg,#ffffff0d,#ffffff03);box-shadow:0 16px 40px #00000018;transition:transform .55s ease,opacity .55s ease,border-color .25s}
+.original-history .tl__i:nth-child(even){margin-left:calc(50% + 42px)}
+.original-history .tl__i:before{content:"";position:absolute;top:45px;right:-43px;width:42px;height:1px;background:#65d6e777}
+.original-history .tl__i:after{content:"";position:absolute;top:40px;right:-49px;width:12px;height:12px;background:#78dce8;border:3px solid #0b1830;border-radius:50%;box-shadow:0 0 0 4px #65d6e726,0 0 18px #65d6e755}
+.original-history .tl__i:nth-child(even):before{right:auto;left:-43px}
+.original-history .tl__i:nth-child(even):after{right:auto;left:-47px}
+.original-history .tl__i b{display:block;font-size:clamp(30px,3.2vw,46px);line-height:1;letter-spacing:-.04em;margin-bottom:20px}
+.original-history .small{font-size:20px;font-weight:700;line-height:1.45}
+.original-history .tiny{font-size:14px;line-height:1.85;margin-top:12px!important}
+.original-history .tl__i:hover{transform:translateY(-5px);border-color:#65d6e788;background-color:#ffffff08}
+.history-reveal{opacity:0;transform:translateY(28px)}
+.history-reveal.history-visible{opacity:1;transform:none}
+@media(max-width:700px){
+.original-history{padding-left:24px}
+.original-history:before{left:5px}
+.original-history .tl__i,.original-history .tl__i:nth-child(even){width:100%;margin-left:0;padding:24px}
+.original-history .tl__i:before,.original-history .tl__i:nth-child(even):before{left:-19px;right:auto;width:18px}
+.original-history .tl__i:after,.original-history .tl__i:nth-child(even):after{left:-25px;right:auto}
+}
+@media(prefers-reduced-motion:reduce){.record-enter{animation:none}.original-history .tl__i{transition:none}}
+
+/* Ambient motion: transform/opacity only; content remains stationary and readable. */
+main>section{position:relative;isolation:isolate}
+.ambient{position:absolute;inset:0;overflow:hidden;z-index:-1;pointer-events:none}
+.ambient:before,.ambient:after{content:"";position:absolute;width:340px;height:340px;border-radius:50%;background:radial-gradient(circle,#65d6e720,transparent 70%);animation:ambientDrift 18s ease-in-out infinite alternate}
+.ambient:before{right:-80px;top:8%}.ambient:after{left:-100px;bottom:0;background:radial-gradient(circle,#7164e817,transparent 70%);animation-delay:-9s}
+@keyframes ambientDrift{to{transform:translate(65px,-45px) scale(1.3);opacity:.5}}
+.hero{background:linear-gradient(120deg,#f8fcff,#eefafd 55%,#f4f1fc)}
+.hero .ambient:before{width:700px;height:700px;right:-150px;top:-180px;background:radial-gradient(circle,#65d6e742,transparent 65%);animation-duration:10s}
+.hero .ambient:after{width:650px;height:650px;left:8%;bottom:-400px;background:radial-gradient(circle,#7164e834,transparent 68%);animation-duration:13s}
+.hero-visual{height:340px;perspective:1000px}
+.hero-visual .vcard{z-index:3;animation-timing-function:ease-in-out;box-shadow:0 18px 45px #164a6a20,0 0 22px #65d6e71a}
+.hero-visual .vcard:nth-of-type(1){animation:heroDocument 6s ease-in-out infinite}
+.hero-visual .vcard:nth-of-type(2){animation:heroAssistant 7s ease-in-out infinite}
+.hero-visual .vcard:nth-of-type(3){animation:heroResult 8s ease-in-out infinite}
+@keyframes heroDocument{50%{transform:translate(12px,-20px) rotate(-3deg)}}
+@keyframes heroAssistant{50%{transform:translate(-18px,16px) rotate(3deg)}}
+@keyframes heroResult{50%{transform:translate(15px,-12px) rotate(-2deg)}}
+.hero-orbit{position:absolute;inset:15px;border:1px solid #168ac22b;border-radius:50%;animation:orbitSpin 22s linear infinite;pointer-events:none}
+.hero-orbit:before{content:"";position:absolute;top:50%;left:-5px;width:10px;height:10px;border-radius:50%;background:#65d6e7;box-shadow:0 0 16px #168ac299}
+.hero-orbit.orbit-two{inset:55px -25px;transform:rotate(-25deg);border-style:dashed;border-color:#7164e832;animation-duration:30s;animation-direction:reverse}
+.hero-orbit.orbit-two:before{background:#7164e8}
+@keyframes orbitSpin{to{transform:rotate(360deg)}}
+.hero-flow{position:absolute;inset:0;width:100%;height:100%;overflow:visible;pointer-events:none}
+.hero-flow path{fill:none;stroke:#168ac255;stroke-width:1.5}
+.hero-flow .flow-pulse{stroke:#168ac2;stroke-width:2.5;stroke-dasharray:10 220;animation:dataFlow 6s linear infinite}
+.hero-flow .flow-pulse.alt{stroke:#7164e8;animation-delay:-3s}
+@keyframes dataFlow{to{stroke-dashoffset:-460}}
+.hero .vline{display:none}
+.hero .grad{background-size:200% 100%;animation:titleLight 9s ease-in-out infinite}
+@keyframes titleLight{50%{background-position:100% 0}}
+.signal{position:relative;overflow:hidden}
+.signal:after{content:"";position:absolute;bottom:0;left:0;width:35%;height:1px;background:linear-gradient(90deg,transparent,#65d6e7,transparent);animation:signalLight 8s ease-in-out infinite}
+.signal:nth-child(2):after{animation-delay:-3s}.signal:nth-child(3):after{animation-delay:-6s}
+@keyframes signalLight{50%{transform:translateX(190%);opacity:.4}}
+.archive-heading .eyebrow:after,#build .eyebrow:after{content:"";display:inline-block;width:6px;height:6px;border-radius:50%;background:#65d6e7;margin-left:12px;animation:statusGlow 4s ease-in-out infinite}
+@keyframes statusGlow{50%{opacity:.35;box-shadow:0 0 0 5px #65d6e720}}
+.original-history .tl__i:after{animation:statusGlow 5s ease-in-out infinite}
+.original-history .tl__i:nth-child(even):after{animation-delay:-2.5s}
+@media(prefers-reduced-motion:reduce){
+.ambient:before,.ambient:after,.hero-orbit,.hero-flow .flow-pulse,.hero .grad,.hero-visual .vcard,.signal:after,.eyebrow:after,.original-history .tl__i:after{animation:none!important}
 }
 
-*{box-sizing:border-box;margin:0;padding:0}
-html,body{height:100%}
-body{
-  font-family:'IBM Plex Sans KR',-apple-system,BlinkMacSystemFont,'Apple SD Gothic Neo','Segoe UI',Roboto,'Noto Sans KR',sans-serif;
-  background:var(--paper);
-  color:var(--ink);
-  overflow:hidden;
-  -webkit-font-smoothing:antialiased;
-  text-rendering:optimizeLegibility;
+
+/* Hero typography: reveal once, then a subtle repeating highlight. */
+.hero-title-line{display:block}
+.hero-title-words{display:inline-block;animation:heroTextReveal 1s cubic-bezier(.2,.7,.2,1) both}
+.hero-title-line:nth-child(2) .hero-title-words{animation-delay:.18s}
+.hero h1 .grad{display:inline-block;background-image:linear-gradient(110deg,#168ac2 0%,#7164e8 32%,#319bc5 48%,#8acde0 53%,#7164e8 62%,#168ac2 100%);background-size:240% 100%;animation:heroTextShine 8s ease-in-out infinite}
+.hero .wrap>.eyebrow{display:inline-block;animation:heroTextReveal .8s ease-out both}
+.hero .wrap>p{animation:heroTextReveal 1s .35s both}
+.hero .actions{animation:heroTextReveal 1s .5s both}
+@keyframes heroTextReveal{from{opacity:0;transform:translateY(24px)}to{opacity:1;transform:translateY(0)}}
+@keyframes heroTextShine{0%,100%{background-position:0% 50%}50%{background-position:100% 50%}}
+@media(prefers-reduced-motion:reduce){.hero-title-words,.hero h1 .grad,.hero .wrap>.eyebrow,.hero .wrap>p,.hero .actions{animation:none!important}}
+
+/* Sequential progression through discovery, application and improvement. */
+.shift-journey{position:relative;list-style:none;margin:0;padding:0 0 0 52px;gap:30px;align-content:start}
+.shift-journey:before{content:"";position:absolute;top:34px;bottom:34px;left:18px;width:2px;background:#65d6e72b}
+.shift-journey .signal{overflow:visible;padding:25px 28px;background:#ffffff03;animation:journeyCard 12s ease-in-out infinite}
+.shift-journey .signal:nth-child(2){animation-delay:4s}
+.shift-journey .signal:nth-child(3){animation-delay:8s}
+.shift-journey .signal:after{content:none}
+.shift-journey .signal:not(:last-child):before{content:"↓";position:absolute;left:-43px;bottom:-29px;color:#65d6e7;font-size:20px;animation:journeyArrow 12s ease-in-out infinite}
+.shift-journey .signal:nth-child(2):before{animation-delay:4s}
+.step-number{position:absolute;left:-52px;top:18px;width:36px;height:36px;display:grid;place-items:center;border:1px solid #65d6e766;border-radius:50%;background:#0b1830;color:#a6dce5;font-weight:700;font-size:17px;animation:journeyNumber 12s ease-in-out infinite}
+.shift-journey .signal:nth-child(2) .step-number{animation-delay:4s}
+.shift-journey .signal:nth-child(3) .step-number{animation-delay:8s}
+.shift-stage{display:block;font-size:11px;font-weight:700;letter-spacing:.08em;color:#78dce8;margin-bottom:10px}
+.shift-journey .signal b{font-size:20px;line-height:1.45;margin:0 0 10px}
+.shift-journey .signal p{font-size:14px;line-height:1.85;margin:0;color:#b4c2d1}
+.shift-outcome{display:inline-block;margin-top:16px;border-top:1px solid #ffffff15;padding-top:12px;color:#92b4c7;font-size:12px}
+@keyframes journeyCard{0%,30%{border-color:#65d6e7aa;box-shadow:0 0 28px #65d6e712;background:#65d6e709}35%,100%{border-color:#ffffff26;box-shadow:none;background:#ffffff03}}
+@keyframes journeyNumber{0%,30%{background:#65d6e7;color:#0b1830;box-shadow:0 0 0 5px #65d6e71a}35%,100%{background:#0b1830;color:#a6dce5;box-shadow:none}}
+@keyframes journeyArrow{0%,24%,40%,100%{opacity:.35;transform:translateY(-2px)}32%{opacity:1;transform:translateY(4px)}}
+@media(max-width:600px){.shift-journey{padding-left:44px;gap:24px}.shift-journey:before{left:14px}.shift-journey .signal{padding:20px}.step-number{left:-44px;width:28px;height:28px;font-size:14px}.shift-journey .signal:not(:last-child):before{left:-39px;bottom:-26px}.shift-journey .signal b{font-size:18px}}
+@media(prefers-reduced-motion:reduce){.shift-journey .signal,.step-number,.shift-journey .signal:before{animation:none!important}}
+
+#build{background:#f6f8fc}
+#build .sectionhead p{color:#48576b;font-size:18px}
+#build .cards{gap:20px}
+#build .product-card{--accent:#096d9b;--tint:#e9f5fb;position:relative;display:flex;flex-direction:column;padding:28px 24px;min-height:370px;border:1px solid #d7e1ed;border-top:4px solid var(--accent);border-radius:20px;background:#fff;box-shadow:0 8px 26px #13263d08;transition:transform .25s,box-shadow .25s}
+#build .product-card:hover{transform:translateY(-5px);box-shadow:0 18px 36px #13263d14}
+#build .product-2{--accent:#6650b9;--tint:#f0edfc}
+#build .product-3{--accent:#157566;--tint:#e8f6f1}
+#build .product-4{--accent:#3855a6;--tint:#edf1fc}
+.product-top{display:flex;align-items:center;justify-content:space-between;gap:8px;margin-bottom:24px}
+#build .num{color:var(--accent);font-size:11px;letter-spacing:.08em}
+.product-icon{width:46px;height:46px;padding:11px;border-radius:14px;background:var(--tint);color:var(--accent);flex-shrink:0}
+.product-icon svg{display:block;width:100%;height:100%}
+.product-audience{font-size:12px;font-weight:600;color:#526174}
+#build .product-card h3{margin:8px 0 18px;font-size:clamp(22px,1.7vw,26px);line-height:1.35;letter-spacing:-.04em;word-break:keep-all;overflow-wrap:anywhere}
+#build .product-value{color:var(--accent);font-size:15px;font-weight:700;line-height:1.65;margin:0 0 10px;word-break:keep-all}
+#build .product-desc{font-size:15px;line-height:1.85;color:#445266;margin:0 0 24px;word-break:keep-all;overflow-wrap:anywhere}
+.product-features{list-style:none;display:flex;flex-wrap:wrap;gap:7px;margin:auto 0 0;padding:18px 0 0;border-top:1px solid #e4eaf2}
+.product-features li{font-size:11px;line-height:1.6;font-weight:600;background:var(--tint);color:var(--accent);border-radius:6px;padding:5px 8px}
+@media(max-width:1200px){#build .cards{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:600px){#build .cards{grid-template-columns:1fr}#build .product-card{min-height:0;padding:24px}#build .product-card h3{font-size:25px}}
+@media(prefers-reduced-motion:reduce){#build .product-card{transition:none}}
+#history{padding-block:clamp(56px,6.3vw,98px)}
+#history .sectionhead{margin-bottom:24px}
+#history .original-history{padding-block:8px}
+#history .original-history .tl__i{padding:18px 24px;margin-bottom:12px}
+#history .original-history .tl__i b{font-size:clamp(27px,2.6vw,37px);margin-bottom:10px}
+#history .original-history .tiny{margin-top:6px!important;line-height:1.65}
+#history .original-history .tl__i:before{top:34px}
+#history .original-history .tl__i:after{top:29px}
+@media(max-width:700px){#history .original-history .tl__i{padding:16px 20px;margin-bottom:12px}}
+
+/* Compact history and stronger Lab hierarchy. */
+#history{padding-block:clamp(48px,5.4vw,84px)}
+#history .sectionhead{margin-bottom:18px}
+#history .original-history{padding-block:4px}
+#history .original-history .tl__i{padding:14px 22px;margin-bottom:8px}
+#history .original-history .tl__i b{font-size:clamp(25px,2.3vw,33px);margin-bottom:7px}
+#history .original-history .tiny{margin-top:4px!important;line-height:1.6}
+#history .original-history .tl__i:before{top:30px}
+#history .original-history .tl__i:after{top:25px}
+#lab{background:linear-gradient(130deg,#eaf4fa,#f4f3fc 65%,#edf8f9)}
+#lab .sectionhead{max-width:900px}
+#lab .sectionhead p{font-size:18px;line-height:1.85;color:#43536b}
+#lab .sectionhead small{color:#526174;font-size:14px}
+.lab-window{padding:14px 0 24px}
+.labtrack{gap:20px;padding-bottom:18px;animation-duration:150s}
+@keyframes lab-loop{to{transform:translateX(calc(-50% - 10px))}}
+#lab .labcard{--lab-accent:#12658e;--lab-tint:#eaf4fa;flex-basis:380px;min-height:340px;background:#fff;border:1px solid #cadbe8;border-top:4px solid var(--lab-accent);padding:26px;border-radius:20px;box-shadow:0 10px 24px #1936500c;transition:transform .25s,box-shadow .25s}
+#lab .labcard:nth-child(3n+2){--lab-accent:#6350a5;--lab-tint:#f0edfa}
+#lab .labcard:nth-child(3n){--lab-accent:#147366;--lab-tint:#eaf6f2}
+#lab .labcard:hover{transform:translateY(-6px);box-shadow:0 18px 32px #1936501a}
+.lab-card-top{display:flex;align-items:center;justify-content:space-between;gap:12px;margin-bottom:8px}
+#lab .lab-category{font-size:12px;color:var(--lab-accent)}
+.lab-mark{display:grid;place-items:center;width:42px;height:42px;flex-shrink:0;border-radius:12px;color:var(--lab-accent);background:var(--lab-tint)}
+.lab-mark svg{width:24px;height:24px;animation:labIconGlow 5s ease-in-out infinite}
+@keyframes labIconGlow{50%{opacity:.55;transform:translateY(-2px)}}
+#lab .labcard h3{font-size:23px;line-height:1.4;margin:14px 0;word-break:keep-all;color:#111b2d}
+#lab .labcard p{font-size:16px;line-height:1.85;color:#45556a;word-break:keep-all;margin-bottom:22px}
+#lab .lab-scope{padding-top:16px}
+.lab-scope-label{display:block;font-size:11px;font-weight:700;color:#617084;margin-bottom:9px}
+.lab-tags{display:flex;gap:6px;flex-wrap:wrap}
+.lab-tags span{font-size:12px;font-weight:600;padding:5px 8px;border-radius:6px;background:var(--lab-tint);color:var(--lab-accent)}
+@media(max-width:700px){#history .original-history .tl__i{padding:14px 18px;margin-bottom:8px}}
+@media(max-width:600px){#lab .labcard{flex-basis:300px;padding:22px}#lab .labcard h3{font-size:21px}#lab .labcard p{font-size:15px}}
+@media(prefers-reduced-motion:reduce){.lab-mark svg{animation:none}#lab .labcard{transition:none}}
+
+.carousel-controls{display:flex;justify-content:flex-end;gap:8px;margin-bottom:14px}
+.carousel-controls button{border:1px solid #b9cedc;background:#fff;color:#133451;border-radius:999px;padding:11px 18px;font-size:13px;font-weight:700;transition:background .2s}
+.carousel-controls button:hover{background:#0b1830;color:#fff}
+.manual-slider{overflow-x:auto!important;scrollbar-width:none;touch-action:pan-x pan-y;cursor:grab}
+.manual-slider::-webkit-scrollbar{display:none}
+.manual-slider:focus-visible{outline:2px solid #168ac2;outline-offset:4px}
+#lab .labtrack{animation:none!important;transform:none!important}
+.manual-slider.dragging{cursor:grabbing}
+#portfolio .work-preview{position:relative;overflow:hidden;border:1px solid #ccdae8;border-top:4px solid #168ac2;min-height:220px;padding:26px;background:linear-gradient(135deg,#fff 60%,#eaf4fc);box-shadow:0 10px 25px #13263d08;transition:transform .25s,box-shadow .25s}
+#portfolio .work-preview:nth-child(3n+2){border-top-color:#7164e8;background:linear-gradient(135deg,#fff 60%,#f1effc)}
+#portfolio .work-preview:nth-child(3n){border-top-color:#168575;background:linear-gradient(135deg,#fff 60%,#eaf7f3)}
+#portfolio .work-preview small{align-self:flex-start;background:#0b1830;color:#fff;padding:4px 12px;border-radius:30px;font-size:12px}
+#portfolio .work-preview h3{font-size:22px;line-height:1.45;max-width:90%;word-break:keep-all}
+#portfolio .work-preview>span{border-top:1px solid #dce4ec;padding-top:14px;color:#24435d}
+#portfolio .work-preview:hover{transform:translateY(-5px);box-shadow:0 16px 35px #13263d18}
+.mini-gallery{margin-top:36px}
+.mini-heading{display:flex;align-items:center;justify-content:space-between;gap:16px}
+.mini-heading>span{font-size:11px;font-weight:700;color:#526b80;letter-spacing:.12em}
+.mini-track{display:flex;width:max-content;gap:16px;padding:8px 0 16px}
+.mini-project{display:block;flex:0 0 176px;width:176px;height:112px;overflow:hidden;border-radius:40px;background:white;border:1px solid #d4dfeb;box-shadow:0 5px 14px #13263d10}
+.mini-project img{display:block;width:100%;height:100%;object-fit:cover;transition:transform .35s}
+.mini-project:hover img{transform:scale(1.06)}
+@media(max-width:600px){.mini-project{width:150px;flex-basis:150px;height:100px}.carousel-controls button{padding:10px 14px}}
+
+/* Quiet editorial cards; edge arrows replace the toolbar. */
+.lab-carousel,.mini-gallery{position:relative}
+.lab-carousel{padding-inline:30px}
+.mini-gallery{padding-inline:30px}
+.carousel-controls{position:absolute;inset:0;display:block;margin:0;pointer-events:none;z-index:4}
+.carousel-controls button{position:absolute;top:50%;transform:translateY(-50%);width:38px;height:56px;padding:8px;border:0;border-radius:0;background:transparent;color:#263b50;pointer-events:auto}
+.carousel-controls button[data-direction="-1"]{left:-10px}
+.carousel-controls button[data-direction="1"]{right:-10px}
+.carousel-controls button svg{width:24px;height:32px;fill:none;stroke:currentColor;stroke-width:1.6;stroke-linecap:round;stroke-linejoin:round}
+.carousel-controls button:hover{background:transparent;color:#168ac2}
+.carousel-controls button:focus-visible{outline:2px solid #168ac2;outline-offset:2px;border-radius:6px}
+.mini-heading{margin-bottom:10px}
+#build .product-card,#lab .labcard,#portfolio .work-preview{border:1px solid #d9dfe5;border-top:1px solid #d9dfe5;background:#fff;box-shadow:0 4px 16px #13263d05}
+#build .product-card{--accent:#243a50;--tint:#f2f4f6}
+#lab .labcard:nth-child(n){--lab-accent:#243a50;--lab-tint:#f2f4f6}
+#portfolio .work-preview:nth-child(n){border-top-color:#d9dfe5;background:#fff}
+#portfolio .work-preview small{background:none;color:#526174;padding:0;font-size:14px;letter-spacing:.04em}
+#portfolio .work-preview h3{font-size:23px;font-weight:700;margin-top:24px;line-height:1.5}
+#portfolio .work-preview>span{color:#627080;font-size:12px}
+#build .num,#lab .lab-category{color:#627080;font-size:12px;letter-spacing:.06em}
+#build .product-card h3,#lab .labcard h3{font-weight:700;color:#132236}
+#build .product-value{color:#263b50}
+#lab .lab-mark,.product-icon{background:#f2f4f6;color:#526174;border-radius:10px}
+#lab .lab-mark svg{animation:none}
+#lab .lab-tags span,.product-features li{background:none;border:1px solid #e0e5e9;color:#526174;font-weight:500}
+#portfolio .work-preview:hover,#lab .labcard:hover,#build .product-card:hover{border-color:#aab9c7;box-shadow:0 12px 28px #13263d0c}
+@media(max-width:600px){.lab-carousel,.mini-gallery{padding-inline:24px}.carousel-controls button{width:32px;padding:5px}.carousel-controls button[data-direction="-1"]{left:-8px}.carousel-controls button[data-direction="1"]{right:-8px}}
+
+/* Secondary heading supports, rather than competes with, the hero. */
+#shift .shift-title{font-size:clamp(28px,3.2vw,43px);line-height:1.4;letter-spacing:-.04em;font-weight:700;margin:18px 0 24px}
+#shift .shift-title>span{display:block}
+#shift .shift-title em{font-style:normal;color:#b1d6df;background:none;animation:none}
+#shift .sectionhead{max-width:560px;margin-bottom:0}
+#shift .sectionhead>p{font-size:16px;line-height:1.85;max-width:44ch;color:#afbdcd}
+#shift .twocol{grid-template-columns:minmax(0,.85fr) minmax(0,1.15fr);align-items:start;gap:clamp(40px,6vw,84px)}
+@media(max-width:1000px){#shift .twocol{grid-template-columns:1fr}#shift .sectionhead{max-width:640px}}
+@media(max-width:600px){#shift .shift-title{font-size:clamp(25px,6.5vw,32px);line-height:1.4}}
+
+/* Shared section hierarchy and alternating surface rhythm. */
+main>section:not(.hero) .sectionhead{max-width:none}
+main>section:not(.hero) .sectionhead h2,
+#shift .sectionhead .shift-title{font-size:clamp(28px,3.2vw,43px);line-height:1.4;letter-spacing:-.04em;font-weight:700;margin:18px 0 24px;white-space:nowrap}
+#shift .shift-title>span{display:inline}
+#shift,#lab,#portfolio,#consult{background:linear-gradient(125deg,#0b1830,#12263c);color:#fff}
+#build,#history,#education{background:linear-gradient(125deg,#f5f9fc,#eef5fa 60%,#f3f1fa);color:#111b2d}
+#shift .sectionhead>p,#lab .sectionhead>p,#portfolio .sectionhead>p,#consult .sectionhead>p{color:#b8c7d7}
+#lab .sectionhead small{color:#aebfd0}
+#shift .eyebrow,#lab .eyebrow,#portfolio .eyebrow,#consult .eyebrow{color:#8fd6e3}
+#lab .sectionhead .grad{background:none;color:#b1d6df}
+#portfolio .mini-heading>span{color:#aebfd0}
+#lab .carousel-controls button,#portfolio .carousel-controls button{color:#c7dbe7}
+#lab .carousel-controls button:hover,#portfolio .carousel-controls button:hover{color:#fff}
+#history .eyebrow{color:#168ac2}
+#history .original-history:before{background:linear-gradient(#3b87a8,#8b80b6,#b6ccdb)}
+#history .original-history .tl__i{background:#ffffffc9;border-color:#d3dfe9;box-shadow:0 8px 22px #13263d08}
+#history .original-history .tl__i b{color:#286988}
+#history .original-history .small{color:#172a3e!important}
+#history .original-history .tiny{color:#526174}
+#history .original-history .tl__i:after{border-color:#eef5fa;background:#3c94ad}
+#history .original-history .tl__i:before{background:#7ca6b9}
+#consult .form{color:#111b2d}
+#consult .aside{border-color:#ffffff24}
+#shift .twocol{grid-template-columns:1fr;gap:38px}
+#shift .sectionhead{max-width:none}
+#shift .sectionhead>p{max-width:65ch}
+#shift .shift-journey{padding:0;display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:40px;align-items:stretch}
+#shift .shift-journey:before{display:none}
+#shift .shift-journey .signal{margin:0;padding:28px;display:flex;flex-direction:column}
+#shift .step-number{position:relative;left:auto;top:auto;margin-bottom:22px;width:40px;height:40px}
+#shift .shift-journey .signal:not(:last-child):before{content:"→";left:auto;right:-32px;bottom:auto;top:50%;font-size:25px;animation:journeyAcross 12s ease-in-out infinite}
+#shift .shift-journey .signal:nth-child(2):before{animation-delay:4s}
+#shift .shift-outcome{margin-top:auto;padding-top:18px}
+#shift .shift-journey .signal p{margin-bottom:22px}
+@keyframes journeyAcross{0%,24%,40%,100%{opacity:.35;transform:translateX(-2px)}32%{opacity:1;transform:translateX(3px)}}
+@media(max-width:800px){
+main>section:not(.hero) .sectionhead h2,#shift .sectionhead .shift-title{white-space:normal;font-size:clamp(26px,4.7vw,36px);word-break:keep-all}
+#shift .shift-journey{grid-template-columns:1fr;gap:30px}
+#shift .shift-journey .signal:not(:last-child):before{content:"↓";right:50%;top:auto;bottom:-29px;animation:none}
 }
-
-/* ---------- animated purple line background ---------- */
-#bg-lines{position:fixed;inset:0;width:100%;height:100%;z-index:0;display:block}
-
-/* ---------- stage / scaling ---------- */
-.stage{position:fixed;inset:0;z-index:1;overflow:hidden}
-.deck{
-  width:var(--DW);height:var(--DH);position:absolute;top:50%;left:50%;
-  transform-origin:center center;
+@media(prefers-reduced-motion:reduce){#shift .shift-journey .signal:before{animation:none}}
+/* Allow supporting section copy to use the full content width. */
+main>section:not(.hero) .sectionhead>p,
+#shift .sectionhead>p{max-width:none;width:100%}
+@media(min-width:1200px){#shift .sectionhead>p{white-space:nowrap}}
+/* White portfolio cards must not inherit the dark section's white text. */
+#portfolio .work-preview,
+#portfolio .work-preview:visited,
+#portfolio .work-preview h3{color:#132236}
+#portfolio .work-preview small{color:#526174}
+#portfolio .work-preview>span{color:#526174}
+@media(min-width:1200px){
+  #lab .sectionhead>p{white-space:nowrap;font-size:clamp(13px,1.05vw,16px)}
 }
++/* Interactive hero */
+.hero{--pointer-x:72%;--pointer-y:45%;min-height:calc(100svh - 76px);padding:clamp(42px,6.5vh,76px) 0;display:flex;align-items:center;overflow:hidden}
+.hero:before{content:"";position:absolute;width:560px;height:560px;left:var(--pointer-x);top:var(--pointer-y);transform:translate(-50%,-50%);border-radius:50%;background:radial-gradient(circle,#67d8ef26 0,#7467ee16 34%,transparent 70%);pointer-events:none;transition:left .18s linear,top .18s linear}
+.hero>.wrap{width:100%;display:grid;grid-template-columns:minmax(540px,1.08fr) minmax(460px,.92fr);align-items:center;gap:clamp(42px,6vw,96px)}
+.hero-copy{position:relative;z-index:3}.hero-copy>p{max-width:650px}
+.hero-progress{display:flex;align-items:center;gap:10px;margin-top:30px;font-size:10px;font-weight:900;letter-spacing:.14em;color:#8291a5}.hero-progress i{width:34px;height:1px;background:#cdd9e4;position:relative;overflow:hidden}.hero-progress i:after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,#25bfe2,#6765ef);transform:translateX(-100%);animation:heroProgress 9s linear infinite}.hero-progress i:nth-of-type(2):after{animation-delay:3s}.hero-progress span{transition:.35s}.hero-progress span.is-active{color:#0e93cc}
+.hero-visual{position:relative!important;inset:auto!important;width:min(100%,560px)!important;height:430px!important;justify-self:end;z-index:2;perspective:1200px}
+.pivot-board{position:absolute;inset:0;border:1px solid #c7dfea;border-radius:36px;background:linear-gradient(145deg,#ffffffd9,#f4fbffb8 50%,#f2f0ffb8);box-shadow:0 32px 80px #2d648b1b,inset 0 1px #fff;overflow:hidden;transform:rotateX(var(--hero-rx,0deg)) rotateY(var(--hero-ry,0deg));transform-style:preserve-3d;transition:transform .18s ease-out}.pivot-board:after{content:"";position:absolute;inset:-40%;background:conic-gradient(from 90deg,transparent,#50cbe516,transparent 30%,#6c64ef14,transparent 60%,#2ad0a414,transparent);animation:pivotAura 13s linear infinite}
+.pivot-grid{position:absolute;inset:0;opacity:.42;background-image:linear-gradient(#5fa8c40e 1px,transparent 1px),linear-gradient(90deg,#5fa8c40e 1px,transparent 1px);background-size:28px 28px;mask-image:linear-gradient(to bottom,black,transparent 88%)}
+.pivot-route{position:absolute;inset:0;width:100%;height:100%;z-index:1}.pivot-route path{fill:none;stroke-width:2}.route-base{stroke:#bed2de;stroke-dasharray:4 8}.route-live{stroke:url(#pivotGradient);stroke-width:3!important;stroke-linecap:round;stroke-dasharray:54 620;animation:routeTravel 4.5s linear infinite;filter:drop-shadow(0 0 5px #5ed8ee)}
+.pivot-node{position:absolute;z-index:4;width:190px;padding:18px 19px;text-align:left;border:1px solid #c8dae4;border-radius:20px;background:#ffffffed;color:#152238;box-shadow:0 16px 34px #214d6914;cursor:pointer;transition:transform .45s cubic-bezier(.2,.8,.2,1),box-shadow .45s,border-color .45s}.pivot-node span{display:block;font-size:9px;font-weight:900;letter-spacing:.13em;color:#168fc0;margin-bottom:8px}.pivot-node strong{display:block;font-size:16px;line-height:1.35}.pivot-node small{display:block;margin-top:7px;font-size:9px;letter-spacing:.08em;color:#758599}.pivot-node:before{content:"";position:absolute;width:8px;height:8px;border-radius:50%;background:#b9cbd5;box-shadow:0 0 0 6px #b9cbd51a;transition:.35s}.pivot-node.is-active{border-color:#55cce4;box-shadow:0 22px 48px #1b91bd26,0 0 0 5px #55cce411;transform:translateY(-8px) scale(1.035)}.pivot-node.is-active:before{background:#4dcae7;box-shadow:0 0 0 8px #4dcae72b}
+.node-build{left:25px;top:54px}.node-build:before{right:-5px;bottom:23px}.node-connect{left:185px;top:173px;width:202px}.node-connect:before{right:-5px;bottom:25px}.node-transform{right:24px;bottom:39px;width:202px}.node-transform:before{left:-5px;top:23px}.node-transform.is-active{border-color:#38cba5;box-shadow:0 22px 48px #17a98622,0 0 0 5px #38cba511}
+.pivot-core{position:absolute;z-index:3;right:58px;top:47px;width:103px;height:103px;border-radius:50%;display:grid;place-content:center;text-align:center;background:#0d1c34;color:white;box-shadow:0 0 0 13px #5bcce40e,0 20px 40px #142d5040;animation:coreFloat 4s ease-in-out infinite}.pivot-core>b{font-size:27px;letter-spacing:-.08em}.pivot-core small{font-size:7px;line-height:1.25;letter-spacing:.13em;color:#7ce2ef}.pivot-core>span{position:absolute;inset:-12px;border:1px dashed #65d0e6;border-radius:50%;animation:orbitSpin 9s linear infinite}
+.result-chip{position:absolute;z-index:5;padding:7px 10px;border-radius:99px;background:#0f2039;color:#fff;font-size:9px;font-weight:800;box-shadow:0 8px 20px #1a35582b;animation:chipFloat 4s ease-in-out infinite}.chip-one{right:15px;top:168px}.chip-two{left:35px;bottom:103px;animation-delay:-1.2s}.chip-three{right:218px;bottom:19px;animation-delay:-2.3s}
+.orbit-dot{position:absolute;z-index:3;width:7px;height:7px;border-radius:50%;background:#6863ef;box-shadow:0 0 0 6px #6863ef1c;animation:dotPulse 2.2s ease-in-out infinite}.dot-one{left:165px;top:154px}.dot-two{right:88px;bottom:142px;animation-delay:-1.1s}
+.pivot-caption{position:absolute;z-index:4;left:26px;bottom:20px;display:flex;align-items:center;gap:8px;font-size:9px;color:#698093}.pivot-caption span{font-weight:900;color:#1aa8ca}.pivot-caption b{color:#1b2a3c}.pivot-caption i{width:32px;height:1px;background:linear-gradient(90deg,#25bfe2,#6b64ef)}
+@keyframes routeTravel{to{stroke-dashoffset:-674}}@keyframes pivotAura{to{transform:rotate(360deg)}}@keyframes coreFloat{50%{transform:translateY(-7px)}}@keyframes chipFloat{50%{transform:translateY(-5px)}}@keyframes dotPulse{50%{transform:scale(1.7);opacity:.45}}@keyframes heroProgress{0%,12%{transform:translateX(-100%)}35%,100%{transform:translateX(100%)}}
+@media(max-width:1180px){.hero{min-height:auto;padding:76px 0}.hero>.wrap{grid-template-columns:1fr}.hero-copy{text-align:center}.hero-copy>p{margin-left:auto;margin-right:auto}.hero .actions,.hero-progress{justify-content:center}.hero-visual{justify-self:center;margin-top:16px}}
+@media(max-width:620px){.hero{padding:54px 0 62px}.hero>.wrap{gap:30px}.hero-visual{height:360px!important;transform:scale(.88);transform-origin:top center;margin-bottom:-42px}.pivot-board{border-radius:28px}.pivot-node{width:165px;padding:14px}.node-connect{left:145px;width:180px}.node-transform{width:180px}.pivot-core{right:30px;transform:scale(.82)}.hero-progress{margin-top:22px}}
+@media(prefers-reduced-motion:reduce){.pivot-board,.pivot-node{transition:none}.route-live,.pivot-board:after,.pivot-core,.pivot-core>span,.result-chip,.orbit-dot,.hero-progress i:after{animation:none}}
 
-/* ---------- slide base ---------- */
-.slide{
-  position:absolute;inset:0;
-  padding:52px 78px 40px;
-  display:flex;flex-direction:column;
-  opacity:0;transform:translateX(46px) scale(.995);
-  transition:opacity .5s ease, transform .55s cubic-bezier(.22,.61,.36,1);
-  pointer-events:none;
+/* ===== 섹션별 카드 스타일 (브랜드 톤: 네이비 · 블루 · 시안 · 퍼플) =====
+   ① What we build : 라이트 타일 — 브랜드 색상 단일 계열(시안→퍼플) 은은한 틴트 + 네이비 원형 아이콘
+   ② J2 Lab        : 다크 글래스 — 반투명 카드 + 시안 라인 아이콘 + 아웃라인 칩
+   ③ Portfolio     : 화이트 에디토리얼 — 큰 워터마크 번호 + 호버 시 그라데이션 바 */
+
+/* ---------- ① What we build : 라이트 타일 ---------- */
+#build .cards .product-card{--tile:linear-gradient(160deg,#eaf6fb,#dcefF7);--tag:#1c7fb3;--ink-t:#0f1b2e;--sub:#5b6a7d;
+  position:relative;overflow:hidden;border:0!important;border-top:0!important;border-radius:24px;background:var(--tile)!important;
+  box-shadow:0 1px 0 #ffffff inset,0 2px 10px #0f1f3308!important;color:var(--ink-t);transition:transform .3s cubic-bezier(.2,.8,.2,1),box-shadow .3s}
+#build .cards .product-card:nth-child(2){--tile:linear-gradient(160deg,#e9f1fc,#dbe8f9);--tag:#2d6fc0}
+#build .cards .product-card:nth-child(3){--tile:linear-gradient(160deg,#ecedfc,#dfe1f9);--tag:#4d5fc9}
+#build .cards .product-card:nth-child(4){--tile:linear-gradient(160deg,#f0ebfb,#e4dcf8);--tag:#6a58c9}
+#build .cards .product-card:hover{transform:translateY(-6px);box-shadow:0 18px 40px #0f1f3316!important;border:0!important}
+#build .cards .product-card:before{content:"";position:absolute;right:-70px;bottom:-90px;width:230px;height:230px;border-radius:50%;background:#ffffff66;pointer-events:none}
+#build .cards .product-icon{width:56px;height:56px;padding:15px;border-radius:50%!important;background:linear-gradient(145deg,#1c3557,#0b1830)!important;color:#7ce2ef!important;box-shadow:0 10px 22px #0b183033,inset 0 1px 0 #ffffff22;transition:transform .3s}
+#build .cards .product-card:hover .product-icon{transform:translateY(-4px) rotate(-6deg)}
+#build .cards .product-icon svg{stroke-width:1.8}
+#build .cards .num{font-size:12px;font-weight:700;letter-spacing:.02em;color:var(--tag)!important}
+#build .cards .product-audience{display:none}
+#build .cards .product-card h3{font-size:clamp(22px,1.6vw,26px);font-weight:800;line-height:1.35;letter-spacing:-.045em;color:var(--ink-t)!important;margin:6px 0 10px;word-break:keep-all}
+#build .cards .product-value{color:var(--ink-t);font-size:15px;font-weight:600;margin:0 0 6px}
+#build .cards .product-desc{color:var(--sub);font-size:14px;line-height:1.75;margin:0 0 18px}
+#build .cards .product-features{border-top:0;padding-top:0;margin-top:auto;position:relative;z-index:1}
+#build .cards .product-features li{background:#ffffffc4!important;border:0!important;color:#2a3a4f!important;font-weight:600;border-radius:999px;padding:6px 11px;font-size:12px}
+
+/* ---------- ② J2 Lab : 다크 글래스 ---------- */
+#lab .labtrack .labcard{flex-basis:360px;min-height:320px;padding:26px;position:relative;overflow:hidden;border-radius:22px;
+  border:1px solid #ffffff1c!important;border-top:1px solid #ffffff30!important;background:linear-gradient(160deg,#ffffff14,#ffffff06)!important;
+  -webkit-backdrop-filter:blur(12px);backdrop-filter:blur(12px);box-shadow:0 20px 40px #00000033!important;color:#fff;
+  transition:transform .3s cubic-bezier(.2,.8,.2,1),border-color .3s,box-shadow .3s}
+#lab .labtrack .labcard:before{content:"";position:absolute;top:-80px;right:-60px;width:220px;height:220px;border-radius:50%;background:radial-gradient(circle,#65d6e72e,transparent 65%);pointer-events:none;transition:opacity .3s}
+#lab .labtrack .labcard:hover{transform:translateY(-6px);border-color:#65d6e78c!important;box-shadow:0 0 0 1px #65d6e72a,0 24px 48px #00000055!important}
+#lab .labtrack .lab-category{font-size:12px;font-weight:700;letter-spacing:.04em;color:#78dce8!important}
+#lab .labtrack .lab-mark{width:48px;height:48px;border-radius:14px!important;background:#65d6e714!important;border:1px solid #65d6e755;color:#8fe4ef!important;box-shadow:none;transition:transform .3s,background .3s}
+#lab .labtrack .labcard:hover .lab-mark{background:#65d6e72a!important;transform:translateY(-3px)}
+#lab .labtrack .lab-mark svg{animation:none;stroke-width:1.7}
+#lab .labtrack .labcard h3{font-size:23px;font-weight:700;line-height:1.4;letter-spacing:-.035em;color:#fff!important;margin:14px 0 10px;word-break:keep-all}
+#lab .labtrack .labcard p{color:#b4c2d1;font-size:14px;line-height:1.8;margin:0 0 20px}
+#lab .labtrack .lab-scope{border-top:1px solid #ffffff14;padding-top:16px;margin-top:auto;position:relative;z-index:1}
+#lab .labtrack .lab-scope-label{color:#8fa4b8;font-size:11px;font-weight:700;letter-spacing:.06em}
+#lab .labtrack .lab-tags span{background:transparent!important;border:1px solid #ffffff2a!important;color:#d5e0ea!important;font-weight:500;border-radius:999px;padding:5px 11px;font-size:12px}
+
+/* ---------- ③ Portfolio : 화이트 에디토리얼 ---------- */
+#portfolio .preview-grid{counter-reset:proj}
+#portfolio .preview-grid .work-preview{counter-increment:proj;position:relative;overflow:hidden;min-height:210px;padding:26px 26px 22px;border-radius:22px;
+  border:0!important;background:#fff!important;color:#0f1b2e;box-shadow:0 6px 20px #00000026!important;transition:transform .3s cubic-bezier(.2,.8,.2,1),box-shadow .3s}
+#portfolio .preview-grid .work-preview:hover{transform:translateY(-6px);box-shadow:0 22px 44px #00000040!important;border:0!important}
+/* 워터마크 번호 */
+#portfolio .preview-grid .work-preview:before{content:"0" counter(proj);position:absolute;right:16px;bottom:-22px;font-size:104px;font-weight:900;letter-spacing:-.08em;line-height:1;color:#0b183009;pointer-events:none;transition:color .3s}
+#portfolio .preview-grid .work-preview:hover:before{color:#168ac214}
+/* 호버 시 좌→우로 펼쳐지는 그라데이션 바 */
+#portfolio .preview-grid .work-preview:after{content:"";position:absolute;left:0;top:0;height:4px;width:0;background:linear-gradient(90deg,#168ac2,#65d6e7,#7164e8);transition:width .45s cubic-bezier(.2,.8,.2,1)}
+#portfolio .preview-grid .work-preview:hover:after{width:100%}
+#portfolio .preview-grid .work-preview small{font-size:12px;font-weight:700;letter-spacing:.06em;color:#168ac2!important;background:none!important;padding:0;padding-right:60px;display:flex;align-items:center;gap:8px}
+#portfolio .preview-grid .work-preview small:before{content:"";width:18px;height:2px;background:#168ac2;border-radius:2px}
+#portfolio .preview-grid .work-preview h3{font-size:21px;font-weight:800;line-height:1.4;letter-spacing:-.04em;color:#0f1b2e!important;margin:12px 0 10px;padding-right:44px;word-break:keep-all}
+#portfolio .preview-grid .work-preview>span:not(.tile-ico){color:#627080!important;font-size:13px;font-weight:600;border:0;padding-top:0;margin-top:auto;transition:color .2s}
+#portfolio .preview-grid .work-preview:hover>span:not(.tile-ico){color:#168ac2!important}
+#portfolio .preview-grid .work-preview .tile-ico{position:absolute;top:22px;right:22px;width:44px;height:44px;border-radius:13px;background:#0b1830;z-index:2;display:grid;place-items:center;color:#7ce2ef!important;pointer-events:none;transition:transform .3s,background .3s}
+#portfolio .preview-grid .work-preview .tile-ico svg{width:22px;height:22px;fill:none;stroke:currentColor;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round}
+#portfolio .preview-grid .work-preview:hover .tile-ico{transform:translateY(-3px);background:linear-gradient(145deg,#168ac2,#7164e8);color:#fff!important}
+
+@media(max-width:600px){
+  #build .cards .product-card,#lab .labtrack .labcard,#portfolio .preview-grid .work-preview{border-radius:20px}
+  #lab .labtrack .labcard{flex-basis:300px;min-height:0}
+  #build .cards .product-icon{width:50px;height:50px;padding:13px}
+  #portfolio .preview-grid .work-preview:before{font-size:84px}
 }
-.slide.is-active{opacity:1;transform:none;pointer-events:auto;z-index:2}
-.slide.is-leaving-left{opacity:0;transform:translateX(-46px) scale(.995);z-index:1}
+@media(prefers-reduced-motion:reduce){#build .cards .product-card,#build .cards .product-icon,#lab .labtrack .labcard,#lab .labtrack .lab-mark,#portfolio .preview-grid .work-preview,#portfolio .preview-grid .work-preview:after,#portfolio .preview-grid .work-preview .tile-ico{transition:none}}
 
-/* entrance stagger for content elements — triggered by a .reveal ancestor */
-[data-anim]{opacity:0;transform:translateY(26px);
-  transition:opacity .6s cubic-bezier(.22,.61,.36,1), transform .6s cubic-bezier(.22,.61,.36,1);}
-.reveal [data-anim],[data-anim].reveal{opacity:1;transform:none;
-  transition-delay:calc(var(--i,0)*68ms + 100ms);}
-
-/* ---- click-through fragments (head → body → insight) ---- */
-.frag{opacity:0;transition:opacity .5s ease}
-.frag.is-shown{opacity:1}
-/* body "spread" reveal */
-.frag-body{transform:scale(.9);filter:blur(12px);transform-origin:center center;
-  transition:opacity .55s ease, transform .75s cubic-bezier(.16,.74,.24,1), filter .6s ease}
-.frag-body.is-shown{transform:none;filter:blur(0)}
-/* insight typographic reveal, word by word */
-.insight.typo .word{display:inline-block;opacity:0;transform:translateY(20px) rotate(3deg);
-  transition:opacity .5s ease, transform .6s cubic-bezier(.2,.7,.2,1)}
-.frag-insight.is-shown .insight.typo .word{opacity:1;transform:none;
-  transition-delay:calc(var(--wi,0)*55ms)}
-
-/* ---------- slide header ---------- */
-.kicker{font-size:19px;font-weight:800;letter-spacing:.14em;color:var(--violet);
-  text-transform:uppercase;margin-bottom:10px;display:flex;align-items:center;gap:12px}
-.kicker::before{content:"";width:34px;height:3px;border-radius:3px;background:linear-gradient(90deg,var(--violet),var(--violet-500))}
-.s-emoji{font-size:40px;line-height:1;margin-bottom:8px}
-.s-title{font-size:41px;font-weight:800;line-height:1.24;letter-spacing:-.02em;color:var(--ink);
-  word-break:keep-all}
-.s-title .hl{color:var(--violet-700)}
-.s-sub{font-size:22px;font-weight:500;color:var(--muted);margin-top:12px;line-height:1.4;word-break:keep-all}
-.s-head{margin-bottom:26px}
-.s-head.tight{margin-bottom:18px}
-
-/* ---------- body area ---------- */
-.s-body{flex:1;min-height:0;display:flex;flex-direction:column;justify-content:center;gap:18px}
-
-/* ---------- footer insight ---------- */
-.insight-wrap{margin-top:24px}
-.insight{
-  position:relative;
-  background:linear-gradient(90deg,var(--violet-50),#fff);
-  border:1.5px solid var(--violet-line);
-  border-left:5px solid var(--violet);
-  border-radius:16px;
-  padding:20px 28px 20px 58px;
-  font-size:23px;font-weight:700;color:var(--ink-2);line-height:1.4;word-break:keep-all;
-  box-shadow:var(--shadow-sm);
-  animation:floatSoft 5.6s ease-in-out infinite;will-change:transform;
+/* ===== 섹션 톤 리듬 : 라이트/다크 교차 =====
+   hero L · shift D · build L · lab D · portfolio L · education D · history L · consult D */
+#portfolio{background:linear-gradient(125deg,#f5f9fc,#eef5fa 60%,#f3f1fa)!important;color:#111b2d}
+#portfolio .eyebrow{color:#168ac2}
+#portfolio .sectionhead>p{color:#48576b}
+#portfolio .mini-heading>span{color:#526b80}
+#portfolio .carousel-controls button{color:#263b50}
+#portfolio .carousel-controls button:hover{color:#168ac2}
+#portfolio .preview-grid .work-preview{box-shadow:0 6px 20px #13263d0d!important;border:1px solid #dfe7ef!important}
+#portfolio .preview-grid .work-preview:hover{box-shadow:0 22px 44px #13263d1a!important;border-color:#c9d7e4!important}
+#portfolio .mini-project{border-color:#d4dfeb}
+#education{background:linear-gradient(125deg,#0b1830,#12263c)!important;color:#fff}
+#education .eyebrow{color:#8fd6e3}
+#education .sectionhead h2{color:#fff}
+#education .sectionhead>p{color:#b8c7d7}
+#education .edu-card{color:#111b2d;border:1px solid #ffffff1a;box-shadow:0 12px 30px #00000033;transition:transform .3s cubic-bezier(.2,.8,.2,1),box-shadow .3s}
+#education .edu-card:hover{transform:translateY(-5px);box-shadow:0 22px 44px #00000055}
+#education .edu-body small{color:#6a5ae0}
+#education .edu-body h3{color:#132236}
+#education .more-row .btn.outline{background:#fff;color:#0b1830;border-color:#fff}
+#history{border-top:1px solid #dbe5ee}
+/* 스냅샷 프레임 : 라운드 20 · 다크 아웃라인 / 서브 텍스트 하단 배치 */
+#portfolio .mini-project{border-radius:20px;border:1.5px solid #0b1830;box-shadow:0 6px 16px #13263d14}
+#portfolio .mini-project:hover{border-color:#168ac2}
+#portfolio .portfolio-outro{margin:34px 0 0;text-align:center;color:#48576b;font-size:16px;line-height:1.7;word-break:keep-all}
+#portfolio .more-row{margin-top:18px}
+@media(max-width:600px){#portfolio .portfolio-outro{font-size:15px;margin-top:26px}}
+/* 포트폴리오 순서 : 헤딩 → 스냅샷 → 카드 → 더보기 */
+#portfolio .mini-gallery{margin:0 0 34px}
+#portfolio .mini-heading{margin:0}
+#portfolio .more-row{margin-top:30px}
+/* ===== 상담 신청 : 컴팩트 폼 + 우측 진행 방식 + 하단 비주얼 모션 ===== */
+#consult .consultgrid{grid-template-columns:minmax(0,1.1fr) minmax(320px,.9fr);gap:22px;align-items:stretch}
+#consult .form{display:flex;flex-direction:column}
+#consult .form .field:has(textarea){flex:1;display:flex;flex-direction:column}
+#consult .form .field textarea{flex:1;min-height:96px;resize:none}
+#consult .form>label{margin-top:auto}
+#consult .form{padding:clamp(20px,2.4vw,30px)}
+#consult .field-row{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+#consult .field{gap:5px;margin-bottom:11px}
+#consult .field label{font-size:12px}
+#consult .field input,#consult .field textarea{padding:10px 12px;font-size:14px;border-radius:9px;background:#f8fafc}
+#consult .field input::placeholder,#consult .field textarea::placeholder{color:#9aa7b6}
+#consult .field input:focus,#consult .field textarea:focus{outline:2px solid #168ac2;outline-offset:0;background:#fff}
+#consult .field textarea{min-height:96px}
+#consult .form>label{font-size:12px!important;display:block;margin:2px 0 8px}
+#consult #formMsg{margin:0 0 8px;font-size:13px}
+#consult .form .btn{padding:12px 20px}
+#consult .aside{display:flex;flex-direction:column;padding:clamp(20px,2.4vw,30px)}
+#consult .aside h3{font-size:21px;margin-bottom:10px}
+#consult .aside>p{font-size:13.5px;margin:0}
+#consult .aside ul{margin:16px 0 0;gap:10px}
+#consult .aside li{padding-top:9px;font-size:13.5px}
+#consult .aside strong{font-size:12px;margin-bottom:2px}
+.consult-motion{margin-top:18px;padding-top:18px;border-top:1px solid #ffffff1a}
+.consult-motion svg{display:block;width:100%;height:auto}
+.consult-motion .cm-base{fill:none;stroke:#ffffff22;stroke-width:2;stroke-dasharray:4 7}
+.consult-motion .cm-live{fill:none;stroke:url(#cmGrad);stroke-width:3;stroke-linecap:round;stroke-dasharray:46 400;animation:cmTravel 3.6s linear infinite;filter:drop-shadow(0 0 5px #5ed8ee)}
+.consult-motion .cm-ring{fill:#65d6e70e;stroke:#65d6e744;stroke-width:1;transform-origin:center;transform-box:fill-box;animation:cmRing 3.6s ease-in-out infinite}
+.consult-motion .cm-dot{fill:#0b1830;stroke:#78dce8;stroke-width:2;animation:cmDot 3.6s ease-in-out infinite}
+.consult-motion .n2 .cm-ring,.consult-motion .n2 .cm-dot{animation-delay:1.2s}
+.consult-motion .n3 .cm-ring,.consult-motion .n3 .cm-dot{animation-delay:2.4s}
+.consult-motion text{fill:#d5e0ea;font-size:12px;font-weight:700;text-anchor:middle;font-family:inherit}
+.consult-motion .cm-step{fill:#78dce8;font-size:9px;letter-spacing:.14em;font-weight:900}
+.cm-chips{display:flex;gap:8px;flex-wrap:wrap;margin-top:10px}
+.cm-chips span{font-size:11px;font-weight:600;color:#d5e0ea;border:1px solid #ffffff26;border-radius:999px;padding:5px 10px}
+@keyframes cmTravel{to{stroke-dashoffset:-446}}
+@keyframes cmRing{0%,25%,100%{transform:scale(1);stroke:#65d6e744}12%{transform:scale(1.25);stroke:#65d6e7cc}}
+@keyframes cmDot{0%,25%,100%{fill:#0b1830}12%{fill:#65d6e7}}
+@media(max-width:1000px){#consult .consultgrid{grid-template-columns:1fr}}
+@media(max-width:600px){#consult .field-row{grid-template-columns:1fr}}
+@media(prefers-reduced-motion:reduce){.consult-motion .cm-live,.consult-motion .cm-ring,.consult-motion .cm-dot{animation:none}}
+/* 상담 폼 : 업무 유형 카테고리 칩 */
+#consult .field label small{font-weight:500;color:#7a8797;font-size:11px;margin-left:6px}
+#consult .cat-chips{display:flex;flex-wrap:wrap;gap:7px;margin-top:2px}
+#consult .cat-chip{position:relative;cursor:pointer}
+#consult .cat-chip input{position:absolute;opacity:0;width:0;height:0}
+#consult .cat-chip span{display:inline-block;font-size:12.5px;font-weight:600;color:#3b4a5e;background:#f3f6f9;border:1px solid #dfe6ee;border-radius:999px;padding:7px 12px;transition:background .2s,color .2s,border-color .2s,transform .15s}
+#consult .cat-chip:hover span{border-color:#9fc2d8;background:#eaf4fa}
+#consult .cat-chip input:checked+span{background:#0b1830;color:#fff;border-color:#0b1830}
+#consult .cat-chip input:checked+span:before{content:"✓ ";color:#78dce8}
+#consult .cat-chip input:focus-visible+span{outline:2px solid #168ac2;outline-offset:2px}
+#consult .cat-chip:active span{transform:scale(.97)}
+/* ===== 포트폴리오 카드 : 4x2 그래픽 타일 (스냅샷과 구분되는 추상 비주얼) ===== */
+#portfolio .preview-grid--8{grid-template-columns:repeat(4,minmax(0,1fr));gap:18px}
+#portfolio .preview-grid--8 .work-preview{--wa:#168ac2;--wb:#65d6e7;--wt:#e9f5fb;counter-increment:none;display:flex;flex-direction:column;min-height:0;padding:0;border-radius:20px;overflow:hidden;background:#fff!important;border:1px solid #dfe7ef!important;box-shadow:0 6px 20px #13263d0d!important}
+#portfolio .preview-grid--8 .work-preview.c2{--wa:#6a5ae0;--wb:#9b8bfa;--wt:#efedfc}
+#portfolio .preview-grid--8 .work-preview.c3{--wa:#0f8f7d;--wb:#3ed1a8;--wt:#e8f6f2}
+#portfolio .preview-grid--8 .work-preview.c4{--wa:#2f5fc4;--wb:#5aa8ff;--wt:#e9f0fc}
+#portfolio .preview-grid--8 .work-preview.c5{--wa:#8b3fc9;--wb:#c48bff;--wt:#f4ecfc}
+#portfolio .preview-grid--8 .work-preview.c6{--wa:#0e7c9c;--wb:#3fc3ee;--wt:#e7f4f9}
+#portfolio .preview-grid--8 .work-preview.c7{--wa:#4759d6;--wb:#8e9cff;--wt:#ebeefc}
+#portfolio .preview-grid--8 .work-preview.c8{--wa:#1f3a5c;--wb:#5d8bb8;--wt:#e9eff5}
+#portfolio .preview-grid--8 .work-preview:before,#portfolio .preview-grid--8 .work-preview:after{display:none}
+#portfolio .preview-grid--8 .work-preview:hover{transform:translateY(-6px);box-shadow:0 22px 44px #13263d1a!important;border-color:#c9d7e4!important}
+/* 상단 비주얼 : 틴트 배경 + 격자 + 궤도 링 + 아이콘 */
+#portfolio .wp-visual{position:relative;height:120px;overflow:hidden;background:
+  radial-gradient(circle at 85% 20%,color-mix(in srgb,var(--wb) 35%,transparent),transparent 45%),
+  linear-gradient(#0b183008 1px,transparent 1px),linear-gradient(90deg,#0b183008 1px,transparent 1px),var(--wt);
+  background-size:auto,22px 22px,22px 22px,auto}
+#portfolio .wp-visual:before,#portfolio .wp-visual:after{content:"";position:absolute;border-radius:50%;border:1px solid color-mix(in srgb,var(--wa) 30%,transparent);pointer-events:none}
+#portfolio .wp-visual:before{width:150px;height:150px;right:-30px;top:-40px}
+#portfolio .wp-visual:after{width:230px;height:230px;right:-70px;top:-80px;border-style:dashed;opacity:.7;animation:wpSpin 40s linear infinite}
+#portfolio .wp-icon{position:absolute;left:18px;bottom:16px;width:52px;height:52px;border-radius:16px;display:grid;place-items:center;background:linear-gradient(145deg,var(--wa),var(--wb));color:#fff;box-shadow:0 10px 22px color-mix(in srgb,var(--wa) 35%,transparent);transition:transform .3s}
+#portfolio .wp-icon svg{width:24px;height:24px;fill:none;stroke:currentColor;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round}
+#portfolio .work-preview:hover .wp-icon{transform:translateY(-4px) rotate(-6deg)}
+#portfolio .wp-year{position:absolute;right:14px;top:14px;font-size:11px;font-weight:800;letter-spacing:.06em;color:var(--wa);background:#ffffffcc;border:1px solid color-mix(in srgb,var(--wa) 25%,transparent);border-radius:999px;padding:4px 10px}
+#portfolio .wp-body{padding:14px 16px 16px}
+#portfolio .preview-grid--8 .work-preview small{font-size:11px;font-weight:700;letter-spacing:.06em;color:var(--wa)!important;padding:0;display:flex;align-items:center;gap:6px}
+#portfolio .preview-grid--8 .work-preview small:before{width:14px;background:var(--wa)}
+#portfolio .preview-grid--8 .work-preview h3{font-size:15.5px;font-weight:700;line-height:1.45;letter-spacing:-.03em;margin:6px 0 6px;padding:0;color:#0f1b2e!important;word-break:keep-all}
+#portfolio .preview-grid--8 .work-preview p{margin:0;font-size:12.5px;line-height:1.6;color:#627080;word-break:keep-all}
+#portfolio .preview-grid--8 .work-preview:hover h3{color:var(--wa)!important}
+@keyframes wpSpin{to{transform:rotate(360deg)}}
+@media(max-width:1200px){#portfolio .preview-grid--8{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:600px){#portfolio .preview-grid--8{grid-template-columns:1fr;gap:12px}#portfolio .wp-visual{height:100px}}
+@media(prefers-reduced-motion:reduce){#portfolio .wp-visual:after{animation:none}}
+/* 스냅샷 프레임 아웃라인 완화 */
+#portfolio .mini-project{border:1px solid #c9d6e2;box-shadow:0 4px 12px #13263d0c}
+#portfolio .mini-project:hover{border-color:#168ac2}
+@media(max-width:1200px){#portfolio .preview-grid--8{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:600px){#portfolio .preview-grid--8{grid-template-columns:1fr 1fr;gap:12px}#portfolio .wp-body{padding:12px}#portfolio .preview-grid--8 .work-preview h3{font-size:14px}}
+/* Education history 4x2 */
+#education .preview-grid--edu{grid-template-columns:repeat(4,minmax(0,1fr));gap:18px}
+#education .preview-grid--edu .edu-card img{height:132px}
+#education .preview-grid--edu .edu-body{padding:14px 16px 16px}
+#education .preview-grid--edu .edu-body h3{font-size:14.5px;line-height:1.45;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
+@media(max-width:1200px){#education .preview-grid--edu{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:600px){#education .preview-grid--edu{grid-template-columns:1fr;gap:12px}}
+/* 히어로 상하 패딩 동일화 (2배 확장: 240px) */
+.hero{padding:clamp(160px,17vw,240px) 0!important}
+@media(max-width:1180px){.hero{padding:120px 0!important}}
+@media(max-width:620px){.hero{padding:80px 0!important}}
+/* ===== 걸어온 길 : 가로 타임라인(5열)로 컴팩트화 ===== */
+#history{padding-block:clamp(56px,6vw,84px)!important}
+#history .sectionhead{margin-bottom:28px}
+#history .original-history{max-width:none;padding:34px 0 0;display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:16px}
+#history .original-history:before{left:0;right:0;top:0;bottom:auto;width:auto;height:2px;background:linear-gradient(90deg,#65d6e7,#7164e8,#65d6e7);opacity:.6}
+#history .original-history .tl__i{width:auto;margin:0!important;padding:18px 18px 20px;border-radius:16px;background:#fff!important;border:1px solid #d9e3ee;box-shadow:0 6px 18px #13263d08;display:block}
+#history .original-history .tl__i:nth-child(even){margin-left:0!important}
+#history .original-history .tl__i:before{content:"";position:absolute;left:24px;right:auto;top:-34px;width:2px;height:22px;background:#7ca6b9}
+#history .original-history .tl__i:after{content:"";position:absolute;left:19px;right:auto;top:-40px;width:12px;height:12px;border-radius:50%;background:#3c94ad;border:3px solid #f5f9fc;box-shadow:0 0 0 3px #65d6e733}
+#history .original-history .tl__i:nth-child(even):before,#history .original-history .tl__i:nth-child(even):after{left:24px}
+#history .original-history .tl__i:nth-child(even):after{left:19px}
+#history .original-history .tl__i b{font-size:clamp(22px,1.8vw,26px)!important;margin-bottom:8px!important;color:#168ac2;letter-spacing:-.04em}
+#history .original-history .small{font-size:14.5px;font-weight:700;line-height:1.4;word-break:keep-all}
+#history .original-history .tiny{font-size:12.5px;line-height:1.6;margin-top:6px!important;word-break:keep-all}
+#history .original-history .tl__i:hover{transform:translateY(-4px);border-color:#9fc2d8}
+#history .history-reveal{transform:translateY(16px)}
+@media(max-width:1000px){#history .original-history{grid-template-columns:repeat(3,minmax(0,1fr))}}
+@media(max-width:600px){#history .original-history{grid-template-columns:1fr 1fr;gap:12px}#history .original-history .tl__i{padding:14px}}
+/* 걸어온 길 : 2018(우) → 2025(좌)로 올라오며 짙어지는 그라데이션 */
+#history .original-history:before{background:linear-gradient(90deg,#7164e8,#168ac2 45%,#65d6e7 75%,#dfe7ef);opacity:1}
+#history .original-history .tl__i{transition:transform .3s,box-shadow .3s}
+#history .original-history .tl__i:nth-child(1){background:linear-gradient(150deg,#12264a,#0b1830)!important;border-color:#0b1830;box-shadow:0 16px 34px #0b183033}
+#history .original-history .tl__i:nth-child(1) b{color:#78dce8}
+#history .original-history .tl__i:nth-child(1) .small{color:#fff!important}
+#history .original-history .tl__i:nth-child(1) .tiny{color:#b4c2d1}
+#history .original-history .tl__i:nth-child(2){background:linear-gradient(150deg,#dcecf7,#c9dff1)!important;border-color:#b9d3e8}
+#history .original-history .tl__i:nth-child(3){background:linear-gradient(150deg,#e9f3fa,#dcebf6)!important;border-color:#cddfec}
+#history .original-history .tl__i:nth-child(4){background:linear-gradient(150deg,#f3f8fc,#eaf2f9)!important;border-color:#dbe6f0}
+#history .original-history .tl__i:nth-child(5){background:#fff!important;border-color:#e3eaf1}
+#history .original-history .tl__i:nth-child(2) b{color:#1c6fa8}
+#history .original-history .tl__i:nth-child(3) b{color:#2a83b8}
+#history .original-history .tl__i:nth-child(4) b{color:#4a97c4}
+#history .original-history .tl__i:nth-child(5) b{color:#7fb0cc}
+#history .original-history .tl__i:nth-child(1):after{background:#7164e8;box-shadow:0 0 0 4px #7164e833,0 0 16px #7164e888}
+#history .original-history .tl__i:nth-child(2):after{background:#168ac2;box-shadow:0 0 0 3px #168ac233}
+#history .original-history .tl__i:nth-child(3):after{background:#3fb3d6}
+#history .original-history .tl__i:nth-child(4):after{background:#8dd4e3}
+#history .original-history .tl__i:nth-child(5):after{background:#c9dbe6}
+#history .original-history .tl__i:nth-child(1):before{background:#7164e8}
+#history .original-history .tl__i:nth-child(2):before{background:#168ac2}
+#history .original-history .tl__i:nth-child(3):before{background:#3fb3d6}
+#history .original-history .tl__i:nth-child(4):before{background:#8dd4e3}
+#history .original-history .tl__i:nth-child(5):before{background:#c9dbe6}
+/* What we build : 아이콘 상시 모션 (부유 + 링 펄스) */
+#build .cards .product-icon{position:relative;animation:pIconFloat 4s ease-in-out infinite}
+#build .cards .product-icon:after{content:"";position:absolute;inset:-4px;border-radius:50%;border:2px solid #65d6e7;opacity:0;animation:pIconRing 4s ease-out infinite}
+#build .cards .product-2 .product-icon,#build .cards .product-2 .product-icon:after{animation-delay:1s}
+#build .cards .product-3 .product-icon,#build .cards .product-3 .product-icon:after{animation-delay:2s}
+#build .cards .product-4 .product-icon,#build .cards .product-4 .product-icon:after{animation-delay:3s}
+#build .cards .product-card:hover .product-icon{animation-play-state:paused}
+@keyframes pIconFloat{0%,100%{transform:translateY(0) rotate(0)}50%{transform:translateY(-6px) rotate(-5deg)}}
+@keyframes pIconRing{0%{transform:scale(.8);opacity:.7}70%,100%{transform:scale(1.7);opacity:0}}
+@media(prefers-reduced-motion:reduce){#build .cards .product-icon,#build .cards .product-icon:after{animation:none}}
+/* Selected portfolio : 블루·남색 계열로 재정렬 (시안 → 스카이 → 블루 → 로열 → 인디고 → 네이비) */
+#portfolio .preview-grid--8 .work-preview.c1{--wa:#0f8fb8;--wb:#65d6e7;--wt:#e7f6fa}
+#portfolio .preview-grid--8 .work-preview.c2{--wa:#1a7fd0;--wb:#5cb8ff;--wt:#e8f2fc}
+#portfolio .preview-grid--8 .work-preview.c3{--wa:#2a62c9;--wb:#6f9dff;--wt:#e9eefb}
+#portfolio .preview-grid--8 .work-preview.c4{--wa:#3d4fc4;--wb:#8892f5;--wt:#ebecfb}
+#portfolio .preview-grid--8 .work-preview.c5{--wa:#1b4f8a;--wb:#4f8fd6;--wt:#e8eef6}
+#portfolio .preview-grid--8 .work-preview.c6{--wa:#0e6f8f;--wb:#3fb6d6;--wt:#e6f2f6}
+#portfolio .preview-grid--8 .work-preview.c7{--wa:#5b52d8;--wb:#9a93ff;--wt:#eeedfc}
+#portfolio .preview-grid--8 .work-preview.c8{--wa:#0b1830;--wb:#3e5f8a;--wt:#e9edf3}
+/* JTOCOM history : 6열 + 2026 기준 그라데이션 */
+#history .original-history{grid-template-columns:repeat(6,minmax(0,1fr));gap:14px}
+#history .original-history .tl__i{padding:16px 15px 18px}
+#history .original-history .tl__i b{font-size:clamp(20px,1.6vw,24px)!important}
+#history .original-history .small{font-size:13.5px}
+#history .original-history .tiny{font-size:12px}
+#history .original-history .tl__i:nth-child(1){background:linear-gradient(150deg,#12264a,#0b1830)!important;border-color:#0b1830;box-shadow:0 16px 34px #0b183033}
+#history .original-history .tl__i:nth-child(1) b{color:#78dce8}
+#history .original-history .tl__i:nth-child(1) .small{color:#fff!important}
+#history .original-history .tl__i:nth-child(1) .tiny{color:#b4c2d1}
+#history .original-history .tl__i:nth-child(2){background:linear-gradient(150deg,#cfe3f3,#bcd6ec)!important;border-color:#a9c9e2}
+#history .original-history .tl__i:nth-child(2) .small{color:#0f2a45!important}
+#history .original-history .tl__i:nth-child(3){background:linear-gradient(150deg,#dcecf7,#c9dff1)!important;border-color:#b9d3e8}
+#history .original-history .tl__i:nth-child(4){background:linear-gradient(150deg,#e9f3fa,#dcebf6)!important;border-color:#cddfec}
+#history .original-history .tl__i:nth-child(5){background:linear-gradient(150deg,#f3f8fc,#eaf2f9)!important;border-color:#dbe6f0}
+#history .original-history .tl__i:nth-child(6){background:#fff!important;border-color:#e3eaf1}
+#history .original-history .tl__i:nth-child(2) b{color:#155f96}
+#history .original-history .tl__i:nth-child(3) b{color:#1c6fa8}
+#history .original-history .tl__i:nth-child(4) b{color:#2a83b8}
+#history .original-history .tl__i:nth-child(5) b{color:#4a97c4}
+#history .original-history .tl__i:nth-child(6) b{color:#7fb0cc}
+#history .original-history .tl__i:nth-child(1):after,#history .original-history .tl__i:nth-child(1):before{background:#7164e8}
+#history .original-history .tl__i:nth-child(1):after{box-shadow:0 0 0 4px #7164e833,0 0 16px #7164e888}
+#history .original-history .tl__i:nth-child(2):after,#history .original-history .tl__i:nth-child(2):before{background:#168ac2}
+#history .original-history .tl__i:nth-child(2):after{box-shadow:0 0 0 3px #168ac233}
+#history .original-history .tl__i:nth-child(3):after,#history .original-history .tl__i:nth-child(3):before{background:#2f9fcc}
+#history .original-history .tl__i:nth-child(4):after,#history .original-history .tl__i:nth-child(4):before{background:#3fb3d6}
+#history .original-history .tl__i:nth-child(5):after,#history .original-history .tl__i:nth-child(5):before{background:#8dd4e3}
+#history .original-history .tl__i:nth-child(6):after,#history .original-history .tl__i:nth-child(6):before{background:#c9dbe6;box-shadow:none}
+@media(max-width:1200px){#history .original-history{grid-template-columns:repeat(3,minmax(0,1fr))}}
+@media(max-width:600px){#history .original-history{grid-template-columns:1fr 1fr}}
+/* Selected portfolio : 톤 다운 (채도 낮춘 블루그레이 계열, 상단 비주얼 절제) */
+#portfolio .preview-grid--8 .work-preview.c1{--wa:#2f7d99;--wb:#8fc3d3;--wt:#f0f5f8}
+#portfolio .preview-grid--8 .work-preview.c2{--wa:#33709f;--wb:#8fb6d6;--wt:#eff4f9}
+#portfolio .preview-grid--8 .work-preview.c3{--wa:#3d5f95;--wb:#93a9cc;--wt:#eff2f8}
+#portfolio .preview-grid--8 .work-preview.c4{--wa:#4a5494;--wb:#9aa0cc;--wt:#f0f1f8}
+#portfolio .preview-grid--8 .work-preview.c5{--wa:#2c4a6e;--wb:#7f9bb9;--wt:#eef2f6}
+#portfolio .preview-grid--8 .work-preview.c6{--wa:#2f6b7f;--wb:#86b3c0;--wt:#eef4f6}
+#portfolio .preview-grid--8 .work-preview.c7{--wa:#524f9a;--wb:#9f9cce;--wt:#f1f0f8}
+#portfolio .preview-grid--8 .work-preview.c8{--wa:#1f2e48;--wb:#6c7f9b;--wt:#eef1f5}
+#portfolio .wp-visual{background:
+  radial-gradient(circle at 85% 20%,color-mix(in srgb,var(--wb) 22%,transparent),transparent 45%),
+  linear-gradient(#0b183006 1px,transparent 1px),linear-gradient(90deg,#0b183006 1px,transparent 1px),var(--wt);
+  background-size:auto,22px 22px,22px 22px,auto}
+#portfolio .wp-visual:before,#portfolio .wp-visual:after{border-color:color-mix(in srgb,var(--wa) 18%,transparent)}
+#portfolio .wp-icon{background:linear-gradient(145deg,var(--wa),var(--wb));box-shadow:0 8px 18px color-mix(in srgb,var(--wa) 22%,transparent)}
+#portfolio .wp-year{color:var(--wa);background:#ffffffd9;border-color:color-mix(in srgb,var(--wa) 18%,transparent)}
+#portfolio .preview-grid--8 .work-preview{border-color:#e3e9f0!important;box-shadow:0 4px 14px #13263d0a!important}
+/* 헤더 : Company 드롭다운 */
+.navlinks{position:relative}
+.nav-company>a{position:relative;padding-right:14px}
+.nav-company>a:after{content:"";position:absolute;right:0;top:50%;width:6px;height:6px;border-right:1.5px solid currentColor;border-bottom:1.5px solid currentColor;transform:translateY(-70%) rotate(45deg)}
+.nav-sub{position:absolute;left:-12px;top:100%;padding-top:14px;display:none;z-index:30}
+.nav-sub>div{background:#fff;border:1px solid #dce4ec;border-radius:14px;box-shadow:0 16px 40px #13263d1a;padding:8px;min-width:190px;display:grid}
+.nav-sub a{padding:10px 14px;border-radius:9px;font-size:13.5px;font-weight:600;color:#3b4a5e}
+.nav-sub a:hover{background:#f2f6fa;color:#0b1830}
+.nav-company{position:relative}
+.nav-company:hover .nav-sub,.nav-company:focus-within .nav-sub{display:block}
+/* 우측 플로팅 도크 (아이콘 버튼, 호버 시 라벨) */
+.side-dock{position:fixed;right:22px;top:50%;transform:translateY(-50%);z-index:40;display:flex;flex-direction:column;gap:10px;padding:8px;border-radius:999px;background:#ffffffcc;border:1px solid #c7dfea;box-shadow:0 12px 32px #214d6920;backdrop-filter:blur(8px);-webkit-backdrop-filter:blur(8px)}
+.side-dock a{position:relative;width:40px;height:40px;border-radius:50%;display:grid;place-items:center;background:#0b1830;color:#7ce2ef;transition:background .25s,color .25s,transform .25s}
+.side-dock a svg{width:17px;height:17px;fill:none;stroke:currentColor;stroke-width:2;stroke-linecap:round;stroke-linejoin:round}
+.side-dock a:hover{transform:scale(1.08);background:linear-gradient(145deg,#168ac2,#7164e8);color:#fff}
+.side-dock a.is-active{background:linear-gradient(145deg,#168ac2,#7164e8);color:#fff;box-shadow:0 0 0 4px #168ac222}
+.side-dock a span{position:absolute;right:calc(100% + 14px);top:50%;transform:translateY(-50%) translateX(6px);white-space:nowrap;background:#0b1830;color:#fff;font-size:12px;font-weight:700;padding:6px 11px;border-radius:8px;opacity:0;pointer-events:none;transition:opacity .2s,transform .2s}
+.side-dock a span:after{content:"";position:absolute;left:100%;top:50%;transform:translateY(-50%);border:5px solid transparent;border-left-color:#0b1830}
+.side-dock a:hover span,.side-dock a:focus-visible span{opacity:1;transform:translateY(-50%) translateX(0)}
+@media(max-width:800px){.side-dock{right:12px;top:auto;bottom:16px;transform:none;flex-direction:row;gap:6px;padding:6px;border-radius:999px}.side-dock a{width:36px;height:36px}.side-dock a span{right:auto;left:50%;top:auto;bottom:calc(100% + 10px);transform:translateX(-50%) translateY(4px)}.side-dock a:hover span{transform:translateX(-50%) translateY(0)}.side-dock a span:after{left:50%;top:100%;transform:translateX(-50%);border:5px solid transparent;border-top-color:#0b1830}}
+@media(prefers-reduced-motion:reduce){.side-dock a,.side-dock a span{transition:none}}
+/* ===== 모바일 : 좌우 스와이프 (The Shift · What we build · Portfolio · Education) ===== */
+@media(max-width:800px){
+  .swipe-x{display:flex!important;grid-template-columns:none!important;gap:12px!important;overflow-x:auto;overscroll-behavior-x:contain;scroll-snap-type:x mandatory;-webkit-overflow-scrolling:touch;scrollbar-width:none;margin-inline:calc(var(--pad) * -1);padding:4px var(--pad) 14px;scroll-padding-inline:var(--pad)}
+  .swipe-x::-webkit-scrollbar{display:none}
+  .swipe-x>*{flex:0 0 78vw!important;max-width:340px;scroll-snap-align:start;width:auto!important}
+  /* The Shift : 세로 단계 → 가로 스와이프 (연결선·화살표 제거) */
+  #shift .shift-journey{padding-left:0!important;gap:12px!important}
+  #shift .shift-journey:before{display:none!important}
+  #shift .shift-journey .signal:before{display:none!important}
+  #shift .shift-journey .signal{padding:20px!important;margin:0!important}
+  #shift .step-number{left:auto!important;position:static!important;margin-bottom:10px}
+  /* Portfolio : 스냅샷 숨김 */
+  #portfolio .mini-gallery{display:none!important}
+  #portfolio .preview-grid--8 .work-preview{min-height:0}
+  /* Education */
+  #education .preview-grid--edu .edu-card img{height:140px}
+  /* 스와이프 힌트 */
+  .swipe-hint{display:flex;align-items:center;gap:8px;font-size:11px;font-weight:700;letter-spacing:.1em;color:#7a8797;margin:0 0 6px}
+  .swipe-hint:before{content:"";width:22px;height:2px;border-radius:2px;background:linear-gradient(90deg,#168ac2,#65d6e7)}
+  #lab .swipe-hint,#shift .swipe-hint{color:#8fa4b8}
 }
-.insight::before{content:"\201C";position:absolute;left:20px;top:8px;font-size:52px;line-height:1;
-  color:var(--violet);opacity:.5;font-family:Georgia,serif}
+@media(min-width:801px){.swipe-hint{display:none}}
+/* Consult와의 경계 : 얇은 하이라이트 라인 */
+#consult{border-top:1px solid #ffffff14;box-shadow:inset 0 1px 0 #65d6e722}
+</style></head><body>
+<header class="nav"><div class="wrap"><a class="logo" href="#top"><img src="assets/logo.png" alt="JTOCOM"></a><nav class="navlinks" id="nav"><a href="#top">Company</a><a href="portfolio.html">Portfolio</a><a href="education.html">Education</a></nav><a class="btn primary" href="#consult">Contact Us</a></div></header>
+<main id="top"><section class="hero" id="hero"><div class="ambient" aria-hidden="true"></div><div class="wrap"><div class="hero-copy"><span class="eyebrow">AI AGENCY → WORK TRANSFORMATION</span><h1><span class="hero-title-line"><span class="hero-title-words">웹을 만드는 회사에서</span></span><span class="hero-title-line"><span class="hero-title-words"><span class="grad">기업의 일을 바꾸는 회사</span>로</span></span></h1><p>제이투컴은 AI를 이해하는 개발자이자 교육자입니다. 현장의 반복 업무를 발견하고, 실제로 쓰이는 AI 제품과 자동화로 연결합니다.</p><div class="actions"><a class="btn primary" href="#build">AI 솔루션 살펴보기</a><a class="btn outline" href="#consult">우리 회사도 바꿀 수 있을까?</a></div><div class="hero-progress" aria-hidden="true"><span class="is-active">BUILD</span><i></i><span>CONNECT</span><i></i><span>TRANSFORM</span></div></div><div class="hero-visual" id="heroVisual" aria-label="AI 제작에서 기업 업무 변화로 이어지는 제이투컴의 전환 과정"><div class="pivot-board"><div class="pivot-grid" aria-hidden="true"></div><svg class="pivot-route" viewBox="0 0 560 430" aria-hidden="true"><defs><linearGradient id="pivotGradient" x1="0" x2="1"><stop stop-color="#48c9e8"/><stop offset=".52" stop-color="#5d68ef"/><stop offset="1" stop-color="#24c79a"/></linearGradient></defs><path class="route-base" d="M112 115 C200 115 185 223 278 223 S366 330 458 330"/><path class="route-live" d="M112 115 C200 115 185 223 278 223 S366 330 458 330"/></svg><button class="pivot-node node-build is-active" type="button" data-hero-step="0"><span>01 · AI AGENCY</span><strong>빠르게 만듭니다</strong><small>WEB · CONTENT · AI</small></button><button class="pivot-node node-connect" type="button" data-hero-step="1"><span>02 · CONNECT</span><strong>일과 데이터를 잇습니다</strong><small>PROCESS · DATA · PEOPLE</small></button><button class="pivot-node node-transform" type="button" data-hero-step="2"><span>03 · TRANSFORM</span><strong>기업의 일을 바꿉니다</strong><small>LESS WORK · MORE IMPACT</small></button><div class="pivot-core" aria-hidden="true"><span></span><b>J2</b><small>OPERATING<br>PARTNER</small></div><span class="orbit-dot dot-one" aria-hidden="true"></span><span class="orbit-dot dot-two" aria-hidden="true"></span><span class="result-chip chip-one">반복 업무 ↓</span><span class="result-chip chip-two">실행 속도 ↑</span><span class="result-chip chip-three">운영 역량 ↑</span><div class="pivot-caption"><span>FROM</span><b>제작 중심</b><i></i><span>TO</span><b>성과 중심</b></div></div></div></div></section>
+<section class="dark" id="shift"><div class="ambient" aria-hidden="true"></div><div class="wrap"><div class="twocol"><div class="sectionhead"><span class="eyebrow" style="color:#78dce8">The shift</span><h2 class="shift-title"><span>고객이 선택하는 것은,</span> <span><em>일의 변화</em>입니다.</span></h2><p>홈페이지, 쇼핑몰, 관리자 페이지는 누구나 빠르게 만들 수 있습니다. 제이투컴은 그 다음 질문에서 시작합니다.</p></div><p class="swipe-hint" aria-hidden="true">SWIPE →</p><ol class="signals shift-journey swipe-x" aria-label="업무 변화의 세 단계">
+<li class="signal"><span class="step-number" aria-hidden="true">1</span><span class="shift-stage">STEP 01 · 문제 발견</span><b>쌓인 업무에서, 바꿀 일을 찾습니다.</b><p>견적서·계약서·매뉴얼·보고서의 흐름을 살펴보고, 반복되는 업무와 시간이 걸리는 지점을 파악합니다.</p><span class="shift-outcome">변화의 시작 · 개선할 업무 선정</span></li>
+<li class="signal"><span class="step-number" aria-hidden="true">2</span><span class="shift-stage">STEP 02 · 업무 적용</span><b>막막했던 AI가, 실제 업무에 쓰입니다.</b><p>선정한 업무에 데이터와 AI 도구를 연결하고, 직원이 직접 사용하며 작은 범위부터 효과를 검증합니다.</p><span class="shift-outcome">변화의 실행 · 현장에서 검증</span></li>
+<li class="signal"><span class="step-number" aria-hidden="true">3</span><span class="shift-stage">STEP 03 · 지속 개선</span><b>한 번의 도입이, 더 나은 운영으로 이어집니다.</b><p>사용자의 피드백과 업무 결과를 반영해 도구를 개선하고, 검증한 방식을 조직의 다른 업무로 확장합니다.</p><span class="shift-outcome">변화의 확장 · 조직에 정착</span></li>
+</ol></div></div></section>
+<section id="build"><div class="ambient" aria-hidden="true"></div><div class="wrap"><div class="sectionhead"><span class="eyebrow">What we build</span><h2>교육에서 발견하고, 제품으로 해결합니다.</h2><p>반복 업무를 줄이고 팀의 역량을 키우는 네 가지 핵심 상품입니다.</p></div><p class="swipe-hint" aria-hidden="true">SWIPE →</p><div class="cards swipe-x"><article class="card product-card product-1"><div class="product-top"><span class="num">01 / BUSINESS</span><span class="product-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="5" y="3" width="14" height="18" rx="3"/><path d="M9 8h6M9 12h6M9 16h3"/></svg></span></div><span class="product-audience">기업·공공기관</span><h3>AI 업무비서 구축</h3><p class="product-value">찾고 작성하는 시간을 줄입니다.</p><p class="product-desc">사내 문서와 규정을 연결해 근거를 찾고, 견적서·메일·보고서 작성을 지원합니다.</p><ul class="product-features" aria-label="핵심 기능"><li>문서 검색</li><li>답변 지원</li><li>문서 작성</li></ul></article><article class="card product-card product-2"><div class="product-top"><span class="num">02 / MARKETING</span><span class="product-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="14" rx="3"/><path d="m10 9 5 3-5 3Z"/></svg></span></div><span class="product-audience">마케팅·홍보·영업 조직</span><h3>AI 콘텐츠 스튜디오</h3><p class="product-value">제작 기간은 줄이고, 콘텐츠 양은 늘립니다.</p><p class="product-desc">브로슈어·제품 소개 영상·SNS 콘텐츠를 AI로 기획·제작하고, 브랜드 톤을 유지한 채 채널별로 확장합니다.</p><ul class="product-features" aria-label="핵심 기능"><li>AI 브로슈어</li><li>홍보 영상</li><li>채널별 변환</li></ul></article><article class="card product-card product-3"><div class="product-top"><span class="num">03 / TEAMS</span><span class="product-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="7" height="7" rx="2"/><rect x="14" y="14" width="7" height="7" rx="2"/><path d="M14 6h4v4M10 18H6v-4"/></svg></span></div><span class="product-audience">기업·업무 담당팀</span><h3>맞춤형 AI 웹앱</h3><p class="product-value">우리 팀의 일하는 방식에 맞춥니다.</p><p class="product-desc">조직의 업무 흐름을 진단하고 기존 시스템과 연결되는 자동화·웹앱을 설계합니다.</p><ul class="product-features" aria-label="핵심 기능"><li>업무 진단</li><li>시스템 연동</li><li>맞춤 개발</li></ul></article><article class="card product-card product-4"><div class="product-top"><span class="num">04 / ORGANIZATION</span><span class="product-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="m12 3 9 5-9 5-9-5 9-5ZM6 10v6c4 3 8 3 12 0v-6M21 8v8"/></svg></span></div><span class="product-audience">기업·공공기관·대학</span><h3>AI 도입 교육·컨설팅</h3><p class="product-value">도구 교육에서 끝나지 않고, 첫 업무 적용까지 갑니다.</p><p class="product-desc">직무별 AI 실무 교육으로 현장의 반복 업무를 발견하고, 파일럿 설계와 성과 기준까지 함께 세웁니다.</p><ul class="product-features" aria-label="핵심 기능"><li>실무 교육</li><li>업무 진단</li><li>파일럿 설계</li></ul></article></div></div></section>
+<section class="lab" id="lab"><div class="ambient" aria-hidden="true"></div><div class="wrap"><div class="sectionhead"><span class="eyebrow">J2 Lab</span><h2>조직의 과제를 해결하는 <span class="grad">AI 프로젝트 연구소</span></h2><p>기업·공공기관·대학·교육기관의 실제 업무를 분석하고, 데이터와 기존 시스템을 연결하는 프로젝트를 설계합니다. 작은 범위에서 검증한 뒤 운영 현장으로 확장합니다.<br><small>적용 가능한 프로젝트 유형을 조직의 업무와 데이터 환경에 맞춰 범위를 구체화합니다.</small></p></div><div class="lab-carousel"><div class="carousel-controls"><button type="button" data-carousel="labSlider" data-direction="-1" aria-label="J2 Lab 이전"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m15 4-8 8 8 8"/></svg></button><button type="button" data-carousel="labSlider" data-direction="1" aria-label="J2 Lab 다음"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m9 4 8 8-8 8"/></svg></button></div><div class="lab-window manual-slider" id="labSlider" tabindex="0" aria-label="J2 Lab 프로젝트 슬라이더"><div class="labtrack" id="labTrack"></div></div></div></div></section>
 
-/* ---------- cards ---------- */
-.cards{display:grid;gap:20px}
-.cards--2{grid-template-columns:repeat(2,1fr)}
-.cards--3{grid-template-columns:repeat(3,1fr)}
-.cards--4{grid-template-columns:repeat(2,1fr)}
-.cards--5{grid-template-columns:repeat(3,1fr)}
-.cards--6{grid-template-columns:repeat(3,1fr)}
-.card{
-  position:relative;background:var(--card);border:1.5px solid var(--violet-line);
-  border-radius:20px;padding:26px 26px;box-shadow:var(--shadow-sm);
-  display:flex;flex-direction:column;gap:9px;
+<section class="portfolio" id="portfolio"><div class="ambient" aria-hidden="true"></div><div class="wrap"><div class="archive-heading"><div class="sectionhead"><span class="eyebrow">Selected portfolio</span><h2>경험으로 쌓아온 실행력</h2><p>웹과 플랫폼, 업무 시스템을 구축해온 경험을 조직의 생산성 개선으로 연결합니다.</p></div></div><p class="swipe-hint" aria-hidden="true">SWIPE →</p><div class="preview-grid preview-grid--8 swipe-x"><a class="work-preview c1" href="portfolio.html"><div class="wp-visual" aria-hidden="true"><span class="wp-icon"><svg viewBox="0 0 24 24"><path d="M4 12a8 8 0 1 1 3 6.2L4 20l1.3-3.4A8 8 0 0 1 4 12Z"/><path d="M8.5 11h7M8.5 14h4"/></svg></span><span class="wp-year">2026</span></div><div class="wp-body"><small>AI 챗봇</small><h3>Group DEMEX AI Chatbot System</h3><p>그룹사 문서와 규정을 연결한 사내 AI 상담 챗봇을 구축했습니다.</p></div></a><a class="work-preview c2" href="portfolio.html"><div class="wp-visual" aria-hidden="true"><span class="wp-icon"><svg viewBox="0 0 24 24"><path d="M5 4h10l4 4v12H5Z"/><path d="M15 4v4h4M8 13h8M8 17h5"/></svg></span><span class="wp-year">2026</span></div><div class="wp-body"><small>컨설팅</small><h3>디지털교과서 표준화 작업 컨설팅</h3><p>교과서 콘텐츠 구조와 메타데이터 표준화를 설계했습니다.</p></div></a><a class="work-preview c3" href="portfolio.html"><div class="wp-visual" aria-hidden="true"><span class="wp-icon"><svg viewBox="0 0 24 24"><path d="M13 2 4 14h7l-1 8 9-12h-7Z"/></svg></span><span class="wp-year">2026</span></div><div class="wp-body"><small>컨설팅</small><h3>에너지관리공단 에너지바우처 업무 포털 컨설팅</h3><p>신청·심사·지급 업무 흐름을 진단하고 포털 개선안을 제시했습니다.</p></div></a><a class="work-preview c4" href="portfolio.html"><div class="wp-visual" aria-hidden="true"><span class="wp-icon"><svg viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="16" rx="2"/><path d="M3 10h18M9 10v10"/></svg></span><span class="wp-year">2026</span></div><div class="wp-body"><small>시스템 구축</small><h3>Group DEMEX Admin System</h3><p>챗봇과 콘텐츠 운영을 위한 통합 관리자 시스템을 구축했습니다.</p></div></a><a class="work-preview c5" href="portfolio.html"><div class="wp-visual" aria-hidden="true"><span class="wp-icon"><svg viewBox="0 0 24 24"><path d="M4 20V10M10 20V4M16 20v-7M22 20H2"/></svg></span><span class="wp-year">2026</span></div><div class="wp-body"><small>데이터</small><h3>전국학교급식 데이터 전처리·시각화</h3><p>급식 데이터를 정제하고 지역·학교별 대시보드로 시각화했습니다.</p></div></a><a class="work-preview c6" href="portfolio.html"><div class="wp-visual" aria-hidden="true"><span class="wp-icon"><svg viewBox="0 0 24 24"><path d="M4 5h16v14H4Z"/><path d="m4 15 5-5 4 4 3-3 4 4M15 8h.01"/></svg></span><span class="wp-year">2026</span></div><div class="wp-body"><small>AI 콘텐츠</small><h3>DMEX AI Brochure 제작</h3><p>생성형 AI로 서비스 소개 브로슈어를 기획·제작했습니다.</p></div></a><a class="work-preview c7" href="portfolio.html"><div class="wp-visual" aria-hidden="true"><span class="wp-icon"><svg viewBox="0 0 24 24"><path d="M7 18a4 4 0 0 1-.6-8A6 6 0 0 1 18 9a4 4 0 0 1-1 8.9H7Z"/></svg></span><span class="wp-year">2026</span></div><div class="wp-body"><small>시스템 구축</small><h3>SaaS 플랫폼 시스템 구축</h3><p>멀티테넌트 구조의 구독형 서비스 플랫폼을 구축했습니다.</p></div></a><a class="work-preview c8" href="portfolio.html"><div class="wp-visual" aria-hidden="true"><span class="wp-icon"><svg viewBox="0 0 24 24"><path d="m12 3 8 4.5v9L12 21l-8-4.5v-9L12 3Z"/><path d="M12 12l8-4.5M12 12v9M12 12 4 7.5"/></svg></span><span class="wp-year">2025</span></div><div class="wp-body"><small>메타버스 웹</small><h3>JOYTOWN 2.0 (with Metaverse)</h3><p>메타버스와 연동되는 반응형 커뮤니티 플랫폼을 고도화했습니다.</p></div></a></div><div class="more-row"><a class="btn outline" href="portfolio.html" aria-label="포트폴리오 전체 더보기">더보기 <span aria-hidden="true">↗</span></a></div></div></section><section class="bundle" id="education"><div class="ambient" aria-hidden="true"></div><div class="wrap"><div class="archive-heading"><div class="sectionhead"><span class="eyebrow">Education history</span><h2>현장에서 배우고, 함께 성장합니다.</h2><p>기업·공공기관·대학·부트캠프의 최신 교육과 멘토링 이력입니다.</p></div></div><p class="swipe-hint" aria-hidden="true">SWIPE →</p><div class="preview-grid preview-grid--edu swipe-x"><a class="edu-card" href="education.html"><img src="assets/p3.png" alt="2026 KU(건국대학교) 캠퍼스타운 AI Nest 프로그램 강사 및 멘토링" loading="lazy"><div class="edu-body"><small>대학 · 2026.09</small><h3>2026 KU(건국대학교) 캠퍼스타운 AI Nest 프로그램 강사 및 멘토링</h3></div></a><a class="edu-card" href="education.html"><img src="assets/p4.png" alt="2026. 09 성신여자대학교 「취업 말고 커리어」 특강" loading="lazy"><div class="edu-body"><small>대학 · 2026.08~09</small><h3>2026. 09 성신여자대학교 「취업 말고 커리어」 특강</h3></div></a><a class="edu-card" href="education.html"><img src="assets/p5.png" alt="WISET 이공계 생성형 AI 활용 실무 교육" loading="lazy"><div class="edu-body"><small>공공기관 · 2026.07~08</small><h3>WISET 이공계 생성형 AI 활용 실무 교육</h3></div></a><a class="edu-card" href="education.html"><img src="assets/p6.png" alt="무역안보관리원 AI 영상 제작 및 AI 자동화 실무 교육" loading="lazy"><div class="edu-body"><small>공공기관 · 2026.07</small><h3>무역안보관리원 AI 영상 제작 및 AI 자동화 실무 교육</h3></div></a><a class="edu-card" href="education.html"><img src="assets/p8.png" alt="AI 서비스 기획 부트캠프" loading="lazy"><div class="edu-body"><small>부트캠프 · 2026.04~현재</small><h3>AI 서비스 기획 부트캠프</h3></div></a><a class="edu-card" href="education.html"><img src="assets/p9.png" alt="2026년 취업전략 멘토링" loading="lazy"><div class="edu-body"><small>부트캠프 · 2026.02~현재</small><h3>2026년 취업전략 멘토링</h3></div></a><a class="edu-card" href="education.html"><img src="assets/p7.png" alt="한국경제 청년일경험지원사업 ESG 지원형 멀티모달 AX 마케팅 캠프 멘토링" loading="lazy"><div class="edu-body"><small>기업 · 2026</small><h3>한국경제 청년일경험지원사업 ESG 지원형 멀티모달 AX 마케팅 캠프 멘토링</h3></div></a><a class="edu-card" href="education.html"><img src="assets/p1.png" alt="동양미래대학교 컴퓨터공학부 겸임교수" loading="lazy"><div class="edu-body"><small>대학 · 2025.03~현재</small><h3>동양미래대학교 컴퓨터공학부 겸임교수</h3></div></a></div><div class="more-row"><a class="btn outline" href="education.html" aria-label="교육 이력 전체 더보기">더보기 <span aria-hidden="true">↗</span></a></div></div></section>
+<section class="history" id="history"><div class="ambient" aria-hidden="true"></div><div class="wrap"><div class="sectionhead"><span class="eyebrow">JTOCOM history</span><h2>걸어온 길</h2></div><div class="original-history"><div class="tl__i"><b>2026~</b><div><p class="small" style="color:var(--ink)">AI 제품화·자동화로 확장</p><p class="tiny" style="margin-top:4px">AI 업무비서·챗봇 제품 구축, 업무 자동화 컨설팅, 공공기관·대학 AI 교육 확대</p></div></div><div class="tl__i"><b>2025~</b><div><p class="small" style="color:var(--ink)">생성형 AI 도입, AI 회사로 피벗</p><p class="tiny" style="margin-top:4px">웹·콘텐츠 제작에 생성형 AI 적용, AI 실무 교육·강의 시작</p></div></div>
+            <div class="tl__i"><b>2024~</b><div><p class="small" style="color:var(--ink)">AI · 메타버스 영역 확장</p><p class="tiny" style="margin-top:4px">Group DEMEX AI Chatbot, JOYTOWN 2.0 (with Metaverse)</p></div></div>
+            <div class="tl__i"><b>2022~</b><div><p class="small" style="color:var(--ink)">공공 · 금융 프로젝트 확대</p><p class="tiny" style="margin-top:4px">금융보안원, 방위사업청, 부동산광고시장 감시센터</p></div></div>
+            <div class="tl__i"><b>2021~</b><div><p class="small" style="color:var(--ink)">플랫폼 · 인트라넷 구축 다수</p><p class="tiny" style="margin-top:4px">O2O 펫플랫폼 CRM, AJ대원·엘바라이프·새롬 인트라넷</p></div></div>
+            <div class="tl__i"><b>2018~</b><div><p class="small" style="color:var(--ink)">2018년 회사 설립</p><p class="tiny" style="margin-top:4px">LG화학, 효성 ESS, 온라인투어, GSFRESH</p></div></div></div></div></section>
+<section class="consult" id="consult"><div class="ambient" aria-hidden="true"></div><div class="wrap"><div class="sectionhead"><span class="eyebrow">AI transition consulting</span><h2>AI 전환 상담 신청</h2><p>왼쪽 상담 신청 폼과 오른쪽 안내 영역에서 진행 방식과 연락처를 확인할 수 있습니다.</p></div><div class="consultgrid"><form class="form" id="form" novalidate><div class="field-row"><div class="field"><label>회사명 *</label><input name="company" required placeholder="회사명"></div><div class="field"><label>담당자명 *</label><input name="name" required placeholder="이름"></div></div><div class="field-row"><div class="field"><label>이메일 *</label><input name="email" type="email" required placeholder="name@company.com"></div><div class="field"><label>연락처</label><input name="tel" placeholder="010-0000-0000"></div></div><div class="field field-cat"><label>줄이고 싶은 업무 유형 * <small>해당하는 항목을 모두 선택하세요</small></label><div class="cat-chips" id="catChips"><label class="cat-chip"><input type="checkbox" name="cat" value="문서 검색·작성"><span>문서 검색·작성</span></label><label class="cat-chip"><input type="checkbox" name="cat" value="고객 문의 응대"><span>고객 문의 응대</span></label><label class="cat-chip"><input type="checkbox" name="cat" value="견적·제안서 작성"><span>견적·제안서 작성</span></label><label class="cat-chip"><input type="checkbox" name="cat" value="데이터 정리·보고"><span>데이터 정리·보고</span></label><label class="cat-chip"><input type="checkbox" name="cat" value="콘텐츠·영상 제작"><span>콘텐츠·영상 제작</span></label><label class="cat-chip"><input type="checkbox" name="cat" value="승인·프로세스 자동화"><span>승인·프로세스 자동화</span></label><label class="cat-chip"><input type="checkbox" name="cat" value="AI 교육·도입 진단"><span>AI 교육·도입 진단</span></label><label class="cat-chip"><input type="checkbox" name="cat" value="맞춤형 AI 웹앱"><span>맞춤형 AI 웹앱</span></label><label class="cat-chip"><input type="checkbox" name="cat" value="기타"><span>기타</span></label></div><input type="hidden" name="category" id="catValue"></div><div class="field"><label>현재 상황을 자세히 알려주세요 * <small>누가 · 얼마나 자주 · 어떤 도구로 하고 있는지 적어주세요</small></label><textarea name="message" required placeholder="예) 영업팀 3명이 매주 월요일 견적서 15건을 엑셀로 수작업 작성하고 있습니다. 제품 사양이 자주 바뀌어 단가 확인에 시간이 오래 걸리고, 담당자별로 양식이 달라 검토가 어렵습니다."></textarea></div><label style="font-size:13px"><input name="agree" type="checkbox" required> 개인정보 수집·이용에 동의합니다.</label><input type="hidden" name="type" value="AI 전환 상담"><input type="hidden" name="budget" value="미정"><input type="hidden" name="when" value="미정"><p id="formMsg" style="color:#168ac2"></p><button class="btn primary" type="submit" style="width:100%">상담 신청 보내기</button></form><aside class="aside"><h3>JTOCOM과</h3><p>문제 정의부터 AI 제품화, 교육과 운영까지 한 팀이 함께합니다.</p><ul><li><strong>이메일</strong>jtocom@jtocom.com</li><li><strong>전화</strong>010-2867-8552</li><li><strong>응답 시간</strong>영업일 기준 24시간 내</li><li><strong>진행 방식</strong>현황 파악 → 첫 업무 선정 → 솔루션 제안</li></ul>
+<div class="consult-motion" aria-hidden="true"><svg viewBox="0 0 420 150"><defs><linearGradient id="cmGrad" x1="0" x2="1"><stop stop-color="#48c9e8"/><stop offset=".5" stop-color="#6d68ef"/><stop offset="1" stop-color="#2ad0a4"/></linearGradient></defs>
+<path class="cm-base" d="M50 62 C120 62 110 62 210 62 S300 62 370 62"/><path class="cm-live" d="M50 62 C120 62 110 62 210 62 S300 62 370 62"/>
+<g class="cm-node n1" transform="translate(50 62)"><circle class="cm-ring" r="22"/><circle class="cm-dot" r="9"/><text y="52">현황 파악</text><text class="cm-step" y="-34">STEP 1</text></g>
+<g class="cm-node n2" transform="translate(210 62)"><circle class="cm-ring" r="22"/><circle class="cm-dot" r="9"/><text y="52">첫 업무 선정</text><text class="cm-step" y="-34">STEP 2</text></g>
+<g class="cm-node n3" transform="translate(370 62)"><circle class="cm-ring" r="22"/><circle class="cm-dot" r="9"/><text y="52">솔루션 제안</text><text class="cm-step" y="-34">STEP 3</text></g>
+</svg><div class="cm-chips"><span>영업일 24h 응답</span><span>현황 진단부터</span><span>소규모 파일럿 시작</span></div></div></aside></div></div></section></main><footer style="background:#fff;color:#526174;padding:30px 0;border-top:1px solid #dce4ec"><div class="wrap" style="display:flex;justify-content:space-between;align-items:center;gap:16px;flex-wrap:wrap;font-size:14px"><span>JTOCOM · Vertical AI Studio · jtocom@jtocom.com · 010-2867-8552</span><span style="color:#8a97a8;font-size:13px">© 2018 by JTOCOM.</span></div></footer><nav class="side-dock" aria-label="섹션 바로가기"><a href="#shift" data-dock="shift" aria-label="The Shift"><svg viewBox="0 0 24 24"><path d="M20 11a8 8 0 0 0-14.5-4M4 13a8 8 0 0 0 14.5 4"/><path d="M20 4v7h-7M4 20v-7h7"/></svg><span>The Shift</span></a><a href="#build" data-dock="build" aria-label="What we build"><svg viewBox="0 0 24 24"><rect x="3" y="3" width="7" height="7" rx="2"/><rect x="14" y="14" width="7" height="7" rx="2"/><path d="M14 6h4v4M10 18H6v-4"/></svg><span>What we build</span></a><a href="#lab" data-dock="lab" aria-label="J2 Lab"><svg viewBox="0 0 24 24"><path d="M9 3v6L4 18a2 2 0 0 0 2 3h12a2 2 0 0 0 2-3l-5-9V3M8 3h8"/></svg><span>J2 Lab</span></a><a href="#history" data-dock="history" aria-label="History"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg><span>History</span></a><a href="#consult" data-dock="consult" aria-label="Contact Us"><svg viewBox="0 0 24 24"><path d="M4 6h16v10H8l-4 4V6Z"/><path d="M8 10h8M8 13h5"/></svg><span>Contact Us</span></a><a href="#top" data-dock="top" aria-label="Top"><svg viewBox="0 0 24 24"><path d="M12 19V5M5 12l7-7 7 7"/></svg><span>Top</span></a></nav>
+<script>const labs=[["지식 관리","사내 지식 검색·업무 Q&A","분산된 규정·매뉴얼·프로젝트 문서를 연결하고, 출처를 확인할 수 있는 답변으로 정보 탐색을 지원합니다.","문서 수집 · 권한별 검색 · 근거 표시"],["문서 처리","비정형 문서 데이터 추출","계약서·신청서·거래명세서의 주요 항목을 추출하고 검수 후 업무 시스템에 반영하는 흐름을 설계합니다.","OCR · 항목 추출 · 검수 대기열"],["영업 지원","견적·제안서 작성 지원","제품 정보, 가격 기준, 기존 제안 사례를 활용해 고객 요구에 맞는 초안을 구성하고 담당자 검토로 연결합니다.","요구사항 정리 · 견적 산출 · 승인"],["계약 관리","계약 검토·의무사항 관리","표준 계약과 변경 조항을 비교하고, 담당자가 검토할 쟁점과 갱신·이행 일정을 정리합니다.","조항 비교 · 검토 항목 · 일정 알림"],["고객 운영","고객 문의 분류·응대 지원","문의 내용과 이력을 분석해 담당 부서로 배정하고, 지식 기반 답변 초안과 후속 처리 항목을 제안합니다.","문의 분류 · 답변 초안 · 상담 이관"],["프로세스 자동화","부서 간 업무·승인 자동화","접수부터 검토·승인·결과 통지까지 반복되는 절차를 연결하고, 예외 상황은 담당자가 처리하도록 구성합니다.","업무 분기 · 승인 단계 · 처리 기록"],["데이터 분석","운영 지표·성과 리포팅","여러 시스템의 데이터를 정리해 운영 지표를 시각화하고, 변화 원인과 확인할 이슈를 보고서 초안으로 제공합니다.","데이터 통합 · 대시보드 · 정기 보고"],["재무 운영","증빙 검수·정산 대사","영수증·세금계산서·거래 내역을 비교해 누락과 불일치를 표시하고 정산 담당자의 확인을 지원합니다.","증빙 추출 · 내역 대조 · 예외 검수"],["구매 관리","공급사·구매 제안 비교","견적 조건, 납기, 제품 사양을 공통 기준으로 정리해 구매 검토에 필요한 비교표를 구성합니다.","사양 비교 · 조건 정리 · 검토 보고"],["제조·품질","품질 이슈·조치 이력 관리","검사 기록과 불량 보고서를 구조화하고, 유사 사례와 조치 이력을 찾아 현장의 원인 검토를 돕습니다.","검사 데이터 · 유사 사례 · 조치 추적"],["현장 지원","설비 매뉴얼·점검 지원","설비별 매뉴얼과 점검 이력을 연결해 필요한 절차를 검색하고, 작업자가 확인할 체크리스트를 구성합니다.","설비별 검색 · 체크리스트 · 점검 기록"],["인사·교육","온보딩·직무 학습 지원","조직 규정과 직무 자료를 기반으로 입문 과정을 구성하고, 직원 질문과 학습 피드백을 개선에 활용합니다.","직무별 과정 · 규정 안내 · 피드백"],["콘텐츠 운영","교육 콘텐츠 제작·재활용","강의 영상과 교안을 학습 노트·퀴즈·요약 콘텐츠로 전환하고, 검수와 버전 관리까지 이어지는 제작 흐름을 만듭니다.","전사 · 콘텐츠 변환 · 버전 관리"],["교육 평가","과제 피드백·평가 보조","명시된 평가 기준과 제출물을 대조해 피드백 초안을 제시하고, 최종 평가는 교육 담당자가 확인합니다.","평가 기준 · 피드백 초안 · 교사 검토"],["프로젝트 운영","회의·프로젝트 실행 관리","회의에서 결정사항·담당자·기한을 추출하고, 프로젝트 진행 상황과 미완료 항목을 함께 추적합니다.","회의 정리 · 실행 과제 · 진행 추적"],["조사·연구","리서치·근거 자료 관리","여러 자료의 핵심 내용과 출처를 정리하고, 비교 기준에 따라 검토 가능한 리서치 브리프를 구성합니다.","자료 수집 · 출처 관리 · 비교 분석"],["시스템 연계","업무 시스템·AI 도구 연동","기존 그룹웨어·CRM·ERP와 필요한 AI 기능을 연결해 데이터 입력과 반복 작업을 줄이는 운영 흐름을 설계합니다.","API 연계 · 접근 권한 · 실행 로그"],["성과 검증","AI 도입 진단·파일럿 설계","업무 빈도와 소요 시간, 데이터 준비도를 점검해 우선순위를 정하고 도입 전후 성과를 비교할 기준을 설계합니다.","업무 진단 · 파일럿 · 성과 측정"]];
+document.querySelector('#labTrack').innerHTML=labs.concat(labs).map((x,i)=>`<article class="labcard" ${i>=labs.length?'aria-hidden="true"':''}><div class="lab-card-top"><span class="lab-category">${String(i%labs.length+1).padStart(2,'0')} / ${x[0]}</span><span class="lab-mark" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="3" y="3" width="6" height="6" rx="1.5"/><rect x="15" y="15" width="6" height="6" rx="1.5"/><path d="M9 6h9v9M6 9v9h9"/></svg></span></div><h3>${x[1]}</h3><p>${x[2]}</p><div class="lab-scope"><span class="lab-scope-label">주요 구현 범위</span><div class="lab-tags">${x[3].split(' · ').map(t=>`<span>${t}</span>`).join('')}</div></div></article>`).join('');
+document.querySelector('#form').addEventListener('submit',async e=>{e.preventDefault();const f=e.currentTarget,msg=document.querySelector('#formMsg'),b=f.querySelector('button');const cats=[...f.querySelectorAll('input[name=cat]:checked')].map(i=>i.value);document.querySelector('#catValue').value=cats.join(', ');if(!cats.length){msg.textContent='줄이고 싶은 업무 유형을 1개 이상 선택해 주세요.';document.querySelector('#catChips').scrollIntoView({behavior:'smooth',block:'center'});return}msg.textContent='';if(!f.reportValidity())return;b.disabled=true;b.textContent='전송 중…';try{const r=await fetch('https://script.google.com/macros/s/AKfycbyaIyz7a3JG-USSORvfcpyQblYN9vsMFIIt-k0I1tyJ16Ap8LLNnLeBgpOnCiqLkI6S/exec',{method:'POST',body:new URLSearchParams(new FormData(f))});if(!r.ok)throw Error();msg.textContent='상담 신청이 접수되었습니다. 영업일 기준 24시간 내 회신드리겠습니다.';f.reset()}catch(_){msg.textContent='전송 중 문제가 발생했습니다. 잠시 후 다시 시도해 주세요.'}finally{b.disabled=false;b.textContent='상담 신청 보내기'}});</script><script>
+const historyRows=document.querySelectorAll('.original-history .tl__i');
+if('IntersectionObserver' in window && !matchMedia('(prefers-reduced-motion: reduce)').matches){
+  const observer=new IntersectionObserver(entries=>entries.forEach(entry=>{
+    if(entry.isIntersecting){entry.target.classList.add('history-visible');observer.unobserve(entry.target)}
+  }),{threshold:0.15});
+  historyRows.forEach(row=>{row.classList.add('history-reveal');observer.observe(row)});
 }
-.card--abc{
-  min-height:280px;
-  padding:34px 30px 32px;
-  overflow:hidden;
-  justify-content:center;
-  gap:16px;
-  border-width:2px;
-  isolation:isolate;
-  transition:transform .3s ease,box-shadow .3s ease;
-}
-.card--abc::before{
-  content:"";
-  position:absolute;
-  width:170px;height:170px;
-  top:-76px;right:-54px;
-  border-radius:50%;
-  background:var(--abc-tint);
-  opacity:.5;
-  z-index:-1;
-}
-.card--abc::after{
-  content:"";
-  position:absolute;
-  left:30px;right:30px;top:0;
-  height:5px;
-  border-radius:0 0 8px 8px;
-  background:var(--abc-color);
-}
-.card--abc:hover{transform:translateY(-5px);box-shadow:var(--shadow)}
-.card--abc .card__badge{
-  width:72px;height:72px;
-  margin:0 auto 4px;
-  color:#fff;
-  font-size:32px;
-  box-shadow:0 12px 24px -12px var(--abc-color);
-  background:var(--abc-color)!important;
-}
-.card--abc .card__desc{
-  max-width:260px;
-  padding:0 8px;
-  font-size:20px;
-  line-height:1.58;
-  font-weight:600;
-  color:var(--ink-2);
-}
-.card--abc-a{--abc-color:#5B8DEF;--abc-tint:#DDE8FF;background:linear-gradient(145deg,#F8FBFF,#fff);border-color:#C9D9FF}
-.card--abc-b{--abc-color:var(--violet);--abc-tint:var(--violet-100);background:linear-gradient(145deg,var(--violet-50),#fff);border-color:var(--violet)}
-.card--abc-c{--abc-color:#C7913B;--abc-tint:#F7E8C7;background:linear-gradient(145deg,#FFFDF8,#fff);border-color:#E8D3A9}
-.card--abc-a .card__desc{color:#334E86}
-.card--abc-b .card__desc{color:var(--violet-800)}
-.card--abc-c .card__desc{color:#73511F}
-.card--trio{
-  min-height:260px;
-  padding:32px 28px 30px;
-  justify-content:center;
-  gap:14px;
-  background:linear-gradient(145deg,#fff,#FBFAFF);
-  border-width:2px;
-  overflow:hidden;
-}
-.card--trio::before{content:"";position:absolute;width:150px;height:150px;right:-55px;top:-58px;border-radius:50%;background:var(--violet-100);opacity:.55}
-.card--trio .card__num{width:64px;height:64px;margin:0 auto 6px;font-size:28px;box-shadow:0 12px 24px -14px rgba(124,58,237,.65)}
-.card--trio .card__title{font-size:24px}
-.card--trio .card__desc{max-width:260px;padding:0 8px;font-size:19px;line-height:1.55}
-.source-note{font-size:13px;color:var(--muted);line-height:1.4;margin-top:14px;word-break:break-all}
-.s-company-case .s-head{margin-bottom:14px}
-.s-company-case .s-body{justify-content:flex-start;padding-top:2px}
-.s-company-case .cards{gap:12px!important}
-.s-company-case .card{min-height:0;padding:16px 18px 15px;gap:6px;border-radius:16px}
-.s-company-case .card__icon{font-size:26px;margin-bottom:0}
-.s-company-case .card__label{font-size:12px}
-.s-company-case .card__title{font-size:17px;line-height:1.28}
-.s-company-case .card__desc{font-size:14px;line-height:1.38}
-.s-company-case .source-note{font-size:11px;margin-top:8px;line-height:1.25}
-.s-company-case .insight-wrap{margin-top:12px}
-.s-company-case .insight{padding:14px 22px 14px 44px;font-size:18px}
-.case-read-note{margin-bottom:10px;padding:9px 14px;border:1.5px solid var(--violet-line);border-radius:10px;background:linear-gradient(90deg,var(--violet-50),#fff);color:var(--ink-2);font-size:15px;line-height:1.35}
-.case-read-note strong{color:var(--violet-800);margin-right:8px}
-.pre-q-panel{margin-top:16px;padding:14px 18px;border:1.5px solid var(--violet-line);border-radius:16px;background:linear-gradient(145deg,var(--violet-50),#fff)}
-.pre-q-title{font-size:17px;font-weight:800;color:var(--violet-800);margin-bottom:10px}
-.pre-q-grid{display:grid;grid-template-columns:1fr 1fr;gap:8px 20px}
-.pre-q{font-size:14px;line-height:1.35;color:var(--ink-2);padding-left:18px;position:relative;word-break:keep-all}
-.pre-q::before{content:"?";position:absolute;left:0;top:1px;width:14px;height:14px;border-radius:50%;background:var(--violet);color:#fff;font-size:10px;font-weight:800;display:grid;place-items:center}
-.em-key{display:inline-block;color:var(--violet-800);font-weight:800;background:var(--violet-100);padding:2px 7px;border-radius:6px}
-.tbl tbody tr.row--key td{background:var(--violet-50);border-bottom-color:transparent;color:var(--violet-800);font-weight:700}
-.tbl tbody tr.row--key td:first-child{border-left:3px solid var(--violet);border-radius:12px 0 0 12px}
-.tbl tbody tr.row--key td:last-child{border-radius:0 12px 12px 0}
-.card--hl{background:linear-gradient(160deg,var(--violet-50),#fff);
-  border-color:var(--violet);box-shadow:var(--shadow)}
-.card--hl::after{content:"";position:absolute;inset:0;border-radius:20px;
-  box-shadow:inset 0 0 0 1.5px var(--violet);pointer-events:none}
-.card__num{width:44px;height:44px;border-radius:50%;display:grid;place-items:center;
-  background:var(--violet-100);color:var(--violet-700);font-weight:800;font-size:21px;margin-bottom:4px}
-.card--hl .card__num{background:var(--violet);color:#fff}
-.card__badge{width:52px;height:52px;border-radius:50%;display:grid;place-items:center;
-  font-weight:800;font-size:24px;color:#fff;margin-bottom:6px}
-.card__icon{font-size:34px;line-height:1;margin-bottom:2px}
-.card__label{font-size:15px;font-weight:800;letter-spacing:.04em;color:var(--violet);
-  text-transform:uppercase}
-.card__sublabel{font-size:16px;font-weight:700;color:var(--violet);letter-spacing:.02em;
-  display:flex;align-items:center;gap:8px}
-.card__sublabel::before,.card__sublabel::after{content:"";width:16px;height:2px;background:var(--violet-line)}
-.card__title{font-size:23px;font-weight:800;color:var(--ink);line-height:1.32;word-break:keep-all}
-.card--hl .card__title{color:var(--violet-800)}
-.card__desc{font-size:19px;font-weight:500;color:var(--ink-2);line-height:1.5;word-break:keep-all}
-.card__foot{margin-top:auto;padding-top:12px;border-top:1px dashed var(--violet-line);
-  font-size:17px;color:var(--muted);line-height:1.45;word-break:keep-all}
-.card__ol{margin:2px 0 0 2px;padding-left:0;list-style:none;counter-reset:c;display:flex;flex-direction:column;gap:8px}
-.card__ol li{position:relative;padding-left:34px;font-size:19px;color:var(--ink-2);line-height:1.4;counter-increment:c;word-break:keep-all}
-.card__ol li::before{content:counter(c);position:absolute;left:0;top:1px;width:24px;height:24px;border-radius:50%;
-  background:var(--violet-100);color:var(--violet-700);font-size:14px;font-weight:800;display:grid;place-items:center}
-.card__list{list-style:none;display:flex;flex-direction:column;gap:9px;margin-top:2px}
-.card__list li{position:relative;padding-left:20px;font-size:19px;color:var(--ink-2);line-height:1.4;word-break:keep-all}
-.card__list li::before{content:"";position:absolute;left:2px;top:11px;width:8px;height:8px;border-radius:50%;background:var(--violet)}
-.card__chip{align-self:flex-start;margin-top:8px;background:var(--violet);color:#fff;font-weight:800;font-size:15px;
-  padding:6px 14px;border-radius:999px;display:inline-flex;align-items:center;gap:6px;letter-spacing:.02em}
-.pill-top{position:absolute;top:-26px;left:50%;transform:translateX(-50%);white-space:nowrap;z-index:5;
-  background:var(--violet);color:#fff;font-weight:800;font-size:15px;padding:6px 16px;border-radius:999px;
-  box-shadow:var(--shadow-sm)}
-.badge-star{position:absolute;top:-13px;right:20px;background:var(--violet-800);color:#fff;font-weight:800;
-  font-size:14px;padding:6px 14px;border-radius:999px;letter-spacing:.03em}
-
-/* connector line above numbered cards */
-.card__num.centered{margin:0 auto 6px}
-.card.center{align-items:center;text-align:center}
-.card.center .card__title,.card.center .card__desc{text-align:center}
-
-/* ---------- tags ---------- */
-.tags{display:flex;flex-wrap:wrap;gap:14px;margin-bottom:26px;justify-content:center}
-.tag{background:var(--violet-100);color:var(--violet-700);font-weight:800;font-size:23px;
-  padding:14px 28px;border-radius:999px;transform-origin:center;will-change:transform;
-  box-shadow:0 7px 18px -10px rgba(124,58,237,.55);
-  animation:tagFloat 3.4s ease-in-out infinite}
-.tag:nth-child(4n)  {animation-duration:3.0s;animation-delay:-.5s}
-.tag:nth-child(4n+1){animation-duration:3.9s;animation-delay:-1.4s}
-.tag:nth-child(4n+2){animation-duration:3.3s;animation-delay:-2.1s}
-.tag:nth-child(4n+3){animation-duration:4.3s;animation-delay:-.9s}
-.tag--hl{background:var(--violet);color:#fff;box-shadow:0 9px 20px -8px rgba(124,58,237,.75)}
-@keyframes tagFloat{0%,100%{transform:translateY(0) scale(1)}50%{transform:translateY(-11px) scale(1.05)}}
-
-/* ---------- table ---------- */
-.tbl{width:100%;border-collapse:separate;border-spacing:0;font-size:20px}
-.tbl--compact tbody td{padding:9px 16px;font-size:17px;line-height:1.3}
-.tbl--compact thead th{padding:0 16px 10px;font-size:16px}
-.tbl thead th{font-size:18px;font-weight:800;color:var(--muted);text-align:left;
-  padding:0 22px 14px;letter-spacing:.02em;border-bottom:2px solid var(--violet-line)}
-.tbl tbody td{padding:16px 22px;border-bottom:1px solid #F0ECFB;color:var(--ink-2);
-  font-weight:500;line-height:1.4;vertical-align:middle;word-break:keep-all}
-.tbl tbody tr:last-child td{border-bottom:none}
-.tbl--firstcol tbody td:first-child{color:var(--violet-700);font-weight:800;white-space:nowrap}
-.tbl .em-ico{display:inline-block;margin-right:8px}
-.td--muted{color:var(--muted-2)!important;font-weight:500!important;text-decoration:line-through;
-  text-decoration-color:var(--muted-2);text-decoration-thickness:1px}
-.tbl tbody tr.row--hl td{background:var(--violet-50);border-bottom-color:transparent}
-.tbl tbody tr.row--hl td:first-child{border-left:3px solid var(--violet);border-radius:12px 0 0 12px;color:var(--violet-700)}
-.tbl tbody tr.row--hl td:last-child{border-radius:0 12px 12px 0}
-.tbl tbody tr.row--hl td{color:var(--violet-800);font-weight:700}
-
-/* ---------- two column ---------- */
-.twocol{display:grid;grid-template-columns:1fr 1fr;gap:24px;align-items:stretch}
-.twocol.with-plus{grid-template-columns:1fr auto 1fr;gap:16px;align-items:center}
-.col{background:var(--card);border:1.5px solid var(--violet-line);border-radius:20px;
-  padding:26px 28px;box-shadow:var(--shadow-sm);display:flex;flex-direction:column;gap:12px;height:100%}
-.col--muted{background:var(--card-soft)}
-.col--hl{background:linear-gradient(160deg,var(--violet-50),#fff);border-color:var(--violet);box-shadow:var(--shadow)}
-.col__icon{width:56px;height:56px;border-radius:16px;display:grid;place-items:center;font-size:28px;
-  background:var(--violet-100)}
-.col--muted .col__icon{background:#EFEDF5}
-.col--hl .col__icon{background:var(--violet);}
-.col__title{font-size:24px;font-weight:800;color:var(--ink)}
-.col--hl .col__title{color:var(--violet-800)}
-.col__sub{font-size:17px;color:var(--muted);line-height:1.4;margin-top:-4px;word-break:keep-all}
-.col__list{list-style:none;display:flex;flex-direction:column;gap:11px;margin-top:4px}
-.col__list li{position:relative;padding-left:24px;font-size:20px;color:var(--ink-2);line-height:1.4;word-break:keep-all}
-.col__list li::before{content:"";position:absolute;left:2px;top:10px;width:9px;height:9px;border-radius:50%;
-  background:var(--violet-500)}
-.col--muted .col__list li::before{background:var(--muted-2)}
-.plus{width:46px;height:46px;border-radius:50%;background:var(--violet);color:#fff;font-size:26px;font-weight:800;
-  display:grid;place-items:center;box-shadow:var(--shadow-sm)}
-.col__steps{list-style:none;display:flex;flex-direction:column;gap:0}
-.col__steps li{position:relative;padding:11px 0 11px 40px;font-size:19px;color:var(--ink-2);line-height:1.4;word-break:keep-all}
-.col__steps li .em-ico{position:absolute;left:0;top:9px;font-size:22px}
-.col__steps li strong{color:var(--violet-700);font-weight:800}
-
-/* mini boxes */
-.mini-grid{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-top:4px}
-.mini-grid.one{grid-template-columns:1fr}
-.mini{background:#fff;border:1.5px solid var(--violet-line);border-radius:12px;padding:14px 16px;
-  font-size:18px;font-weight:600;color:var(--ink-2);line-height:1.35;word-break:keep-all}
-.col--hl .mini{background:rgba(255,255,255,.7);border-color:var(--violet-100)}
-
-/* ---------- good / bad boxes ---------- */
-.gb{display:flex;flex-direction:column;gap:16px;justify-content:center}
-.gb-box{border-radius:18px;padding:22px 24px;box-shadow:var(--shadow-sm)}
-.gb-box .gb-tag{font-size:16px;font-weight:800;display:flex;align-items:center;gap:8px;margin-bottom:10px;letter-spacing:.02em}
-.gb-box .gb-text{font-size:20px;line-height:1.5;color:var(--ink-2);word-break:keep-all}
-.gb-bad{background:var(--card-soft);border:1.5px solid #E7E3F0}
-.gb-bad .gb-tag{color:var(--muted)}
-.gb-good{background:linear-gradient(160deg,var(--violet-50),#fff);border:1.5px solid var(--violet)}
-.gb-good .gb-tag{color:var(--violet-700)}
-.gb-good .gb-text{color:var(--violet-800);font-weight:600}
-
-/* ---------- horizontal timeline (p4) ---------- */
-.htl{display:flex;align-items:flex-start;justify-content:space-between;gap:6px;margin-bottom:8px}
-.htl-item{flex:1;display:flex;flex-direction:column;align-items:center;gap:10px;text-align:center}
-.htl-dot{width:66px;height:66px;border-radius:50%;background:var(--violet-100);display:grid;place-items:center;
-  font-size:28px;box-shadow:var(--shadow-sm)}
-.htl-item.hl .htl-dot{background:var(--violet);}
-.htl-name{font-size:17px;font-weight:700;color:var(--ink-2);line-height:1.3;word-break:keep-all}
-.htl-item.hl .htl-name{color:var(--violet-700);font-weight:800}
-.htl-arrow{align-self:center;margin-top:22px;color:var(--violet-500);font-size:24px;font-weight:800}
-.now-panel{background:var(--card);border:1.5px solid var(--violet-line);border-radius:20px;overflow:hidden;
-  box-shadow:var(--shadow-sm);margin-top:6px}
-.now-head{background:var(--violet);color:#fff;font-size:19px;font-weight:800;padding:12px 24px;
-  display:flex;align-items:center;gap:10px;letter-spacing:.02em}
-.now-list{display:grid;grid-template-columns:1fr 1fr;gap:0}
-.now-list li{list-style:none;padding:13px 24px;font-size:18px;color:var(--ink-2);line-height:1.4;
-  border-top:1px solid #F0ECFB;word-break:keep-all;display:flex;gap:10px}
-.now-list li::before{content:"▸";color:var(--violet);font-weight:800}
-.now-list li:nth-child(odd){border-right:1px solid #F0ECFB}
-
-/* ---------- wordcloud (p5) ---------- */
-.wc{background:var(--card-soft);border:1.5px solid var(--violet-line);border-radius:24px;
-  padding:40px 40px;display:flex;flex-wrap:wrap;gap:18px 30px;align-items:center;justify-content:center;
-  box-shadow:var(--shadow-sm);min-height:340px}
-.wc span{color:var(--muted);font-weight:600;line-height:1;display:inline-block;transform-origin:center;
-  animation:wcPulse 3.4s ease-in-out infinite;will-change:transform}
-.wc span:nth-child(5n)  {animation-duration:4.3s;animation-delay:-.4s}
-.wc span:nth-child(5n+1){animation-duration:3.0s;animation-delay:-1.4s}
-.wc span:nth-child(5n+2){animation-duration:3.9s;animation-delay:-2.2s}
-.wc span:nth-child(5n+3){animation-duration:2.7s;animation-delay:-.9s}
-.wc span:nth-child(5n+4){animation-duration:4.7s;animation-delay:-1.8s}
-.wc .w-lg{font-size:40px;font-weight:800;color:var(--violet-700)}
-.wc .w-md{font-size:29px;color:var(--ink-2);font-weight:700}
-.wc .w-sm{font-size:21px}
-.wc .w-xs{font-size:17px;color:var(--muted-2)}
-@keyframes wcPulse{0%,100%{transform:scale(.82)}50%{transform:scale(1.16)}}
-
-/* ---------- flow diagram (p11) ---------- */
-.flow{display:flex;flex-direction:column;gap:14px}
-.flow-row{display:grid;grid-template-columns:1fr auto 1fr;gap:16px;align-items:stretch}
-.flow-box{border-radius:18px;padding:20px 24px;box-shadow:var(--shadow-sm)}
-.flow-box .fb-label{display:inline-block;font-size:15px;font-weight:800;letter-spacing:.06em;
-  padding:4px 12px;border-radius:999px;margin-bottom:12px;text-transform:uppercase}
-.fb-past{background:var(--card-soft);border:1.5px solid #E7E3F0}
-.fb-past .fb-label{background:#EEEAF6;color:var(--muted)}
-.fb-now{background:linear-gradient(160deg,var(--violet-50),#fff);border:1.5px solid var(--violet)}
-.fb-now .fb-label{background:var(--violet);color:#fff}
-.fb-chain{display:flex;flex-wrap:wrap;align-items:center;gap:8px;font-size:20px;font-weight:700;color:var(--ink-2)}
-.fb-now .fb-chain{color:var(--violet-800)}
-.fb-chain .arr{color:var(--violet-500);font-weight:800}
-.qbox{background:var(--card);border:1.5px solid var(--violet-line);border-radius:18px;padding:20px 24px;
-  box-shadow:var(--shadow-sm)}
-.qbox h4{font-size:19px;font-weight:800;color:var(--violet-700);margin-bottom:12px}
-.qbox ul{list-style:none;display:flex;flex-direction:column;gap:9px}
-.qbox li{position:relative;padding-left:20px;font-size:18px;color:var(--ink-2);line-height:1.4;word-break:keep-all}
-.qbox li::before{content:"";position:absolute;left:2px;top:10px;width:7px;height:7px;border-radius:50%;background:var(--violet)}
-.flow-varrow{align-self:center;color:var(--violet-500);font-size:26px;font-weight:800;text-align:center}
-
-/* ---------- decision flow chips (p27) ---------- */
-.dflow{display:flex;align-items:center;gap:10px;flex-wrap:wrap;margin-top:6px}
-.dflow .node{background:var(--violet-100);color:var(--violet-700);font-weight:800;font-size:18px;
-  padding:8px 16px;border-radius:12px}
-.dflow .arr{color:var(--violet-500);font-weight:800;font-size:18px}
-
-/* ---------- example box ---------- */
-.example{background:var(--card-soft);border:1.5px dashed var(--violet-line);border-radius:16px;padding:18px 22px}
-.example .ex-q{font-size:19px;color:var(--ink-2);line-height:1.5;font-style:italic;word-break:keep-all}
-.example .ex-skills{margin-top:12px;font-size:18px;font-weight:800;color:var(--violet-700);line-height:1.5;word-break:keep-all}
-.example .ex-skills b{color:var(--muted);font-weight:700;font-style:normal}
-
-/* ---------- worksheet (p42) ---------- */
-.ws{display:flex;flex-direction:column;gap:18px;margin-top:6px}
-.ws-row{display:flex;align-items:center;gap:18px;background:var(--card);border:1.5px solid var(--violet-line);
-  border-radius:16px;padding:20px 26px;box-shadow:var(--shadow-sm)}
-.ws-row.hl{background:linear-gradient(90deg,var(--violet-50),#fff);border-color:var(--violet)}
-.ws-emoji{font-size:30px}
-.ws-label{font-size:22px;font-weight:800;color:var(--ink);white-space:nowrap}
-.ws-row.hl .ws-label{color:var(--violet-700)}
-.ws-blank{flex:1;height:2px;background:repeating-linear-gradient(90deg,var(--violet-line) 0 14px,transparent 14px 24px)}
-.ws-row.hl .ws-blank{background:repeating-linear-gradient(90deg,var(--violet) 0 14px,transparent 14px 24px)}
-
-/* ---------- p37: regret boxes (compact) + lesson cards (impact) ---------- */
-.regret-row{display:grid;grid-template-columns:1fr 1fr;gap:16px}
-.regret-box{display:flex;gap:14px;align-items:center;background:var(--card-soft);
-  border:1.5px solid #E7E3F0;border-radius:14px;padding:14px 20px}
-.rb-emoji{font-size:24px;flex:none}
-.rb-title{font-size:18px;font-weight:800;color:var(--muted)}
-.rb-sub{font-size:15px;color:var(--muted);line-height:1.35;word-break:keep-all}
-.lessons-label{font-size:24px;font-weight:900;color:var(--violet-700);text-align:center;margin:8px 0 2px;
-  letter-spacing:.01em}
-.lessons{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
-.lesson{position:relative;border-radius:22px;padding:32px 26px;color:#fff;
-  box-shadow:0 22px 44px -18px rgba(91,33,182,.65);
-  display:flex;flex-direction:column;gap:14px;
-  animation:lessonFloat 4s ease-in-out infinite;will-change:transform}
-.lesson.l1{background:linear-gradient(155deg,#8B5CF6,#7C3AED)}
-.lesson.l2{background:linear-gradient(155deg,#7C3AED,#6D28D9)}
-.lesson.l3{background:linear-gradient(155deg,#6D28D9,#5B21B6)}
-.lesson-num{font-size:44px;font-weight:900;opacity:.5;line-height:1}
-.lesson p{font-size:24px;font-weight:800;line-height:1.42;word-break:keep-all}
-.lesson:nth-child(1){animation-delay:-.2s}
-.lesson:nth-child(2){animation-delay:-1.5s}
-.lesson:nth-child(3){animation-delay:-2.8s}
-@keyframes lessonFloat{0%,100%{transform:translateY(0)}50%{transform:translateY(-13px)}}
-
-/* ---------- p40: click-revealed key-message cards ---------- */
-.frag-card{transform:translateY(38px) scale(.9);
-  transition:opacity .55s ease, transform .65s cubic-bezier(.18,.76,.24,1)}
-.frag-card.is-shown{transform:none}
-.k-ico{animation:iconBob 2.6s ease-in-out infinite;will-change:transform}
-@keyframes iconBob{0%,100%{transform:translateY(0)}50%{transform:translateY(-8px)}}
-.frag-card.card--hl{animation:glowPulse 2.8s ease-in-out infinite}
-@keyframes glowPulse{0%,100%{box-shadow:var(--shadow)}50%{box-shadow:0 26px 54px -16px rgba(124,58,237,.7),0 0 0 2px var(--violet)}}
-.pill-top.rise{animation:pillBob 2.4s ease-in-out infinite;will-change:transform}
-@keyframes pillBob{0%,100%{transform:translateX(-50%) translateY(0)}50%{transform:translateX(-50%) translateY(-7px)}}
-
-/* ---------- title slide (p1) ---------- */
-.slide.s-cover{align-items:center;justify-content:center;text-align:center;padding:60px}
-.cover-title{font-size:92px;font-weight:900;letter-spacing:-.03em;line-height:1.05}
-.ct-inner{display:inline-block;
-  background:linear-gradient(110deg,var(--violet-800) 0%,var(--violet-500) 25%,var(--violet-700) 50%,var(--violet-500) 75%,var(--violet-800) 100%);
-  background-size:250% 100%;
-  -webkit-background-clip:text;background-clip:text;color:transparent;
-  animation:ctShimmer 7s linear infinite, ctFloat 4.8s ease-in-out infinite;
-  will-change:transform,background-position}
-@keyframes ctShimmer{from{background-position:0% 50%}to{background-position:250% 50%}}
-@keyframes ctFloat{0%,100%{transform:translateY(0) rotate(0deg)}50%{transform:translateY(-14px) rotate(-.5deg)}}
-@keyframes floatSoft{0%,100%{transform:translateY(0)}50%{transform:translateY(-9px)}}
-/* ---------- shared ambient motion ---------- */
-.slide.is-active .card,
-.slide.is-active .col,
-.slide.is-active .qbox,
-.slide.is-active .gb-box,
-.slide.is-active .example,
-.slide.is-active .now-panel,
-.slide.is-active .flow-box,
-.slide.is-active .regret-box,
-.slide.is-active .ws-row,
-.slide.is-active .tbl tbody tr{
-  animation:contentFloat 6.5s ease-in-out infinite;
-  animation-delay:calc(var(--i,0)*120ms + 400ms);
-  will-change:transform;
-}
-.slide.is-active .card:nth-child(3n+2),
-.slide.is-active .col:nth-child(2n),
-.slide.is-active .qbox:nth-child(2n){animation-delay:calc(var(--i,0)*120ms + 900ms)}
-.slide.is-active .s-sub{animation:subtleBreath 5.5s ease-in-out infinite;will-change:transform}
-@keyframes contentFloat{0%,100%{transform:translateY(0)}50%{transform:translateY(-4px)}}
-@keyframes subtleBreath{0%,100%{opacity:1;transform:translateY(0)}50%{opacity:.88;transform:translateY(-2px)}}
-@media (prefers-reduced-motion:reduce){
-  .slide.is-active .card,.slide.is-active .col,.slide.is-active .qbox,.slide.is-active .gb-box,.slide.is-active .example,.slide.is-active .now-panel,.slide.is-active .flow-box,.slide.is-active .regret-box,.slide.is-active .ws-row,.slide.is-active .tbl tbody tr,.slide.is-active .s-sub{animation:none!important}
-}
-.cover-sub{font-size:30px;font-weight:600;color:var(--ink-2);margin-top:22px}
-.cover-rule{width:120px;height:3px;background:linear-gradient(90deg,transparent,var(--violet),transparent);margin:34px auto}
-.cover-name{font-size:28px;font-weight:800;color:var(--ink)}
-.cover-role{font-size:20px;color:var(--muted);margin-top:10px}
-.cover-occasion{font-size:19px;color:var(--muted-2);margin-top:6px;font-weight:600}
-.cover-quote-wrap{margin-top:40px}
-.cover-quote{max-width:900px;font-size:23px;font-weight:700;color:var(--violet-800);
-  background:var(--violet-50);border:1.5px solid var(--violet-line);border-radius:16px;padding:20px 34px;
-  line-height:1.5;word-break:keep-all;box-shadow:var(--shadow-sm);
-  animation:floatSoft 5.2s ease-in-out infinite;will-change:transform}
-
-/* ---------- section divider ---------- */
-.slide.s-divider{align-items:flex-start;justify-content:center;text-align:left;padding:80px 96px}
-.slide.s-divider .ghost{position:absolute;right:70px;bottom:20px;font-size:280px;font-weight:900;
-  line-height:.8;color:var(--violet-50);z-index:-1;letter-spacing:-.04em;user-select:none}
-.div-kicker{font-size:22px;font-weight:900;letter-spacing:.24em;color:var(--violet);margin-bottom:22px;
-  display:flex;align-items:center;gap:14px}
-.div-kicker::before{content:"";width:52px;height:4px;border-radius:4px;background:var(--violet)}
-.div-title{font-size:56px;font-weight:900;line-height:1.2;letter-spacing:-.025em;color:var(--ink);
-  max-width:1000px;word-break:keep-all}
-.div-title .hl{background:linear-gradient(120deg,var(--violet-700),var(--violet-500));
-  -webkit-background-clip:text;background-clip:text;color:transparent}
-.div-sub{font-size:24px;font-weight:600;color:var(--muted);margin-top:26px;letter-spacing:.01em}
-
-/* ---------- closing (p43) ---------- */
-.closing-head{text-align:center;margin-bottom:8px}
-.closing-title{font-size:58px;font-weight:900;letter-spacing:-.02em}
-.closing-sub{font-size:24px;font-weight:600;color:var(--violet-700);margin-top:12px}
-.cl-sub-inner{display:inline-block;animation:floatSoft 4.6s ease-in-out infinite;animation-delay:-1.2s;
-  will-change:transform}
-
-/* =================== CHROME (controls) =================== */
-.nav-arrow{position:fixed;top:50%;transform:translateY(-50%);z-index:20;
-  width:60px;height:60px;border-radius:50%;border:none;cursor:pointer;
-  background:rgba(255,255,255,.86);backdrop-filter:blur(6px);
-  box-shadow:0 10px 30px -10px rgba(76,29,149,.4);
-  display:grid;place-items:center;color:var(--violet-700);transition:transform .2s, background .2s, opacity .2s}
-.nav-arrow:hover{background:#fff;transform:translateY(-50%) scale(1.08);color:var(--violet-800)}
-.nav-arrow:active{transform:translateY(-50%) scale(.96)}
-.nav-arrow svg{width:26px;height:26px}
-.nav-arrow.prev{left:26px}
-.nav-arrow.next{right:26px}
-.nav-arrow[disabled]{opacity:.28;cursor:default;pointer-events:none}
-
-.hamburger{position:fixed;top:20px;right:22px;z-index:40;width:42px;height:42px;border-radius:12px;border:none;
-  cursor:pointer;background:rgba(255,255,255,.9);backdrop-filter:blur(6px);
-  box-shadow:0 8px 22px -12px rgba(76,29,149,.4);display:grid;place-items:center;gap:0;
-  transition:transform .2s,background .2s}
-.hamburger:hover{background:#fff;transform:scale(1.06)}
-.hamburger span{display:block;width:19px;height:2.5px;border-radius:3px;background:var(--violet-700);margin:2.5px 0;
-  transition:transform .3s, opacity .2s}
-body.menu-open .hamburger span:nth-child(1){transform:translateY(7px) rotate(45deg)}
-body.menu-open .hamburger span:nth-child(2){opacity:0}
-body.menu-open .hamburger span:nth-child(3){transform:translateY(-7px) rotate(-45deg)}
-
-.progress{position:fixed;top:0;left:0;height:4px;background:linear-gradient(90deg,var(--violet-700),var(--violet-400,#a78bfa));
-  z-index:30;width:0;transition:width .4s cubic-bezier(.22,.61,.36,1)}
-
-.counter{position:fixed;bottom:22px;left:50%;transform:translateX(-50%);z-index:20;
-  background:rgba(255,255,255,.9);backdrop-filter:blur(6px);border-radius:999px;
-  padding:9px 20px;font-size:16px;font-weight:800;color:var(--violet-800);letter-spacing:.04em;
-  box-shadow:0 8px 24px -12px rgba(76,29,149,.4);display:flex;align-items:center;gap:8px}
-.counter .cur{font-size:18px}
-.counter .tot{color:var(--muted-2)}
-
-/* ---------- menu panel ---------- */
-.scrim{position:fixed;inset:0;background:rgba(28,24,48,.42);backdrop-filter:blur(2px);z-index:35;
-  opacity:0;pointer-events:none;transition:opacity .3s}
-body.menu-open .scrim{opacity:1;pointer-events:auto}
-.menu{position:fixed;top:0;right:0;height:100%;width:min(430px,86vw);z-index:38;
-  background:#fff;box-shadow:-20px 0 60px -20px rgba(76,29,149,.4);
-  transform:translateX(100%);transition:transform .38s cubic-bezier(.22,.61,.36,1);
-  display:flex;flex-direction:column}
-body.menu-open .menu{transform:none}
-.menu-top{padding:26px 28px 18px;border-bottom:1px solid var(--violet-line)}
-.menu-top h2{font-size:22px;font-weight:900;color:var(--ink)}
-.menu-top p{font-size:14px;color:var(--muted);margin-top:4px;font-weight:600}
-.menu-list{flex:1;overflow-y:auto;padding:10px 16px 30px}
-.menu-list::-webkit-scrollbar{width:8px}
-.menu-list::-webkit-scrollbar-thumb{background:var(--violet-100);border-radius:8px}
-.menu-sec{font-size:13px;font-weight:800;letter-spacing:.1em;color:var(--violet);text-transform:uppercase;
-  padding:18px 12px 8px}
-.menu-item{display:flex;align-items:center;gap:14px;width:100%;text-align:left;border:none;background:none;
-  cursor:pointer;padding:11px 14px;border-radius:12px;transition:background .18s;color:var(--ink-2)}
-.menu-item:hover{background:var(--violet-50)}
-.menu-item.active{background:var(--violet-100)}
-.menu-item .mi-num{width:34px;height:34px;flex:none;border-radius:9px;background:var(--card-soft);
-  display:grid;place-items:center;font-size:14px;font-weight:800;color:var(--muted)}
-.menu-item.active .mi-num,.menu-item:hover .mi-num{background:var(--violet);color:#fff}
-.menu-item .mi-title{font-size:16px;font-weight:600;line-height:1.35;word-break:keep-all}
-.menu-item.active .mi-title{font-weight:800;color:var(--violet-800)}
-
-.hint{position:fixed;bottom:20px;left:22px;z-index:20;font-size:13px;color:var(--muted-2);font-weight:600;
-  display:flex;align-items:center;gap:8px;opacity:.9}
-.hint kbd{background:#fff;border:1px solid var(--violet-line);border-radius:6px;padding:2px 7px;font-size:12px;
-  font-family:inherit;font-weight:700;color:var(--violet-700);box-shadow:0 2px 0 var(--violet-line)}
-
-@media (max-width:640px){
-  .nav-arrow{width:48px;height:48px}
-  .nav-arrow.prev{left:12px}.nav-arrow.next{right:12px}
-  .hint{display:none}
-  .hamburger{top:14px;right:14px}
-}
-@media (prefers-reduced-motion:reduce){
-  [data-anim],.slide{transition:opacity .2s!important}
-  [data-anim]{transform:none!important}
-  .ct-inner,.cover-quote,.insight,.wc span,.cl-sub-inner,.tag,
-  .lesson,.k-ico,.pill-top.rise,.frag-card.card--hl{animation:none!important}
-}
-</style>
-</head>
-<body>
-<canvas id="bg-lines"></canvas>
-
-<div class="progress" id="progress"></div>
-
-<div class="stage">
-  <div class="deck" id="deck"></div>
-</div>
-
-<button class="nav-arrow prev" id="prev" aria-label="이전">
-  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M15 18l-6-6 6-6"/></svg>
-</button>
-<button class="nav-arrow next" id="next" aria-label="다음">
-  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M9 18l6-6-6-6"/></svg>
-</button>
-
-<button class="hamburger" id="hamburger" aria-label="전체 목록">
-  <span></span><span></span><span></span>
-</button>
-
-<div class="counter"><span class="cur" id="cur">1</span><span>/</span><span class="tot" id="tot">43</span></div>
-
-<div class="hint"><kbd>←</kbd><kbd>→</kbd> 방향키로 이동</div>
-
-<div class="scrim" id="scrim"></div>
-<aside class="menu" id="menu" aria-label="슬라이드 목록">
-  <div class="menu-top">
-    <h2>전체 목록</h2>
-    <p>취업 말고 커리어 · 43 슬라이드</p>
-  </div>
-  <div class="menu-list" id="menuList"></div>
-</aside>
-
-<script>
-/* ============================ helpers ============================ */
-const em = g => `<span class="em-ico">${g}</span>`;
-function typoWords(text){
-  return String(text).split(' ').map((w,i)=>`<span class="word" style="--wi:${i}">${w}</span>`).join(' ');
-}
-/* staged "key message" card — each is a click-revealed fragment */
-function kCard(c){
-  return `<div class="card center frag frag-card${c.hl?' card--hl':''}">
-    ${c.pill?`<span class="pill-top rise">${c.pill}</span>`:''}
-    <div class="card__icon k-ico">${c.icon}</div>
-    ${c.sublabel?`<div class="card__sublabel">${c.sublabel}</div>`:''}
-    <div class="card__title">${c.title}</div>
-    ${c.foot?`<div class="card__foot">${c.foot}</div>`:''}
-  </div>`;
-}
-
-function cardGrid(cols, items){
-  return `<div class="cards cards--${cols}">` + items.map(c=>{
-    const abc = c.badge && /^[ABC]$/.test(c.badge) ? ` card--abc card--abc-${c.badge.toLowerCase()}` : '';
-    const variant = c.variant ? ` card--${c.variant}` : '';
-    const cls = 'card' + abc + variant + (c.hl?' card--hl':'') + (c.center?' center':'');
-    let inner = '';
-    if(c.pillTop)  inner += `<span class="pill-top">${c.pillTop}</span>`;
-    if(c.starTop)  inner += `<span class="badge-star">${c.starTop}</span>`;
-    if(c.badge)    inner += `<span class="card__badge" style="background:${c.badgeColor||'var(--violet)'}">${c.badge}</span>`;
-    if(c.num!=null)inner += `<span class="card__num${c.center?' centered':''}">${c.num}</span>`;
-    if(c.icon)     inner += `<div class="card__icon">${c.icon}</div>`;
-    if(c.label)    inner += `<div class="card__label">${c.label}</div>`;
-    if(c.sublabel) inner += `<div class="card__sublabel">${c.sublabel}</div>`;
-    if(c.title)    inner += `<div class="card__title">${c.title}</div>`;
-    if(c.desc)     inner += `<div class="card__desc">${c.desc}</div>`;
-    if(c.ol)       inner += `<ol class="card__ol">${c.ol.map(x=>`<li>${x}</li>`).join('')}</ol>`;
-    if(c.list)     inner += `<ul class="card__list">${c.list.map(x=>`<li>${x}</li>`).join('')}</ul>`;
-    if(c.foot)     inner += `<div class="card__foot">${c.foot}</div>`;
-    if(c.chip)     inner += `<span class="card__chip">${c.chip}</span>`;
-    return `<div class="${cls}" data-anim>${inner}</div>`;
-  }).join('') + `</div>`;
-}
-
-function table(headers, rows, opts={}){
-  const {firstcol=true, hlRow=-1, mutedCol=-1, compact=false} = opts;
-  return `<table class="tbl${firstcol?' tbl--firstcol':''}${compact?' tbl--compact':''}">
-    <thead><tr data-anim>${headers.map(h=>`<th>${h}</th>`).join('')}</tr></thead>
-    <tbody>${rows.map((r,ri)=>`<tr data-anim class="${ri===hlRow?'row--hl':''}">${
-      r.map((c,ci)=>`<td class="${ci===mutedCol?'td--muted':''}">${c}</td>`).join('')
-    }</tr>`).join('')}</tbody></table>`;
-}
-
-function colBox(c){
-  const cls='col'+(c.hl?' col--hl':'')+(c.muted?' col--muted':'');
-  let inner='';
-  if(c.icon) inner+=`<div class="col__icon">${c.icon}</div>`;
-  if(c.title) inner+=`<div class="col__title">${c.title}</div>`;
-  if(c.sub) inner+=`<div class="col__sub">${c.sub}</div>`;
-  if(c.list) inner+=`<ul class="col__list">${c.list.map(x=>`<li>${x}</li>`).join('')}</ul>`;
-  if(c.steps) inner+=`<ul class="col__steps">${c.steps.map(s=>`<li>${em(s.i)}<strong>${s.k}</strong> ${s.v}</li>`).join('')}</ul>`;
-  if(c.miniOne) inner+=`<div class="mini-grid one">${c.miniOne.map(m=>`<div class="mini">${m}</div>`).join('')}</div>`;
-  if(c.mini) inner+=`<div class="mini-grid">${c.mini.map(m=>`<div class="mini">${m}</div>`).join('')}</div>`;
-  if(c.extra) inner+=c.extra;
-  return `<div class="${cls}" data-anim>${inner}</div>`;
-}
-function twoCol(left,right,plus){
-  if(plus) return `<div class="twocol with-plus">${colBox(left)}<div class="plus" data-anim>+</div>${colBox(right)}</div>`;
-  return `<div class="twocol">${colBox(left)}${colBox(right)}</div>`;
-}
-
-/* ============================ slide data ============================ */
-const SLIDES = [
-/* 1 */ {part:'표지', menu:'표지 · 취업 말고 커리어', type:'cover'},
-/* 2 */ {part:'여는 이야기', menu:'테크 업계에 아는 사람이 있나요?', type:'content',
-  title:'테크 업계에 아는 사람이 있나요?', sub:'어디에서 시작하든 괜찮습니다',
-  insight:'어느 쪽이든 오늘 이 자리에 잘 오셨습니다',
-  body: cardGrid(3,[
-    {badge:'A',badgeColor:'#5B8DEF',center:true,desc:'주변에 테크 업계에서 일하는 사람이 있다. 하지만 정확히 무슨 일을 하는지는 모른다'},
-    {badge:'B',badgeColor:'var(--violet)',center:true,desc:'주변에 테크 업계에서 일하는 사람이 없다. 테크 업계가 어떤 곳인지도 막연하다'},
-    {badge:'C',badgeColor:'#C7913B',center:true,desc:'관심은 있지만 나와는 거리가 있는 업계라고 생각했다'},
-  ])},
-/* 3 */ {part:'여는 이야기', menu:'오늘 강의가 끝나면 3가지가 보입니다', type:'content',
-  title:'오늘 강의가 끝나면 3가지가 보입니다',
-  insight:'취업 설명회가 아닙니다, 커리어 설계 시간입니다',
-  body: cardGrid(3,[
-    {num:1,variant:'trio',center:true,title:'업계가 보입니다',desc:'테크 업계의 구조와 AI 이후의 변화를 이해합니다'},
-    {num:2,variant:'trio',center:true,title:'역할이 보입니다',desc:'테크 기업을 움직이는 다양한 역할과 진입 경로를 파악합니다'},
-    {num:3,variant:'trio',center:true,hl:true,title:'오늘 할 일이 보입니다',desc:'채용공고를 읽고, 필요한 경험을 만드는 방법을 알게 됩니다'},
-  ])},
-/* 4 */ {part:'여는 이야기', menu:'먼저 나의 현재 위치를 확인합니다', type:'content',
-  title:'먼저 나의 현재 위치를 확인합니다',
-  sub:'정답을 고르는 시간이 아니라, 출발점을 확인하는 시간입니다',
-  insight:'강의가 끝난 뒤 같은 질문에 다시 답해보면 나의 변화가 보입니다',
-  body: cardGrid(4,[
-    {num:1,title:'정보가 필요합니다',desc:'테크 업계와 직무가 아직 막연합니다'},
-    {num:2,title:'직무를 찾고 있습니다',desc:'관심 분야는 있지만 무엇이 맞는지 모르겠습니다'},
-    {num:3,title:'경험을 정리하고 싶습니다',desc:'프로젝트는 있지만 직무 역량으로 설명하기 어렵습니다'},
-    {num:4,hl:true,title:'실행을 시작합니다',desc:'지원할 직무와 다음 행동이 어느 정도 정해져 있습니다'},
-  ])},
-/* 4 */ {part:'여는 이야기', menu:'여러 역할을 경험한 현장 이야기', type:'content',
-  title:'여러 역할을 경험한 현장 이야기입니다', sub:'콘텐츠 기획에서 창업까지',
-  insight:'화려한 스펙보다 선택의 연속이 만든 커리어입니다',
-  body: `
-    <div class="htl" data-anim>
-      ${[['✏️','콘텐츠 기획'],['🖥️','웹에이전시 PM'],['🏢','대기업 IT·서비스 조직'],['🧑‍💻','프리랜서'],['📇','대기업'],['🚀','창업',true]]
-        .map((s,i,a)=>`<div class="htl-item ${s[2]?'hl':''}"><div class="htl-dot">${s[0]}</div><div class="htl-name">${s[1]}</div></div>${i<a.length-1?'<div class="htl-arrow">→</div>':''}`).join('')}
-    </div>
-    <div class="now-panel" data-anim>
-      <div class="now-head">🙋 현재</div>
-      <ul class="now-list">
-        <li>AI 콘텐츠 제작사 제이투컴 대표</li>
-        <li>소프트웨어 개발사 제이브제이 대표</li>
-        <li>대학 겸임교수 (생성형 AI·융합 콘텐츠·데이터 리터러시·데이터 시각화)</li>
-        <li>취준생 부트캠프 멘토 및 창업 컨설턴트</li>
-        <li>기업·학교·공공기관 생성형 AI 강사</li>
-      </ul>
-    </div>`},
-/* 5 */ {part:'여는 이야기', menu:'여러분의 감각도 테크 역량이 됩니다', type:'content',
-  title:'여러분의 감각도 테크 역량이 될 수 있습니다', sub:'트렌드를 읽는 감각은 다양한 테크 직무로 연결됩니다',
-  insight:'기술만 아는 사람보다 사용자·데이터·위험을 이해하는 사람도 필요합니다',
-  body: `
-    <div class="wc" data-anim>
-      <span class="w-sm">텍스트힙</span><span class="w-lg">숏폼</span><span class="w-xs">럭키비키</span>
-      <span class="w-lg">갓생</span><span class="w-sm">제로클릭</span><span class="w-xs">휴먼 인 더 루프</span>
-      <span class="w-lg">중꺾마</span><span class="w-xs">요노(YONO)</span><span class="w-sm">무지출 챌린지</span>
-      <span class="w-xs">갈아타기</span><span class="w-md">도파민 디톡스</span><span class="w-sm">인스타그래머블</span>
-      <span class="w-md">현타</span><span class="w-xs">가심비</span><span class="w-sm">본캐부캐</span>
-      <span class="w-xs">밈력</span><span class="w-sm">갓생루틴</span><span class="w-md">스라밸</span>
-      <span class="w-xs">플렉스</span><span class="w-sm">직진구매</span><span class="w-xs">체리슈머</span>
-      <span class="w-md">디토소비</span><span class="w-xs">킹받네</span><span class="w-sm">만렙</span>
-      <span class="w-xs">찐텐</span><span class="w-sm">가시성비</span><span class="w-md">알잘딱깔센</span>
-      <span class="w-md">보안 엔지니어</span><span class="w-sm">개인정보보호</span><span class="w-md">AI 거버넌스</span>
-      <span class="w-sm">모델 안전성</span><span class="w-md">데이터 품질</span><span class="w-sm">데이터 거버넌스</span>
-    </div>
-    ${cardGrid(3,[
-      {icon:'💬',center:true,title:'언어 감각',desc:'사람들이 지금 어떤 표현을 쓰는가'},
-      {icon:'👁️',center:true,title:'사용자 감각',desc:'무엇에 반응하고 무엇을 불편해하는가'},
-      {icon:'🧩',center:true,title:'콘텐츠 감각',desc:'어떤 형식이 공유되고 확산되는가'},
-    ])}`},
-/* 6 */ {part:'PART 1 · 판의 변화', menu:'PART 1 · AI 시대, 판은 어떻게 바뀌는가', type:'divider',
-  kicker:'PART 1', ghost:'01',
-  title:'AI 시대, 테크 업계의 판은<br><span class="hl">어떻게 바뀌고 있는가</span>',
-  sub:'산업 구조 · AI 변화 · 채용 변화 · 직무 변화'},
-/* 7 */ {part:'PART 1 · 판의 변화', menu:'테크 업계는 한 종류의 회사가 아닙니다', type:'content',
-  title:'테크 업계는 한 종류의 회사가 아닙니다',
-  insight:'첫 회사의 이름보다 어떤 문제와 역할을 경험하는지가 중요합니다',
-  body: table(['회사 유형','특징','대표 환경'],[
-    [em('🏢')+'빅테크·플랫폼','직무 분화가 체계적이고 경쟁이 치열함','네이버 · 카카오 · 쿠팡 등'],
-    [em('🚀')+'스타트업','빠른 실행, 한 사람이 여러 역할 수행','토스 · 당근 · 무신사 등'],
-    [em('🖥️')+'대기업 IT·디지털 조직','안정적 환경, 산업 도메인 이해 필요','삼성SDS · LG CNS · 현대오토에버 등'],
-    [em('🎯')+'에이전시·솔루션','다양한 산업과 고객 경험을 빠르게 축적','SI·웹에이전시·SaaS·B2B 솔루션'],
-  ])},
-/* 8 */ {part:'PART 1 · 판의 변화', menu:'AI는 직업보다 업무 단위를 먼저 바꿉니다', type:'content',
-  title:'AI는 직업보다 업무 단위를 먼저 바꿉니다',
-  insight:'AI가 사람을 대체하기보다, 일의 구성을 바꾸고 있습니다',
-  body: twoCol(
-    {icon:'✕',muted:true,title:'줄어드는 업무',list:['단순 반복 업무','정해진 규칙에 따른 데이터 처리','템플릿 기반 문서 초안','정형화된 고객 응대','자료 검색과 요약','한 가지 역할만 반복하는 업무']},
-    {icon:'✓',hl:true,title:'중요해지는 업무',list:['문제 정의와 우선순위 결정','맥락을 반영한 질문 설계','결과물 검토와 품질 판단','이해관계자 조율','사용자와 비즈니스 해석','여러 역할을 연결하는 업무']}
-  )},
-/* 9 */ {part:'PART 1 · 판의 변화', menu:'회사의 채용 기준도 바뀌고 있습니다', type:'content',
-  title:'회사의 채용 기준도 바뀌고 있습니다',
-  insight:'AI를 쓰는 사람보다 AI와 함께 성과를 내는 사람을 찾습니다',
-  body: cardGrid(4,[
-    {num:1,title:'조직은 더 작고 민첩해집니다',desc:'대규모 주니어 공채보다 필요한 역량을 갖춘 소수 인재 중심'},
-    {num:2,title:'직무 경계가 무너집니다',desc:'기획자가 데이터를 보고, 디자이너가 프롬프트를 쓰고, 개발자가 제품을 이해함'},
-    {num:3,title:'AI 협업 역량을 확인합니다',desc:'도구 사용 자체보다 문제를 정의하고 결과를 검토하는 능력'},
-    {num:4,hl:true,title:'경험의 증거를 요구합니다',desc:'학력·자격증만이 아니라 프로젝트·포트폴리오·실무 결과물 확인'},
-  ])},
-/* 10 */ {part:'PART 1 · 판의 변화', menu:'직무 안의 일이 바뀝니다', type:'content',
-  title:'직무가 사라지는 것이 아니라 직무 안의 일이 바뀝니다',
-  insight:'도구가 바뀌면 필요한 사람의 역량도 달라집니다',
-  body: table(['직군','과거의 중심 업무','AI 이후 더 중요해지는 업무'],[
-    [em('🎯')+'제품·기획','문서 작성·일정 관리','문제 정의·우선순위·데이터 해석'],
-    [em('✏️')+'디자인','툴 숙련·시안 제작','사용자 관점·심미안·큐레이션'],
-    [em('💻')+'개발','코드를 직접 작성','구조 설계·리뷰·품질 판단'],
-    [em('🧩')+'제품 엔지니어링','직무별 산출물을 순차 전달','문제 발견·설계·구현·검증'],
-    [em('📊')+'데이터','쿼리·리포트 작성','분석 질문·인사이트·의사결정'],
-    [em('📈')+'마케팅·그로스','콘텐츠 초안 제작','전략·타깃팅·실험 설계'],
-    [em('🤝')+'운영·고객경험','반복 응대·수작업 운영','프로세스 개선·고객 맥락 해석'],
-  ],{mutedCol:1})},
-/* 11 */ {part:'PART 1 · 판의 변화', menu:'전공보다 문제 해결 방식이 중요합니다', type:'content',
-  title:'AI 시대에는 전공보다 문제 해결 방식이 더 중요해집니다',
-  insight:'전공은 출발점이지만, 결과물이 가능성을 증명합니다',
-  body: `
-    <div class="flow">
-      <div class="flow-box fb-past" data-anim>
-        <span class="fb-label">과거</span>
-        <div class="fb-chain">전공 <span class="arr">→</span> 자격 <span class="arr">→</span> 직무 <span class="arr">→</span> 입사</div>
-      </div>
-      <div class="flow-varrow" data-anim>↓</div>
-      <div class="flow-row">
-        <div class="flow-box fb-now" data-anim style="grid-column:1 / 2">
-          <span class="fb-label">현재</span>
-          <div class="fb-chain">관심 문제 <span class="arr">→</span> 도구 학습 <span class="arr">→</span> 작은 결과물 <span class="arr">→</span> 프로젝트 경험 <span class="arr">→</span> 직무 역량 증명</div>
-        </div>
-        <div class="flow-varrow" data-anim style="transform:rotate(-90deg)">↓</div>
-        <div class="qbox" data-anim>
-          <h4>'현재' 방식에서, 회사가 확인하는 질문</h4>
-          <ul>
-            <li>어떤 문제를 발견했는가</li>
-            <li>왜 그 문제를 선택했는가</li>
-            <li>무엇을 직접 했는가</li>
-            <li>어떤 결과와 학습이 있었는가</li>
-          </ul>
-        </div>
-      </div>
-    </div>`},
-/* 12 */ {part:'PART 2 · 직무와 진입 경로', menu:'PART 2 · 어떤 직무와 진입 경로가 있는가', type:'divider',
-  kicker:'PART 2', ghost:'02',
-  title:'테크 업계에는 어떤 직무와<br><span class="hl">진입 경로가 있는가</span>',
-  sub:'제품·개발·디자인·데이터·마케팅·보안 직무 · 선택 기준 · 진입 가능성'},
-/* 13 */ {part:'PART 2 · 직무와 진입 경로', menu:'테크 서비스는 여러 직군이 함께 만듭니다', type:'content',
-  title:'테크 서비스는 여러 직군이 함께 만듭니다',
-  insight:'개발자만 있는 산업이 아닙니다. 각 직군이 연결되어 하나의 서비스를 만듭니다',
-  body: table(['직군','대표 직무','핵심 역할'],[
-    [em('🎯')+'제품·기획','서비스기획자·PM·PO','문제 정의·요구사항·우선순위'],
-    [em('✏️')+'디자인','UX·UI 디자이너·UX 리서처','사용자 경험·화면·사용성'],
-    [em('💻')+'개발','프론트엔드·백엔드·모바일·풀스택','시스템과 기능 구현'],
-    [em('🧩')+'제품 엔지니어링','Product Engineer(PE)','문제 정의·설계·구현·검증'],
-    [em('📊')+'데이터','분석가·엔지니어·사이언티스트','수집·분석·의사결정 지원'],
-    [em('📈')+'마케팅·그로스','콘텐츠·퍼포먼스·그로스 마케터','고객 획득·전환·성장'],
-    [em('🤝')+'운영·고객경험','서비스 운영·CRM·CX','운영 안정성·고객 관계·개선'],
-    [em('🛡️')+'보안·개인정보·AI 거버넌스','보안 엔지니어·개인정보보호·AI 리스크','데이터 보호·위험 관리·책임 있는 기술 사용'],
-  ])},
-/* 14 */ {part:'PART 2 · 직무와 진입 경로', menu:'테크 기업을 만드는 다양한 역할', type:'content',
-  title:'테크 기업은 다양한 역할이 함께 만듭니다', sub:'제품을 발견하고, 설계하고, 구현하고, 성장시키는 역할',
-  insight:'테크 기업의 경쟁력은 특정 직무 하나가 아니라, 서로 다른 전문성이 하나의 고객 가치를 만드는 데서 나옵니다',
-  body: `<div class="tags" data-anim>${['서비스기획자','PM','PO','UX·UI 디자이너','데이터 분석가','콘텐츠 마케터','그로스 마케터','서비스 운영','CRM','CX'].map(t=>`<span class="tag">${t}</span>`).join('')}<span class="tag tag--hl">Product Engineer(PE)</span></div>`
-    + cardGrid(6,[
-      {num:1,center:true,desc:'어떤 문제를 해결할지 결정'},
-      {num:2,center:true,desc:'사용자가 무엇을 원하는지 파악'},
-      {num:3,center:true,desc:'개발할 기능과 정책 정리'},
-      {num:4,center:true,desc:'여러 부서의 요구 조율'},
-      {num:5,center:true,desc:'데이터로 개선 방향 도출'},
-      {num:6,center:true,desc:'고객과 서비스의 관계 관리'},
-    ])},
-/* 15 */ {part:'PART 2 · 직무와 진입 경로', menu:'전공보다 역할과 경험이 중요합니다', type:'content',
-  title:'테크 기업은 전공보다 역할과 경험을 봅니다', sub:'각 직무의 문제를 이해하고 결과물로 증명해야 함',
-  insight:'보여줄 직무 경험이 없으면 어려운 것이지, 특정 전공이 아니라서 불가능한 것은 아닙니다',
-  body: `<div class="tags" data-anim>${['서비스기획자','PM','PO','UX·UI 디자이너','데이터 분석가','콘텐츠 마케터','그로스 마케터','서비스 운영','CRM','CX'].map(t=>`<span class="tag">${t}</span>`).join('')}<span class="tag tag--hl">Product Engineer(PE)</span></div>`
-    + cardGrid(4,[
-      {num:1,title:'전공 ≠ 직무',desc:'전공과 직무가 일대일로 연결되지 않는 역할이 많아지고 있음'},
-      {num:2,title:'경험 → 결과물',desc:'수업·동아리·프로젝트 경험을 직무 결과물로 바꿀 수 있음'},
-      {num:3,title:'역량 확인',desc:'기업은 포트폴리오·과제·인턴 경험으로 역량을 확인함'},
-      {num:4,hl:true,title:'진입장벽↓',desc:'AI 도구로 조사·분석·문서화·프로토타입 제작의 진입장벽이 낮아짐'},
-    ])},
-/* 16 */ {part:'PART 2 · 직무와 진입 경로', menu:'개발은 여러 테크 직무 중 하나의 선택지입니다', type:'content',
-  title:'개발은 여러 테크 직무 중 하나의 선택지입니다',
-  sub:'개발에 관심이 있다면 도전할 수 있지만, 모든 사람이 개발자가 될 필요는 없습니다',
-  insight:'AI 시대의 테크 커리어는 개발자만의 길이 아니라, 각자의 강점으로 문제를 해결하는 여러 경로입니다',
-  body: twoCol(
-    {icon:'🧭',title:'개발을 선택하는 사람에게',list:['작동하는 결과물을 직접 만들고 싶은가','오류 원인을 추적하고 구조를 이해하는가','기술을 계속 배우는 과정이 즐거운가','코드와 시스템으로 문제를 해결하고 싶은가']},
-    {icon:'✓',hl:true,title:'다른 선택지도 충분히 중요합니다',list:['문제를 정의하고 우선순위를 정하는 기획','사용자 경험을 설계하는 디자인','데이터로 원인과 방향을 찾는 분석','고객·시장·위험을 이해하는 마케팅·보안']}
-  )},
-/* 17 */ {part:'PART 2 · 직무와 진입 경로', menu:'직무마다 보여줘야 할 결과물이 다릅니다', type:'content',
-  title:'직무마다 보여줘야 할 결과물이 다릅니다',
-  sub:'개발 포트폴리오는 하나의 예시일 뿐, 모든 직무의 기준은 아닙니다',
-  insight:'중요한 것은 직무 이름이 아니라, 그 직무의 문제를 이해하고 결과물로 증명하는 것입니다',
-  body: `<div class="twocol">
-    ${colBox({icon:'📋',title:'개발 포트폴리오에서 보여줄 것',extra:`<ol class="card__ol" style="margin-top:8px">
-      <li>어떤 문제를 해결하려 했는가</li>
-      <li>어떤 기술을 선택했고 왜 선택했는가</li>
-      <li>어떤 기능을 직접 구현했는가</li>
-      <li>어떤 오류가 발생했는가</li>
-      <li>오류를 어떻게 해결했는가</li>
-      <li>AI가 만든 코드를 어떻게 검토했는가</li>
-      <li>다시 만든다면 무엇을 개선할 것인가</li></ol>`})}
-    <div class="gb">
-      <div class="gb-box gb-bad" data-anim>
-        <div class="gb-tag">✕ 나쁜 설명</div>
-        <div class="gb-text">"React로 웹사이트를 만들었습니다"</div>
-      </div>
-      <div class="gb-box gb-good" data-anim>
-        <div class="gb-tag">✓ 좋은 설명</div>
-        <div class="gb-text">"대학생의 일정 공유 문제를 해결하기 위해 React와 Firebase로 팀 일정 관리 서비스를 구현했고, 실시간 동기화 오류를 데이터 구조 변경으로 해결했습니다"</div>
-      </div>
-    </div>
-  </div><div class="example" data-anim><div class="ex-q">다른 직무의 결과물 예시</div><div class="ex-skills"><b>기획</b> 문제 정의·정책서 · <b>디자인</b> 사용자 흐름·프로토타입 · <b>데이터</b> 분석 리포트·실험 결과 · <b>마케팅</b> 캠페인·성과 분석 · <b>보안</b> 위험 분석·대응 기준</div></div>`},
-/* 18 */ {part:'PART 2 · 직무와 진입 경로', menu:'AI와 함께 역할이 넓어집니다', type:'content',
-  title:'하나의 서비스 문제를 여러 직군이 함께 해결합니다',
-  sub:'AI는 각 단계의 속도를 높이고, 사람은 방향·품질·책임을 판단합니다',
-  insight:'직무를 이해하는 가장 좋은 방법은 하나의 문제를 끝까지 따라가 보는 것입니다. 데이터 분석뿐 아니라 보호와 거버넌스도 서비스 완성도의 일부입니다',
-  body: table(['해결 단계','주요 역할','AI가 돕는 일','사람이 책임지는 판단'],[
-    [em('🎯')+'문제 정의','PM·기획','사용자 의견·시장 자료 정리','어떤 문제를 풀지, 성공 기준은 무엇인지'],
-    [em('🔍')+'원인 분석','데이터·리서치','데이터 정리·가설 초안','무엇이 사실이고 어떤 원인이 중요한지'],
-    [em('✏️')+'해결안 설계','디자인·기획','아이디어·시안 생성','사용자에게 가장 적합한 경험인지'],
-    [em('💻')+'구현·검증','개발·PE','코드·테스트 초안','안전하게 작동하는지, 무엇을 개선할지'],
-    [em('📈')+'확산·개선','마케팅·운영','콘텐츠 변형·문의 분류','누구에게 어떻게 전달하고 다음 실험은 무엇인지'],
-    [em('🛡️')+'보호·책임 검토','개인정보·보안·AI 거버넌스','위험 항목·정책 초안·데이터 흐름 정리','개인정보·저작권·편향·보안 위험을 허용할 수 있는지'],
-  ],{mutedCol:2})},
-/* 19 */ {part:'PART 2 · 직무와 진입 경로', menu:'AI 결과를 검증하는 책임이 필요합니다', type:'content',
-  title:'AI를 잘 쓰는 사람은 결과를 검증하는 사람입니다',
-  sub:'속도보다 정확성·보안·책임을 함께 판단해야 합니다',
-  insight:'AI가 만든 결과물의 마지막 책임은 도구가 아니라 사람에게 있습니다',
-  body: cardGrid(4,[
-    {icon:'🔍',title:'사실을 확인합니다',desc:'출처·수치·코드가 실제로 맞는지 검증합니다'},
-    {icon:'🔐',title:'위험을 점검합니다',desc:'개인정보·저작권·보안 문제가 없는지 확인합니다'},
-    {icon:'🧭',title:'맥락을 판단합니다',desc:'우리 사용자와 목표에 적합한 결과인지 살펴봅니다'},
-    {icon:'✋',hl:true,title:'결과에 책임집니다',desc:'AI를 사용했더라도 최종 결정과 결과는 내가 설명합니다'},
-  ])},
-/* 19 */ {part:'PART 2 · 직무와 진입 경로', menu:'나와 맞는 직무를 찾으세요', type:'content',
-  title:'인기 있는 직무보다 나와 맞는 직무를 찾으세요',
-  insight:'직무는 전공만으로 결정되지 않습니다, 반복해서 잘하고 싶은 활동에서 좁혀집니다',
-  body: table(['내가 즐기는 활동','연결 가능성이 높은 직무'],[
-    [em('🧩')+'복잡한 내용을 구조화하고 정리한다','서비스기획자·PM·PO'],
-    [em('🤝')+'여러 사람의 의견을 듣고 조율한다','PM·프로젝트 매니저·서비스 운영'],
-    [em('👁️')+'화면이나 서비스의 불편함이 잘 보인다','UX·UI 디자이너·UX 리서처'],
-    [em('🔍')+'숫자를 보고 원인을 찾는 것이 재미있다','데이터 분석가·그로스 마케터'],
-    [em('💻')+'아이디어를 직접 작동하게 만들고 싶다','소프트웨어 개발자'],
-    [em('🧩')+'문제를 찾고 제품으로 만들어 검증하고 싶다','Product Engineer(PE)'],
-    [em('📈')+'트렌드와 사람의 반응을 빠르게 읽는다','콘텐츠·브랜드 마케터'],
-    [em('✓')+'고객의 불편을 해결하는 데 보람을 느낀다','CX·CRM·서비스 운영'],
-    [em('🛡️')+'취약점을 찾고 시스템을 안전하게 지키고 싶다','보안 엔지니어·보안 아키텍트'],
-    [em('🔐')+'개인정보의 흐름과 보호 기준을 관리하고 싶다','개인정보보호 담당자'],
-    [em('⚖️')+'AI의 위험과 책임 있는 사용 기준을 설계하고 싶다','AI 거버넌스·AI 리스크 담당자'],
-    [em('🧪')+'AI 결과의 오류·유해성·편향을 검증하고 싶다','모델 안전성·AI 평가 담당자'],
-    [em('🗂️')+'데이터의 출처·정확성·품질을 관리하고 싶다','데이터 거버넌스·데이터 품질 담당자'],
-  ],{firstcol:false,compact:true})},
-/* 20 */ {part:'PART 2 · 직무와 진입 경로', menu:'직무는 네 기준의 교집합에서', type:'content',
-  title:'직무는 네 가지 기준의 교집합에서 선택합니다',
-  insight:'직무의 이미지가 아니라 실제 업무를 기준으로 선택해야 합니다',
-  body: cardGrid(4,[
-    {num:1,title:'흥미',desc:'계속 배우고 싶은가'},
-    {num:2,title:'강점',desc:'비교적 잘하거나 빠르게 성장하는가'},
-    {num:3,title:'업무 방식',desc:'실제 일하는 과정이 나와 맞는가'},
-    {num:4,hl:true,title:'시장성',desc:'채용 수요와 성장 경로가 있는가'},
-  ]) + `<div class="example" data-anim><div class="ex-q">예시: "발표를 좋아하니 마케터가 맞다"로 끝내지 않습니다</div>
-    <div class="ex-skills"><b>→</b> 타깃 분석이 좋은가 · 데이터를 보는 것이 가능한가 · 콘텐츠를 반복 개선할 수 있는가 · 성과 압박을 감당할 수 있는가</div></div>`},
-/* 21 */ {part:'PART 2 · 직무와 진입 경로', menu:'연봉은 확인해야 할 조건입니다', type:'content',
-  title:'연봉은 선택 기준이 아니라 확인해야 할 조건입니다',
-  insight:'연봉이 높은 직무보다, 시장 가치를 높일 수 있는 직무가 중요합니다',
-  body: twoCol(
-    {icon:'💰',title:'연봉을 볼 때 함께 확인할 것',mini:['회사 규모와 산업','직무의 희소성','개인의 경험과 포트폴리오','성과급·스톡옵션·복지 포함 여부','성장 속도와 다음 이직 가능성','조사 연도와 데이터 출처']},
-    {icon:'📊',hl:true,title:'직무별 경향',miniOne:['개발·데이터 직군은 기술 숙련도에 따른 격차가 큼','제품·기획 직군은 경험과 책임 범위에 따른 격차가 큼','디자인·마케팅·운영 직군은 산업과 회사 규모의 영향이 큼']},
-    true)},
-/* 22 */ {part:'PART 3 · 회사가 원하는 신입', menu:'PART 3 · 회사는 어떤 신입을 원하는가', type:'divider',
-  kicker:'PART 3', ghost:'03',
-  title:'회사는 어떤<br><span class="hl">신입을 원하는가</span>',
-  sub:'AI 협업 · 기술 대화 · 문서 · 판단 · 협업'},
-/* 23 */ {part:'PART 3 · 회사가 원하는 신입', menu:'맥락을 주고 결과를 판단합니다', type:'content',
-  title:'AI 시대의 핵심 인재는 맥락을 주고 결과를 판단합니다',
-  insight:'일을 시키는 능력보다, 무엇이 좋은 결과인지 판단하는 능력이 중요합니다',
-  body: cardGrid(3,[
-    {icon:'💬',center:true,title:'맥락을 전달하는 사람',desc:'목적·배경·대상·제약 조건을 명확히 설명함'},
-    {icon:'🔎',center:true,title:'결과를 판단하는 사람',desc:'AI 결과물이 맞는지, 쓸 만한지, 위험하지 않은지 검토함'},
-    {icon:'👥',center:true,hl:true,title:'사람을 연결하는 사람',desc:'서로 다른 요구와 관점을 하나의 방향으로 정렬함'},
-  ])},
-/* 24 */ {part:'PART 3 · 회사가 원하는 신입', menu:'모든 직군은 기술과 대화할 수 있어야 합니다', type:'content',
-  title:'모든 직군은 기술과 대화할 수 있어야 합니다',
-  sub:'개발자가 되는 것이 아니라, 나의 직무에서 기술의 가능성과 한계를 판단하는 능력',
-  insight:'기술을 깊이 구현하는 직무도, 기술을 이해하고 함께 결정하는 직무도 모두 테크 커리어입니다',
-  body: `<div class="tags" data-anim>${['요구사항','API','데이터베이스(DB)','프론트엔드','백엔드','서버·클라이언트','버그·에러·예외','배포','버전 관리(Git)','테스트·QA'].map(t=>`<span class="tag">${t}</span>`).join('')}<span class="tag tag--hl">Product Engineer(PE)</span></div>`
-    + table(['수준','설명','대상 / 비고'],[
-      [em('✕')+'기초 부족','서버·데이터베이스·API의 역할을 구분하기 어려움','회의에서 질문과 판단이 어려움'],
-      [em('✓')+'협업 가능 수준','기술의 가능 여부와 제약을 이해하고 질문함','신입·주니어 기획·디자인·데이터 직무의 목표'],
-      [em('🔼')+'심화 이해','아키텍처·성능·기술 부채를 함께 논의함','시니어·PO 수준에서 요구'],
-    ],{hlRow:1})},
-/* 25 */ {part:'PART 3 · 회사가 원하는 신입', menu:'서비스기획자·PM의 실제 하루', type:'content',
-  title:'🕐 예) 서비스기획자·PM의 실제 하루',
-  insight:'문서를 쓰는 이유는 팀이 같은 결정을 내리게 하기 위해서입니다',
-  body: table(['시간','업무','실제로 하는 판단'],[
-    ['09:00','데일리 스크럼','진행 상황과 장애 요소 확인'],
-    ['10:00','요구사항·화면 정책 작성','무엇을 만들고 무엇을 제외할지 결정'],
-    ['13:00','사업·마케팅·CS 요구 수렴','요구사항 우선순위 조정'],
-    ['15:00','개발·디자인 협의','구현 범위와 일정 조율'],
-    ['16:00','데이터·지표 확인','다음 개선 과제 선정'],
-    ['17:00','백로그 정리','다음 스프린트 범위 결정'],
-  ])},
-/* 26 */ {part:'PART 3 · 회사가 원하는 신입', menu:'Product Engineer의 실제 하루', type:'content',
-  title:'🧑‍💻 예) Product Engineer의 실제 하루',
-  insight:'PE는 코딩만 하는 사람이 아니라 문제를 발견하고, 설계하고, 구현하고, 검증하는 사람입니다',
-  body: table(['시간','업무','실제로 하는 판단'],[
-    ['09:00','사용자 피드백·오류 로그 확인','어떤 문제가 반복되고 누구에게 영향을 주는지 파악'],
-    ['10:00','문제 원인 분석·우선순위 결정','지금 해결할 문제와 나중에 해결할 문제 구분'],
-    ['11:00','AI와 구현 방법 탐색','제안된 기술과 코드가 실제 구조에 맞는지 검토'],
-    ['13:00','기능 설계·데이터 구조 검토','사용자 흐름과 시스템 구조를 함께 설계'],
-    ['15:00','코드 구현·리뷰·테스트','빠르게 만들되 오류·보안·확장성을 확인'],
-    ['17:00','배포 결과 확인·회고','사용자 반응을 보고 다음 개선 과제 선정'],
-  ])},
-/* 27 */ {part:'PART 3 · 회사가 원하는 신입', menu:'채용공고는 회사의 문제입니다', type:'content',
-  title:'채용공고는 회사의 문제를 적어놓은 문서입니다',
-  insight:'채용공고를 읽는 것은 조건 확인이 아니라 회사의 문제를 읽는 일입니다',
-  body: table(['항목','읽어야 할 질문'],[
-    ['<span class="em-key">💼 주요업무</span>','<span class="em-key">입사하면 실제로 무엇을 하는가</span>'],
-    [em('✅')+'자격요건','반드시 필요한 최소 역량은 무엇인가'],
-    [em('👤')+'우대사항','어떤 경험이 있으면 차별화되는가'],
-    [em('🔧')+'사용 도구','어떤 실무 환경에서 일하는가'],
-    [em('💬')+'반복 단어','회사가 가장 중요하게 보는 역량은 무엇인가'],
-  ]) + `<div class="example" data-anim><div class="ex-q">예시: "사용자 데이터를 분석해 서비스 개선 과제를 도출하고, 개발·디자인 조직과 협업합니다"</div>
-    <div class="ex-skills"><b>추출할 역량 →</b> 데이터 해석 · 문제 정의 · 서비스 개선 · 협업 · 커뮤니케이션</div></div>`},
-/* 28 */ {part:'PART 3 · 회사가 원하는 신입', menu:'채용공고를 3분 안에 분석해봅니다', type:'content',
-  title:'실습 | 채용공고를 3분 안에 분석해봅니다',
-  sub:'공고를 읽는 데서 끝나지 않고, 나의 다음 경험으로 바꿔봅니다',
-  insight:'반복되는 단어는 회사가 중요하게 보는 역량의 힌트입니다',
-  body: `<div class="twocol">
-    ${colBox({icon:'⏱️',title:'3분 분석 순서',steps:[
-      {i:'1️⃣',k:'반복 단어 ·',v:'가장 자주 등장하는 역량을 3개 찾기'},
-      {i:'2️⃣',k:'필수 조건 ·',v:'신입에게 반드시 필요한 최소 역량 표시하기'},
-      {i:'3️⃣',k:'<span class="em-key">산출물 ·</span>',v:'<span class="em-key">그 역량을 보여줄 결과물 한 가지 정하기</span>'},
-      {i:'4️⃣',k:'<span class="em-key">다음 행동 ·</span>',v:'<span class="em-key">이번 주에 할 수 있는 작은 실험으로 바꾸기</span>'},
-    ]})}
-    ${colBox({hl:true,icon:'📝',title:'실제 문장을 이렇게 바꿔 읽습니다',miniOne:['공고 문장: 사용자 데이터를 분석해 서비스 개선 과제를 도출하고 개발·디자인 조직과 협업','추출 역량: 데이터 해석 · 문제 정의 · 협업','보여줄 결과물: 서비스 개선 분석 1장','이번 주 행동: 관심 서비스 사용자 3명 인터뷰']})}
-  </div>`},
-/* 29 */ {part:'PART 3 · 회사가 원하는 신입', menu:'좋은 보고서는 결정을 만듭니다', type:'content',
-  title:'채용공고에서 요구한 역량은 실제 업무에서 이렇게 드러납니다',
-  sub:'데이터 해석 · 문제 정의 · 협업 역량은 보고서와 의사결정 과정에서 확인됩니다',
-  insight:'보고서의 목적은 조사를 보여주는 것이 아니라 다음 결정을 돕는 것입니다',
-  body: `<div class="twocol" style="grid-template-columns:1.05fr .95fr">
-    <div style="display:flex;flex-direction:column;gap:14px">
-      ${cardGrid(1,[
-        {num:'01',title:'목적이 명확합니다',foot:`<span style="color:var(--muted)">나쁜 제목 · "서비스 현황 보고"</span><br><span style="color:var(--violet-700);font-weight:700">좋은 제목 · "DAU 20% 하락 원인 분석 및 개선안"</span>`},
-      ]).replace('cards cards--1','cards')}
-      ${cardGrid(1,[
-        {num:'02',title:'읽는 사람 기준으로 씁니다',desc:'자료 나열이 아니라 <b style="color:var(--violet-700)">결론 → 이유 → 근거</b> 순서'},
-      ]).replace('cards cards--1','cards')}
-      ${cardGrid(1,[
-        {num:'03',title:'다음 행동이 보입니다',foot:`<span style="color:var(--muted)">나쁜 결론 · "검토 바랍니다"</span><br><span style="color:var(--violet-700);font-weight:700">좋은 결론 · "A안 채택 요청 — 예상 효과와 리스크 첨부"</span>`},
-      ]).replace('cards cards--1','cards')}
-    </div>
-    <div style="display:flex;flex-direction:column;gap:12px">
-      <div class="col col--hl" data-anim style="gap:8px">
-        <div class="col__title" style="font-size:20px">💡 의사결정 인사이트</div>
-        <div class="card__desc" style="font-size:17px">결국 의사결정은 데이터와 근거 위에서 이뤄집니다. 좋은 보고서는 정보를 나열하는 문서가 아니라, 데이터를 해석해 다음 결정을 가능하게 만드는 도구입니다</div>
-      </div>
-      <div class="qbox" data-anim>
-        <h4>📄 보고서에 꼭 있어야 할 근거</h4>
-        <ul><li>무엇이 변했는가 (사실·지표)</li><li>왜 그런가 (원인·해석)</li><li>그래서 무엇을 할 것인가 (대안·액션)</li></ul>
-      </div>
-      <div class="qbox" data-anim>
-        <h4>🔀 의사결정 흐름</h4>
-        <div class="dflow"><span class="node">데이터</span><span class="arr">→</span><span class="node">해석</span><span class="arr">→</span><span class="node">판단</span><span class="arr">→</span><span class="node">실행</span></div>
-      </div>
-    </div>
-  </div>`},
-/* 29 */ {part:'PART 3 · 회사가 원하는 신입', menu:'AI 시대의 신입은 학습 루프를 만듭니다', type:'content',
-  title:'AI 시대의 신입은 학습 루프를 만듭니다',
-  sub:'배운 것을 결과물로 만들고, 피드백을 받아 다음 버전으로 개선하는 반복 구조',
-  insight:'학습은 많이 보는 것이 아니라, 질문 → 시도 → 공유 → 개선을 한 바퀴 돌 때 일어납니다',
-  body: `<div class="twocol">
-    ${colBox({icon:'🔁',title:'한 사이클의 실행 순서',steps:[
-      {i:'❓',k:'질문 ·',v:'관심 서비스의 불편을 한 문장으로 정의합니다'},
-      {i:'⚡',k:'시도 ·',v:'AI와 도구를 활용해 첫 결과물을 빠르게 만듭니다'},
-      {i:'🗣️',k:'공유 ·',v:'사용자·동료에게 보여주고 피드백을 받습니다'},
-      {i:'🔧',k:'개선 ·',v:'피드백을 반영해 두 번째 버전과 회고를 남깁니다'},
-    ]})}
-    ${colBox({hl:true,icon:'🧩',title:'예시: 배달 앱 개선 실험',sub:'하나의 관심을 작은 결과물로 바꾸는 방식',miniOne:['질문: 왜 사용자는 재주문하지 않을까?','시도: 사용자 3명 인터뷰 + 개선 화면 1장','공유: 친구·멘토에게 보여주고 피드백 기록','개선: 수정안과 배운 점을 포트폴리오에 남김']})}
-  </div>`},
-/* 30 */ {part:'PART 3 · 회사가 원하는 신입', menu:'사례 · 배달의민족이 찾는 인재상', type:'content',
-  title:'사례 | 배달의민족이 찾는 인재상',
-  sub:'채용공고의 평면적인 요구사항을 실제 업무·판단·산출물로 입체화해 읽습니다',
-  insight:'신입에게는 기본기와 성장 가능성을, 경력에게는 주도적인 문제 해결과 실행을 기대합니다. 중요한 것은 키워드를 외우는 것이 아니라, 그 요구를 어떤 행동과 결과물로 증명할지 해석하는 것입니다',
-  body: `<div class="case-read-note" data-anim><strong>평면 → 입체</strong> 채용공고의 키워드를 실제 업무, 판단, 결과물로 바꿔 읽어보세요.</div><div class="cards cards--6" style="grid-template-columns:repeat(3,1fr);gap:16px">
-    <div class="card card--hl" data-anim><div class="card__icon">🎯</div><div class="card__label">제품·서비스 기획</div><div class="card__title">고객 문제를 발견하고 우선순위를 정하는 사람</div><div class="card__desc">신입은 사용자 관점과 논리적 사고를, 경력은 데이터·비즈니스 기반의 주도적 기획과 실행을 보여줍니다.</div></div>
-    <div class="card" data-anim><div class="card__icon">💻</div><div class="card__label">개발·Product Engineer</div><div class="card__title">기본기를 바탕으로 끝까지 작동하는 결과를 만드는 사람</div><div class="card__desc">코드 작성뿐 아니라 구조·품질·보안·확장성을 판단하고 제품 개선까지 연결합니다.</div></div>
-    <div class="card" data-anim><div class="card__icon">✏️</div><div class="card__label">디자인</div><div class="card__title">사용자 경험을 구체적인 화면과 흐름으로 만드는 사람</div><div class="card__desc">신입은 관찰과 표현의 기본기를, 경력은 복잡한 문제를 자율적으로 해결하고 다양한 직군과 협업하는 역량을 보여줍니다.</div></div>
-    <div class="card" data-anim><div class="card__icon">📊</div><div class="card__label">데이터·분석</div><div class="card__title">숫자에서 사업의 다음 질문을 찾는 사람</div><div class="card__desc">신입은 분석 기초와 질문하는 힘을, 경력은 핵심 지표·실험·의사결정으로 연결하는 경험을 갖춥니다.</div></div>
-    <div class="card" data-anim><div class="card__icon">📣</div><div class="card__label">마케팅·콘텐츠</div><div class="card__title">고객의 언어로 가치를 전달하고 실험하는 사람</div><div class="card__desc">신입은 타깃과 메시지를 이해하는 감각을, 경력은 캠페인 전략·성과 분석·개선을 주도하는 역량을 보여줍니다.</div></div>
-    <div class="card card--hl" data-anim><div class="card__icon">🤝</div><div class="card__label">공통 인재상</div><div class="card__title">자율적으로 움직이되 팀으로 성과를 만드는 사람</div><div class="card__desc">규율 위의 자율 · 스타보다 팀워크 · 진지함과 위트 · 열심만큼 성과</div></div>
-  </div><div class="source-note">출처: <a href="https://career.woowahan.com/" target="_blank">우아한형제들 인재영입</a> (공식 채용 페이지, 2026.09.09 확인). 직군별 문장은 공개 직무 설명을 신입·경력 관점으로 요약한 내용입니다.</div>`},
-/* 31 */ {part:'PART 3 · 회사가 원하는 신입', menu:'사례 · 카카오가 찾는 인재상', type:'content',
-  title:'사례 | 카카오가 찾는 인재상',
-  sub:'신입 공채와 경력 공고에서 공통으로 보이는 기대 역량',
-  insight:'카카오는 새로운 기술을 탐색하고, 다양한 생각을 나누며, 실제 결과로 연결하는 사람을 찾습니다',
-  body: `<div class="cards cards--6" style="grid-template-columns:repeat(3,1fr);gap:16px">
-    <div class="card card--hl" data-anim><div class="card__icon">🌱</div><div class="card__label">신입 크루</div><div class="card__title">기본기를 바탕으로 배우고 도전하는 사람</div><div class="card__desc">2026 신입 크루 공채와 신입 기술 공고에서 보이듯, 기초 역량과 새로운 기술·업무에 대한 도전이 중요합니다.</div></div>
-    <div class="card" data-anim><div class="card__icon">🤖</div><div class="card__label">테크·AI</div><div class="card__title">기술을 사용자 경험과 서비스 가치로 연결하는 사람</div><div class="card__desc">ML·LLM·추천·SRE 등 전문성을 바탕으로 안정적이고 확장 가능한 서비스를 만듭니다.</div></div>
-    <div class="card" data-anim><div class="card__icon">🎨</div><div class="card__label">디자인</div><div class="card__title">복잡한 문제를 사용자 경험으로 풀어내는 사람</div><div class="card__desc">AI 서비스 UI·인터랙션처럼 기술과 디자인이 만나는 문제를 고민하고 실험합니다.</div></div>
-    <div class="card" data-anim><div class="card__icon">🤝</div><div class="card__label">협업</div><div class="card__title">다양한 생각을 나누고 함께 결과를 만드는 사람</div><div class="card__desc">기획·개발·데이터·마케팅 등 서로 다른 직군과 원활하게 협업합니다.</div></div>
-    <div class="card" data-anim><div class="card__icon">⚡</div><div class="card__label">자율적 실행</div><div class="card__title">문제를 스스로 정의하고 끝까지 실행하는 사람</div><div class="card__desc">지시받은 일을 처리하는 데 그치지 않고, 불편을 발견해 개선을 주도합니다.</div></div>
-    <div class="card card--hl" data-anim><div class="card__icon">🚀</div><div class="card__label">신입·경력 공통</div><div class="card__title">새로운 가능성을 실제 서비스로 만드는 사람</div><div class="card__desc">신입은 성장 가능성과 기본기를, 경력은 전문성·주도성·확장된 책임을 증명합니다.</div></div>
-  </div><div class="source-note">출처: <a href="https://careers.kakao.com/jobs?skillSet=&page=1&company=KAKAO&part=TECHNOLOGY&employeeType=&keyword=" target="_blank">카카오 영입 · 진행 중 공고</a>, <a href="https://careers.kakao.com/index?t_src=mainpage" target="_blank">카카오 영입 메인</a> (공식 채용 페이지, 2026.09.09 확인).</div>`},
-/* 32 */ {part:'PART 3 · 회사가 원하는 신입', menu:'AI 시대에 필요한 인재는 어떤 사람인가', type:'content',
-  title:'AI 시대에 필요한 인재는 어떤 사람인가',
-  sub:'기업 사례에서 공통으로 보이는 다섯 가지 역량',
-  insight:'이 역량은 말로 설명하는 것이 아니라, 작은 결과물과 문제 해결 경험으로 증명해야 합니다',
-  body: cardGrid(6,[
-    {icon:'🔍',title:'문제를 발견합니다',desc:'사용자와 현장의 불편을 관찰하고, 해결할 문제를 구체화합니다'},
-    {icon:'🤖',title:'AI를 활용합니다',desc:'AI를 목적에 맞는 도구로 사용해 탐색과 실행의 속도를 높입니다'},
-    {icon:'⚖️',title:'결과를 검증합니다',desc:'사실·품질·보안·맥락을 확인하고 최종 판단에 책임집니다'},
-    {icon:'🤝',title:'사람과 협업합니다',desc:'다른 직군의 관점과 요구를 듣고 하나의 방향으로 정렬합니다'},
-    {icon:'🔁',hl:true,title:'반복해서 개선합니다',desc:'작게 만들고 공유하고 피드백을 받아 다음 버전으로 발전시킵니다'},
-  ])},
-/* 33 */ {part:'PART 4 · 경험 만들기', menu:'PART 4 · 어떤 경험을 만들어야 하는가', type:'divider',
-  kicker:'PART 4', ghost:'04',
-  title:'지금부터 어떤 경험을<br><span class="hl">만들어야 하는가</span>',
-  sub:'채용공고 · 프로젝트 · 포트폴리오 · 실행 로드맵'},
-/* 34 */ {part:'PART 4 · 경험 만들기', menu:'좋은 경험의 조건을 먼저 확인합니다', type:'content',
-  title:'경험의 종류보다 좋은 경험의 조건이 중요합니다',
-  sub:'사이드 프로젝트·공모전·인턴·개인 프로젝트 모두 같은 기준으로 봅니다',
-  insight:'활동의 개수보다 무엇을 발견하고, 어떤 판단을 했으며, 무엇이 달라졌는지가 중요합니다',
-  body: cardGrid(5,[
-    {icon:'🔍',title:'실제 문제',desc:'누군가의 불편이나 기회를 관찰했는가'},
-    {icon:'👤',title:'나의 역할',desc:'팀 안에서 내가 직접 맡은 일이 분명한가'},
-    {icon:'⚖️',title:'나의 판단',desc:'대안을 비교하고 선택한 근거가 있는가'},
-    {icon:'📈',title:'변화와 결과',desc:'사용자·지표·과정에서 달라진 점이 있는가'},
-    {icon:'🔁',hl:true,title:'회고와 개선',desc:'다시 한다면 무엇을 바꿀지 설명할 수 있는가'},
-  ])},
-/* 35 */ {part:'PART 4 · 경험 만들기', menu:'예시 · 작은 경험을 직무 역량으로 바꾸기', type:'content',
-  title:'예시 | 작은 경험을 직무 역량으로 바꾸는 과정',
-  sub:'※ 실제 수강생 사례를 확보하면 이 페이지의 예시를 교체할 수 있습니다',
-  insight:'작은 결과물도 문제·역할·판단·결과가 연결되면 직무 경험으로 설명할 수 있습니다',
-  body: `<div class="twocol">
-    ${colBox({icon:'🧑‍🎓',title:'예시 수강생의 출발점',miniOne:['비전공자라 직무 경험이 부족함','평소 자주 쓰는 배달 앱의 불편을 발견함','서비스기획 직무에 관심은 있지만 보여줄 결과물이 없음']})}
-    ${colBox({hl:true,icon:'🧩',title:'작은 결과물로 전환',steps:[
-      {i:'🔍',k:'문제 ·',v:'재주문 과정에서 메뉴 비교가 어렵다는 가설 설정'},
-      {i:'📝',k:'실행 ·',v:'사용자 3명 인터뷰와 개선 화면 1장 제작'},
-      {i:'🗣️',k:'공유 ·',v:'친구·멘토 피드백을 받고 수정 이유 기록'},
-      {i:'📁',k:'증명 ·',v:'문제부터 개선안까지 포트폴리오 한 장으로 정리'},
-    ]})}
-  </div>`},
-/* 31 */ {part:'PART 4 · 경험 만들기', menu:'좋은 포트폴리오는 사고 과정을', type:'content',
-  title:'좋은 포트폴리오는 사고 과정을 보여줍니다',
-  insight:'결과물이 작아도 문제 해결 과정이 선명하면 좋은 포트폴리오가 됩니다',
-  body: twoCol(
-    {title:'사고 과정의 흐름',sub:'문제를 정의하고 해결책을 찾아가는 과정',steps:[
-      {i:'🔍',k:'문제 ·',v:'어떤 불편이나 기회를 발견했는가'},
-      {i:'👥',k:'역할 ·',v:'팀에서 내가 담당한 것은 무엇인가'},
-      {i:'⚙️',k:'실행 ·',v:'실제로 무엇을 만들고 수행했는가'},
-      {i:'🔁',k:'회고 ·',v:'다시 한다면 무엇을 바꿀 것인가'},
-    ]},
-    {hl:true,title:'사고 과정을 보여주는 근거',sub:'과정과 판단의 근거를 남겨 결과물로 증명',steps:[
-      {i:'✏️',k:'근거 ·',v:'인터뷰·관찰·데이터로 무엇을 확인했는가'},
-      {i:'⚖️',k:'판단 ·',v:'어떤 대안을 비교하고 선택했는가'},
-      {i:'📈',k:'결과 ·',v:'무엇이 달라졌는가'},
-      {i:'📄',k:'결과물 ·',v:'요구사항 목록·키워드 표·분석 문서·포트폴리오'},
-    ]}
-  )},
-/* 32 */ {part:'PART 4 · 경험 만들기', menu:'이번 주부터 6개월까지 로드맵', type:'content',
-  title:'이번 주부터 6개월까지 실행 로드맵',
-  insight:'결과물이 작아도 문제 해결 과정이 선명하면 좋은 포트폴리오가 됩니다',
-  body: table(['시점','실행','남길 결과물'],[
-    [em('🚩')+'오늘','관심 직무 채용공고 1개 저장·분석','요구 역량 목록'],
-    [em('🔍')+'이번 주','같은 직무 공고 3개 비교','반복 키워드 표'],
-    [em('📊')+'1개월','관심 서비스 또는 데이터 분석 1개','분석 문서'],
-    [em('🔧')+'3개월','사이드 프로젝트·공모전 1개','포트폴리오'],
-    [em('🏆')+'6개월','인턴·현장실습·부트캠프 도전','실무 경험'],
-  ])},
-/* 33 */ {part:'PART 4 · 경험 만들기', menu:'취업은 여러 커리어 방식 중 하나', type:'content',
-  title:'취업은 여러 커리어 방식 중 하나입니다',
-  insight:'한 번의 취업보다 이동 가능한 역량이 중요합니다',
-  body: table(['커리어 방식','특징','필요한 준비'],[
-    [em('💼')+'취업','조직 안에서 역할과 성장 경로를 경험','직무 역량·협업·포트폴리오'],
-    [em('🚀')+'창업','문제와 시장을 직접 선택','고객 검증·실행·수익 구조'],
-    [em('🧑‍💻')+'프리랜서','전문성을 서비스로 제공','포트폴리오·영업·계약'],
-    [em('🎯')+'프로젝트형 근로','프로젝트 단위로 여러 조직과 협업','특정 역량·평판·네트워크'],
-    [em('🔀')+'하이브리드','직장·강의·콘텐츠·프로젝트 병행','시간 관리·개인 브랜드·전문성'],
-  ])},
-/* 34 */ {part:'PART 5 · 멘토의 이야기', menu:'PART 5 · 커리어의 전환점에서 배운 것', type:'divider',
-  kicker:'PART 5', ghost:'05',
-  title:'멘토 김희정,<br><span class="hl">커리어의 전환점에서 배운 것</span>',
-  sub:'선택 · 성장 · 실패 · 생존 노하우'},
-/* 35 */ {part:'PART 5 · 멘토의 이야기', menu:'내 커리어도 선택의 연속이었습니다', type:'content',
-  title:'내 커리어도 선택의 연속이었습니다',
-  insight:'완벽한 계획은 없었습니다, 다음 선택에 필요한 근거를 만들었습니다',
-  body: table(['시기','선택','당시의 이유'],[
-    ['20대 초','콘텐츠 기획','글과 콘텐츠가 좋았음'],
-    ['20대 중','웹에이전시 PM','디지털 산업의 가능성을 느낌'],
-    ['30대 초','대기업 IT·서비스 조직','더 큰 서비스와 조직을 경험하고 싶었음'],
-    ['30대 중','프리랜서','일하는 방식의 자율성을 원했음'],
-    ['30대 후','대기업','산업과 서비스 운영 경험을 넓히고 싶었음'],
-    ['40대 초','첫 번째 창업','스타트업으로 시장 가능성을 확인하고, 기획·개발·운영·고객 대응까지 A to Z를 직접 경험함'],
-    ['40대 중','두 번째 창업','실제 수익과 시장 반응을 확인하며 사업의 지속 가능성에 대한 확신을 얻음'],
-  ],{hlRow:6})},
-/* 36 */ {part:'PART 5 · 멘토의 이야기', menu:'전환점에서는 세 가지 신호를', type:'content',
-  title:'커리어 전환은 세 가지 신호에서 시작됐습니다',
-  sub:'일반 직장인으로 기반을 쌓고, 성장과 시장의 신호를 확인했습니다',
-  insight:'방향은 감각으로 발견하지만, 다음 선택은 성장과 시장의 데이터로 결정했습니다',
-  body: cardGrid(3,[
-    {label:'다양한 직장 경험',icon:'🧱',title:'기반을 쌓는 시간',desc:'여러 조직과 역할을 경험하며 직무 역량과 협업 방식을 쌓고, 다음 선택에 필요한 근거를 축적함'},
-    {label:'대기업',icon:'📈',title:'성장 신호',desc:'더 큰 문제와 책임을 경험하며 내가 어떤 환경에서 더 성장하는지 확인함'},
-    {label:'창업',icon:'📊',hl:true,title:'데이터 신호',desc:'실제 수익과 고객 반응이 움직이는지 확인하며 시장 가능성과 지속 가능성을 판단함'},
-  ])},
-/* 37 */ {part:'PART 5 · 멘토의 이야기', menu:'연봉보다 배움의 밀도', type:'content',
-  title:'주니어 때는 연봉보다 배움의 밀도가 중요합니다',
-  insight:'지금이 가장 많이 배우고 시도할 수 있는 시기입니다',
-  body: `<div class="regret-row">
-    <div class="regret-box" data-anim><span class="rb-emoji">🚩</span><div><div class="rb-title">후회한 선택</div><div class="rb-sub">배움보다 높은 연봉을 먼저 쫓은 이직</div></div></div>
-    <div class="regret-box" data-anim><span class="rb-emoji">📉</span><div><div class="rb-title">당시의 결과</div><div class="rb-sub">연봉은 올랐지만 새로운 역할과 결과물이 충분히 쌓이지 않음</div></div></div>
-  </div>
-  <div class="lessons-label" data-anim>💡 이후의 교훈</div>
-  <div class="lessons">
-    <div class="lesson l1"><span class="lesson-num">01</span><p>성장 없는 연봉 상승은 오래가기 어렵습니다</p></div>
-    <div class="lesson l2"><span class="lesson-num">02</span><p>주니어 때는 좋은 동료와 어려운 문제를 만나는 것이 중요합니다</p></div>
-    <div class="lesson l3"><span class="lesson-num">03</span><p>다음 이직에서 설명할 수 있는 경험을 남겨야 합니다</p></div>
-  </div>`},
-/* 38 */ {part:'PART 5 · 멘토의 이야기', menu:'현장에서 배운 것, 세 가지', type:'content',
-  title:'현장에서 배운 것, 세 가지만 기억하세요',
-  insight:'오늘 온 것만으로 끝내지 말고, 작은 결과물 하나를 남기세요',
-  body: cardGrid(3,[
-    {icon:'❓',center:true,title:'지금 잘 모르는 것이 당연합니다',desc:'모르면서 질문하고 부딪히는 것이 이 시기의 일입니다'},
-    {icon:'🤝',center:true,title:'직무보다 사람과 협업을 먼저 배우세요',desc:'모든 결과물은 다른 사람과의 연결 속에서 만들어집니다'},
-    {icon:'✅',center:true,hl:true,title:'작은 것 하나를 끝내보세요',desc:'작은 프로젝트 하나가 커리어의 근육을 만듭니다',chip:'🙋 Chang\'s'},
-  ])},
-/* 39 */ {part:'OUTRO · 행동 정리', menu:'OUTRO · 오늘의 핵심을 행동으로', type:'divider',
-  kicker:'OUTRO', ghost:'✦',
-  title:'오늘의 핵심을<br><span class="hl">행동으로 정리합니다</span>'},
-/* 40 */ {part:'OUTRO · 행동 정리', menu:'오늘의 핵심 3줄', type:'content', stagedBody:true,
-  title:'오늘의 핵심 3줄', sub:'박스를 클릭하면 하나씩 나타납니다',
-  body: `<div class="cards cards--3">
-    ${kCard({icon:'🏗️',sublabel:'테크 기업의 본질',title:'테크 기업은 기술로 고객의 문제를 해결하는 조직입니다',foot:'개발자만이 아니라 문제 정의·경험 설계·데이터·성장·보안을 담당하는 다양한 역할이 함께 움직입니다'})}
-    ${kCard({icon:'🚪',sublabel:'기회의 확장',title:'테크 기업에는 문제를 발견하고 해결하는 다양한 역할이 필요합니다',foot:'개발·기획·디자인·데이터·마케팅·보안이 각자의 전문성으로 고객 가치를 만듭니다'})}
-    ${kCard({icon:'🎯',hl:true,pill:'⭐ 핵심 메시지 ⭐',sublabel:'증명의 기준',title:'가능성은 말이 아니라 작은 결과물과 문제 해결 경험으로 증명해야 합니다',foot:'작은 프로젝트·실험·분석 결과가 가장 설득력 있는 포트폴리오가 됩니다'})}
-  </div>`},
-/* 41 */ {part:'OUTRO · 행동 정리', menu:'오늘 30분 안에 할 일', type:'content',
-  title:'오늘 30분 안에 할 일', sub:'관심 직무의 채용공고 1개를 저장하세요',
-  insight:'강의는 들어도 행동하지 않으면 달라지지 않습니다',
-  body: cardGrid(3,[
-    {icon:'🌐',label:'어디서',title:'원티드 · 잡코리아 · 사람인 · 링크드인',desc:'네 곳 중 한 곳에서'},
-    {icon:'⏰',label:'어떻게',ol:['관심 직무를 검색합니다','신입·주니어 공고를 하나 선택합니다','주요업무의 동사(구축·분석·도출·지원 등의 행동)에 표시합니다','자격요건과 우대사항을 구분합니다','부족한 역량 하나를 적습니다']},
-    {icon:'☕',hl:true,label:'남길 결과',list:['관심 직무 1개','채용공고 1개','반복 역량 3개','이번 달 만들 결과물 1개']},
-  ])},
-/* 42 */ {part:'OUTRO · 행동 정리', menu:'내 커리어 액션 플랜', type:'content',
-  title:'내 커리어 액션 플랜',
-  insight:'계획을 크게 세우기보다 다음 행동을 작게 정하세요',
-  body: `<div class="ws">
-    ${[['🎯','관심 직무'],['📋','분석할 채용공고'],['🧩','지금 부족한 역량 1개'],['🛠️','이번 달 만들 결과물 1개'],['🚀','이번 주 첫 행동',true]]
-      .map(r=>`<div class="ws-row ${r[2]?'hl':''}" data-anim><span class="ws-emoji">${r[0]}</span><span class="ws-label">${r[1]}</span><span class="ws-blank"></span></div>`).join('')}
-  </div>`},
-/* 43 */ {part:'OUTRO · 행동 정리', menu:'감사합니다 · Q&A', type:'closing',
-  title:'감사합니다', sub:'궁금한 것, 무엇이든 물어보세요',
-  insight:'정답 없는 질문도 괜찮습니다, 같이 생각해보겠습니다',
-  body: cardGrid(4,[
-    {icon:'💬',label:'직무',desc:'"서비스기획자와 PM은 무엇이 다른가요?"'},
-    {icon:'🚪',label:'취업',desc:'"나에게 맞는 테크 역할과 준비 방법은 무엇인가요?"'},
-    {icon:'🗂️',label:'포트폴리오',desc:'"프로젝트가 없으면 무엇부터 시작해야 하나요?"'},
-    {icon:'🧭',label:'커리어',desc:'"아직 하고 싶은 일이 없으면 어떻게 해야 하나요?"'},
-  ]) + `<div class="pre-q-panel" data-anim><div class="pre-q-title">📮 사전 질문</div><div class="pre-q-grid">
-    <div class="pre-q">개인정보보호 직무에서 가장 중요한 역량은 무엇인가요?</div>
-    <div class="pre-q">개인정보보호 직무 신입에게 추천하는 스펙은 무엇인가요?</div>
-    <div class="pre-q">AI 시대에 개인정보보호 직무 지원자로서 차별점을 갖추려면 무엇이 필요한가요?</div>
-    <div class="pre-q">개인정보 프로젝트 없이 기술 위주로 준비해도 현실적으로 지원 가능한가요?</div>
-    <div class="pre-q">멘토님이 취업할 당시의 스펙은 무엇이었나요?</div>
-    <div class="pre-q">AI로 인한 사업 변화 속에서 취업을 위해 무엇을 준비해야 하나요?</div>
-    <div class="pre-q">비전공자는 어떤 강의와 방법으로 보안 역량을 개발하면 좋을까요?</div>
-    <div class="pre-q">테크 업계의 주요 직무와 실제 하는 일은 무엇인가요?</div>
-  </div></div>`},
-];
-
-/* ============================ render ============================ */
-function renderSlide(s, idx){
-  const el = document.createElement('section');
-  el.className = 'slide';
-  el.dataset.idx = idx;
-  if(s.title && (s.title.includes('배달의민족이') || s.title.includes('카카오가'))) el.classList.add('s-company-case');
-
-  if(s.type === 'cover'){
-    el.classList.add('s-cover');
-    el.innerHTML = `
-      <div data-anim class="cover-title"><span class="ct-inner">취업 말고 커리어</span></div>
-      <div data-anim class="cover-sub">AI 시대, 나에게 맞는 테크 커리어 찾기</div>
-      <div data-anim class="cover-rule"></div>
-      <div data-anim class="cover-name">김희정</div>
-      <div data-anim class="cover-role">AI 콘텐츠 제작사 대표 · 생성형 AI 강사 · 대학 겸임교수</div>
-      <div data-anim class="cover-occasion">2026 성신여자대학교 직무 멘토링 특강</div>
-      <div data-anim class="cover-quote-wrap"><div class="cover-quote">"오늘은 취업 정보를 나열하는 시간이 아니라, 여러분의 커리어 선택지를 넓히는 시간입니다."</div></div>`;
-    return el;
+</script><script>
+document.querySelectorAll('.manual-slider').forEach(view=>{
+ const track=view.firstElementChild;
+ if(view.id==='portfolioSlider'){[...track.children].forEach(card=>{const copy=card.cloneNode(true);copy.setAttribute('aria-hidden','true');copy.tabIndex=-1;track.appendChild(copy)})}
+ let hovering=false,down=false,moved=false,start=0,initial=0,pauseUntil=0,last=0;
+ const reduced=matchMedia('(prefers-reduced-motion: reduce)');
+ function width(){return (track.scrollWidth+parseFloat(getComputedStyle(track).gap||0))/2}
+ function tick(now){
+  const elapsed=last?Math.min(now-last,50):0;last=now;
+  if(!reduced.matches&&!document.hidden&&!hovering&&!down&&now>pauseUntil&&!view.contains(document.activeElement)){
+   view.scrollLeft+=elapsed*(view.id==='labSlider'?0.025:0.032);
+   if(view.scrollLeft>=width())view.scrollLeft-=width();
   }
-
-  if(s.type === 'divider'){
-    el.classList.add('s-divider');
-    el.innerHTML = `
-      <div class="ghost">${s.ghost||''}</div>
-      <div data-anim class="div-kicker">${s.kicker}</div>
-      <h1 data-anim class="div-title">${s.title}</h1>
-      ${s.sub?`<div data-anim class="div-sub">${s.sub}</div>`:''}`;
-    return el;
-  }
-
-  if(s.type === 'closing'){
-    el.innerHTML = `
-      <div class="closing-head">
-        <div data-anim class="closing-title"><span class="ct-inner">${s.title}</span></div>
-        <div data-anim class="closing-sub"><span class="cl-sub-inner">${s.sub}</span></div>
-      </div>
-      <div class="s-body frag frag-body">${s.body}</div>
-      ${s.insight?`<div class="frag frag-insight insight-wrap"><div class="insight typo">${typoWords(s.insight)}</div></div>`:''}`;
-    return el;
-  }
-
-  // default content
-  el.innerHTML = `
-    <div class="s-head${s.sub?'':' tight'}">
-      ${s.kicker?`<div data-anim class="kicker">${s.kicker}</div>`:''}
-      ${s.emoji?`<div data-anim class="s-emoji">${s.emoji}</div>`:''}
-      <h1 data-anim class="s-title">${s.title}</h1>
-      ${s.sub?`<div data-anim class="s-sub">${s.sub}</div>`:''}
-    </div>
-    <div class="s-body${s.stagedBody?'':' frag frag-body'}">${s.body||''}</div>
-    ${s.insight?`<div class="frag frag-insight insight-wrap"><div class="insight typo">${typoWords(s.insight)}</div></div>`:''}`;
-  return el;
-}
-
-const deck = document.getElementById('deck');
-const slideEls = SLIDES.map((s,i)=>{ const el = renderSlide(s,i); deck.appendChild(el); return el; });
-document.getElementById('tot').textContent = SLIDES.length;
-
-/* ============================ navigation ============================ */
-let cur = 0;
-let animateBg = true; // background lines only animate on first & last slide
-const prevBtn = document.getElementById('prev');
-const nextBtn = document.getElementById('next');
-const progress = document.getElementById('progress');
-const curEl = document.getElementById('cur');
-
-function stagger(container){
-  container.querySelectorAll('[data-anim]').forEach((n,k)=>n.style.setProperty('--i',k));
-}
-
-/* reveal step 0 (head) of a slide, resetting all fragments. full=true reveals everything. */
-function prepareSlide(el, full){
-  el.querySelectorAll('.reveal').forEach(x=>x.classList.remove('reveal'));
-  el.querySelectorAll('.frag').forEach(f=>f.classList.remove('is-shown','reveal'));
-  el.classList.remove('reveal');
-  void el.offsetWidth; // reflow so transitions replay
-  el.querySelectorAll('.s-head,.closing-head').forEach(h=>{ stagger(h); h.classList.add('reveal'); });
-  if(el.classList.contains('s-cover') || el.classList.contains('s-divider')){ stagger(el); el.classList.add('reveal'); }
-  const frags = [...el.querySelectorAll('.frag')];
-  if(full){
-    frags.forEach(f=>{ stagger(f); f.classList.add('is-shown','reveal'); });
-    el.dataset.step = String(frags.length);
-  } else {
-    el.dataset.step = '0';
-  }
-}
-
-function go(n, full){
-  n = Math.max(0, Math.min(SLIDES.length-1, n));
-  if(n === SLIDES.length-1) full = true; // last slide always fully expanded
-  cur = n;
-  slideEls.forEach((el,i)=>{
-    el.classList.remove('is-active','is-leaving-left');
-    if(i === cur){
-      prepareSlide(el, full);
-      el.classList.add('is-active');
-    } else if(i < cur){
-      el.classList.add('is-leaving-left');
-    }
-  });
-  updateChrome();
-}
-
-/* advance one step within the slide, or move to next slide */
-function advance(){
-  if(document.body.classList.contains('menu-open')) return;
-  const el = slideEls[cur];
-  const frags = [...el.querySelectorAll('.frag')];
-  const step = +(el.dataset.step || 0);
-  if(step < frags.length){
-    const f = frags[step];
-    stagger(f);
-    f.classList.add('is-shown','reveal');
-    el.dataset.step = String(step + 1);
-    updateChrome();
-  } else if(cur < SLIDES.length-1){
-    go(cur + 1);
-  }
-}
-
-/* step back within the slide, or move to previous slide (fully revealed) */
-function retreat(){
-  if(document.body.classList.contains('menu-open')) return;
-  const el = slideEls[cur];
-  const frags = [...el.querySelectorAll('.frag')];
-  const step = +(el.dataset.step || 0);
-  if(step > 0){
-    frags[step-1].classList.remove('is-shown','reveal');
-    el.dataset.step = String(step - 1);
-    updateChrome();
-  } else if(cur > 0){
-    go(cur - 1, true);
-  }
-}
-
-function updateChrome(){
-  const el = slideEls[cur];
-  const frags = el.querySelectorAll('.frag').length;
-  const step = +(el.dataset.step || 0);
-  curEl.textContent = cur + 1;
-  progress.style.width = (cur/(SLIDES.length-1)*100) + '%';
-  prevBtn.disabled = (cur===0 && step===0);
-  nextBtn.disabled = (cur===SLIDES.length-1 && step>=frags);
-  animateBg = (cur===0 || cur===SLIDES.length-1);
-  updateMenuActive();
-}
-
-prevBtn.addEventListener('click',retreat);
-nextBtn.addEventListener('click',advance);
-
-document.addEventListener('keydown',e=>{
-  if(e.key==='ArrowRight'||e.key==='PageDown'||e.key===' '){ e.preventDefault(); advance(); }
-  else if(e.key==='ArrowLeft'||e.key==='PageUp'){ e.preventDefault(); retreat(); }
-  else if(e.key==='Home'){ go(0); }
-  else if(e.key==='End'){ go(SLIDES.length-1, true); }
-  else if(e.key==='Escape'){ closeMenu(); }
+  requestAnimationFrame(tick);
+ }
+ view.addEventListener('mouseenter',()=>hovering=true);view.addEventListener('mouseleave',()=>hovering=false);
+ view.addEventListener('pointerdown',e=>{pauseUntil=performance.now()+4500;if(e.pointerType!=='mouse')return;down=true;moved=false;start=e.clientX;initial=view.scrollLeft});
+ view.addEventListener('pointermove',e=>{if(!down)return;const delta=e.clientX-start;if(Math.abs(delta)>6){moved=true;view.classList.add('dragging');view.scrollLeft=initial-delta;e.preventDefault()}});
+ const release=()=>{down=false;view.classList.remove('dragging')};window.addEventListener('pointerup',release);view.addEventListener('pointercancel',release);
+ view.addEventListener('dragstart',e=>e.preventDefault());
+ view.addEventListener('click',e=>{if(moved){e.preventDefault();moved=false}},true);
+ view.addEventListener('wheel',()=>pauseUntil=performance.now()+4500,{passive:true});
+ document.querySelectorAll('[data-carousel="'+view.id+'"]').forEach(button=>button.addEventListener('click',()=>{
+  pauseUntil=performance.now()+5000;
+  const direction=Number(button.dataset.direction),step=track.firstElementChild.getBoundingClientRect().width+parseFloat(getComputedStyle(track).gap||0);
+  if(direction<0&&view.scrollLeft<step)view.scrollLeft+=width();
+  if(direction>0&&view.scrollLeft>=width())view.scrollLeft-=width();
+  view.scrollBy({left:direction*step,behavior:reduced.matches?'instant':'smooth'});
+ }));
+ requestAnimationFrame(tick);
 });
-
-/* click anywhere on the stage advances the build */
-const stage=document.querySelector('.stage');
-stage.addEventListener('click',()=>advance());
-
-/* swipe */
-let tx=0,ty=0;
-stage.addEventListener('touchstart',e=>{tx=e.touches[0].clientX;ty=e.touches[0].clientY;},{passive:true});
-stage.addEventListener('touchend',e=>{
-  const dx=e.changedTouches[0].clientX-tx, dy=e.changedTouches[0].clientY-ty;
-  if(Math.abs(dx)>60 && Math.abs(dx)>Math.abs(dy)){ dx<0?advance():retreat(); }
-},{passive:true});
-
-/* ============================ menu ============================ */
-const menuList = document.getElementById('menuList');
-let lastPart = null;
-function menuTitle(s){
-  const raw = s.menu || s.title || '';
-  return raw.replace(/<br\s*\/?>(\s*)/gi,' ').replace(/<[^>]*>/g,'').replace(/\s+/g,' ').trim();
-}
-SLIDES.forEach((s,i)=>{
-  if(s.part !== lastPart){
-    const h = document.createElement('div');
-    h.className='menu-sec'; h.textContent = s.part;
-    menuList.appendChild(h); lastPart = s.part;
-  }
-  const b = document.createElement('button');
-  b.className='menu-item'; b.dataset.idx=i;
-  b.innerHTML = `<span class="mi-num">${i+1}</span><span class="mi-title">${menuTitle(s)}</span>`;
-  b.addEventListener('click',()=>{ go(i, true); closeMenu(); });
-  menuList.appendChild(b);
-});
-const menuItems = [...menuList.querySelectorAll('.menu-item')];
-function updateMenuActive(){
-  menuItems.forEach(it=>it.classList.toggle('active', +it.dataset.idx===cur));
-  const active = menuItems.find(it=>+it.dataset.idx===cur);
-  if(active && document.body.classList.contains('menu-open')) active.scrollIntoView({block:'nearest'});
-}
-
-const hamburger = document.getElementById('hamburger');
-const scrim = document.getElementById('scrim');
-function openMenu(){ document.body.classList.add('menu-open'); updateMenuActive(); }
-function closeMenu(){ document.body.classList.remove('menu-open'); }
-function toggleMenu(){ document.body.classList.contains('menu-open')?closeMenu():openMenu(); }
-hamburger.addEventListener('click',toggleMenu);
-scrim.addEventListener('click',closeMenu);
-
-/* ============================ fit scaling ============================ */
-function fit(){
-  const s = Math.min(window.innerWidth/1280, window.innerHeight/905);
-  deck.style.transform = `translate(-50%,-50%) scale(${s})`;
-}
-window.addEventListener('resize',fit);
-fit();
-
-/* ============================ animated purple lines ============================ */
-const canvas = document.getElementById('bg-lines');
-const ctx = canvas.getContext('2d');
-let W,H,DPR;
-function resizeCanvas(){
-  DPR = Math.min(window.devicePixelRatio||1, 2);
-  W = window.innerWidth; H = window.innerHeight;
-  canvas.width = W*DPR; canvas.height = H*DPR;
-  ctx.setTransform(DPR,0,0,DPR,0,0);
-}
-resizeCanvas();
-window.addEventListener('resize',resizeCanvas);
-
-const lines = [];
-const NLINE = 7;
-for(let i=0;i<NLINE;i++){
-  lines.push({
-    amp: 60 + Math.random()*90,
-    yBase: (i+0.5)/NLINE,
-    speed: 0.00016 + Math.random()*0.00020,
-    phase: Math.random()*Math.PI*2,
-    freq: 0.9 + Math.random()*1.3,
-    width: 1 + Math.random()*1.6,
-    alpha: 0.05 + Math.random()*0.07,
-    drift: (Math.random()<0.5?-1:1)*(0.4+Math.random()*0.5),
-  });
-}
-let bgT = 0, lastTs = 0;
-function draw(ts){
-  if(lastTs && animateBg){ bgT += (ts - lastTs); }
-  lastTs = ts;
-  const t = bgT;
-  ctx.clearRect(0,0,W,H);
-  for(const l of lines){
-    ctx.beginPath();
-    const yc = H*l.yBase;
-    const grad = ctx.createLinearGradient(0,0,W,0);
-    grad.addColorStop(0,`rgba(124,58,237,0)`);
-    grad.addColorStop(0.5,`rgba(124,58,237,${l.alpha})`);
-    grad.addColorStop(1,`rgba(139,92,246,0)`);
-    ctx.strokeStyle = grad;
-    ctx.lineWidth = l.width;
-    for(let x=0;x<=W;x+=14){
-      const y = yc
-        + Math.sin(x/W*Math.PI*2*l.freq + t*l.speed*1000 + l.phase)*l.amp
-        + Math.sin(x/W*Math.PI*4 + t*l.speed*600)*l.amp*0.25;
-      x===0?ctx.moveTo(x,y):ctx.lineTo(x,y);
-    }
-    ctx.stroke();
-  }
-  requestAnimationFrame(draw);
-}
-requestAnimationFrame(draw);
-
-/* init */
-go(0);
-</script>
-</body>
-</html>
+</script><script>
+/* 우측 도크 : 현재 섹션 하이라이트 */
+(()=>{const links=[...document.querySelectorAll('.side-dock a[data-dock]')];const map={top:'hero',shift:'shift',build:'build',lab:'lab',history:'history',consult:'consult'};
+const set=id=>{links.forEach(a=>a.classList.toggle('is-active',map[a.dataset.dock]===id))};
+if('IntersectionObserver' in window){const io=new IntersectionObserver(es=>{es.forEach(e=>{if(e.isIntersecting)set(e.target.id)})},{rootMargin:'-40% 0px -55% 0px'});
+Object.values(map).forEach(id=>{const el=document.getElementById(id);if(el)io.observe(el)});}
+})();
+</script></body></html>
