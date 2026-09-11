@@ -95,9 +95,58 @@ body{
 .s-sub{font-size:22px;font-weight:500;color:var(--muted);margin-top:12px;line-height:1.4;word-break:keep-all}
 .s-head{margin-bottom:26px}
 .s-head.tight{margin-bottom:18px}
+.s-career-criteria .s-head{margin-bottom:12px}
+.s-career-criteria .s-body{justify-content:flex-start;gap:10px}
+.s-career-criteria .cards{transform:scale(.94);transform-origin:top center;margin-bottom:-10px}
+.s-career-criteria .example{margin-top:0}
+.s-ai-talent .s-body{justify-content:flex-start}
+.s-ai-talent .cards{grid-template-columns:repeat(6,1fr)}
+.s-ai-talent .cards .card{grid-column:span 2;text-align:center;align-items:center}
+.s-ai-talent .cards .card:nth-child(4){grid-column:2 / span 2}
+.s-ai-talent .cards .card:nth-child(5){grid-column:4 / span 2}
+.s-ai-talent .card__desc{max-width:260px}
+.s-role-proof .s-body{justify-content:flex-start;gap:12px}
+.s-role-proof .insight-wrap{margin-top:10px}
+.s-role-proof .insight{padding:14px 22px 14px 52px;font-size:20px}
+.s-role-proof .card{padding:18px 20px}
+.s-role-proof .twocol{gap:14px}
+.s-job-fit .s-body{justify-content:flex-start;gap:10px}
+.s-job-fit .tbl--compact tbody td{padding:9px 16px;font-size:17px;line-height:1.3}
+.s-job-fit .tbl--compact thead th{padding:0 16px 10px;font-size:16px}
+.s-job-fit .insight-wrap{margin-top:8px}
+.s-job-fit .insight{padding:14px 22px 14px 52px;font-size:20px}
+.wanted-sample{margin-top:10px;padding:12px 18px;border:1.5px solid var(--violet-line);border-radius:14px;background:linear-gradient(90deg,var(--violet-50),#fff);font-size:14px;line-height:1.45;color:var(--ink-2)}
+.wanted-sample strong{color:var(--violet-700)}
+.wanted-sample .ws-grid{display:grid;grid-template-columns:1fr 1fr 1fr;gap:8px;margin-top:6px}
+.wanted-sample .ws-grid span{display:block}
 
 /* ---------- body area ---------- */
 .s-body{flex:1;min-height:0;display:flex;flex-direction:column;justify-content:center;gap:18px}
+
+/* Review layouts: reserve space for heading, content and closing message. */
+.s-review .s-head{flex:none;margin-bottom:20px}
+.s-review .s-title{font-size:36px;line-height:1.25}
+.s-review .s-sub{font-size:19px;line-height:1.4;margin-top:10px}
+.s-review .s-body{justify-content:center;gap:14px}
+.s-review .insight-wrap{flex:none;margin-top:18px}
+.s-review .insight{font-size:20px;line-height:1.4;padding:16px 24px 16px 52px}
+.s-review .card{padding:20px 22px;gap:8px}
+.s-review .card__title{font-size:21px}
+.s-review .card__desc{font-size:18px;line-height:1.45}
+.s-review .card__label{font-size:13px}
+.s-review .card__foot{font-size:16px;padding-top:8px}
+.s-review .card--abc{min-height:250px}
+.s-review .cards--6 .card__title{font-size:19px}
+.s-review .cards--6 .card__desc{font-size:16px}
+.s-review .col{padding:22px 24px;gap:10px}
+.s-review .col__title{font-size:22px}
+.s-review .col__list li{font-size:18px;line-height:1.45}
+.s-review .tbl thead th{font-size:17px;padding:0 18px 12px}
+.s-review .tbl tbody td{font-size:19px;padding:13px 18px;line-height:1.4}
+.s-review .tbl--compact tbody td{font-size:18px;padding:10px 16px;line-height:1.35}
+.s-review .source-note{font-size:13px;line-height:1.45;margin-top:4px;word-break:keep-all}
+.s-review .example{margin-top:0}
+.s-review .twocol{gap:20px}
 
 /* ---------- footer insight ---------- */
 .insight-wrap{margin-top:24px}
@@ -120,7 +169,10 @@ body{
 .cards--2{grid-template-columns:repeat(2,1fr)}
 .cards--3{grid-template-columns:repeat(3,1fr)}
 .cards--4{grid-template-columns:repeat(2,1fr)}
-.cards--5{grid-template-columns:repeat(3,1fr)}
+.cards--5{grid-template-columns:repeat(6,1fr)}
+.cards--5 .card{grid-column:span 2;text-align:center;align-items:center}
+.cards--5 .card:nth-child(4){grid-column:2 / span 2}
+.cards--5 .card:nth-child(5){grid-column:4 / span 2}
 .cards--6{grid-template-columns:repeat(3,1fr)}
 .card{
   position:relative;background:var(--card);border:1.5px solid var(--violet-line);
@@ -338,6 +390,21 @@ body{
 .htl-name{font-size:17px;font-weight:700;color:var(--ink-2);line-height:1.3;word-break:keep-all}
 .htl-item.hl .htl-name{color:var(--violet-700);font-weight:800}
 .htl-arrow{align-self:center;margin-top:22px;color:var(--violet-500);font-size:24px;font-weight:800}
+.htl.growth .htl-dot{transition:transform .35s ease,box-shadow .35s ease}
+.htl.growth .htl-item:nth-child(1) .htl-dot{transform:scale(.72)}
+.htl.growth .htl-item:nth-child(3) .htl-dot{transform:scale(.80)}
+.htl.growth .htl-item:nth-child(5) .htl-dot{transform:scale(.88)}
+.htl.growth .htl-item:nth-child(7) .htl-dot{transform:scale(.96)}
+.htl.growth .htl-item:nth-child(9) .htl-dot{transform:scale(1.04)}
+.htl.growth .htl-item:nth-child(11) .htl-dot{transform:scale(1.12)}
+.htl.growth .htl-item:nth-child(13) .htl-dot{transform:scale(1.22);box-shadow:0 0 0 7px var(--violet-100),var(--shadow-sm)}
+.growth-chart{position:relative;height:190px;margin:4px 18px 18px;overflow:visible}
+.growth-chart svg{position:absolute;inset:0;width:100%;height:132px;overflow:visible}
+.growth-chart .growth-line{fill:none;stroke:var(--violet);stroke-width:5;stroke-linecap:round;stroke-linejoin:round;vector-effect:non-scaling-stroke}
+.growth-chart .growth-area{fill:url(#growthFill);opacity:.45}
+.growth-chart .growth-point{fill:#fff;stroke:var(--violet);stroke-width:4}
+.growth-chart .growth-label{position:absolute;transform:translateX(-50%);text-align:center;white-space:nowrap;font-size:15px;font-weight:800;color:var(--ink-2);line-height:1.25}
+.growth-chart .growth-label small{display:block;margin-top:4px;font-size:12px;font-weight:600;color:var(--muted)}
 .now-panel{background:var(--card);border:1.5px solid var(--violet-line);border-radius:20px;overflow:hidden;
   box-shadow:var(--shadow-sm);margin-top:6px}
 .now-head{background:var(--violet);color:#fff;font-size:19px;font-weight:800;padding:12px 24px;
@@ -347,6 +414,23 @@ body{
   border-top:1px solid #F0ECFB;word-break:keep-all;display:flex;gap:10px}
 .now-list li::before{content:"▸";color:var(--violet);font-weight:800}
 .now-list li:nth-child(odd){border-right:1px solid #F0ECFB}
+
+/* Page 5: current roles on the left, floating career keywords on the right. */
+.s-career-intro .s-body{gap:12px}
+.s-career-intro .growth-chart{flex:none;height:174px;margin:4px 18px 6px}
+.career-present{display:grid;grid-template-columns:.95fr 1.05fr;gap:24px;align-items:stretch}
+.career-present .now-panel{margin-top:0;animation:none!important}
+.career-present .now-head{font-size:18px;padding:10px 20px}
+.career-present .now-list{grid-template-columns:1fr}
+.career-present .now-list li{font-size:16px;padding:8px 18px;line-height:1.45;border-right:0}
+.career-cloud{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));grid-template-rows:repeat(4,1fr);align-items:center;justify-items:center;gap:14px 18px;min-height:310px;padding:24px;border:1.5px solid var(--violet-line);border-radius:20px;background:linear-gradient(145deg,var(--violet-50),#fff);box-shadow:var(--shadow-sm)}
+.career-cloud span{display:block;white-space:nowrap;font-size:18px;font-weight:600;color:var(--muted);line-height:1.35;animation:careerDrift 4s ease-in-out infinite}
+.career-cloud .career-word-md{font-size:21px;font-weight:700;color:var(--ink-2)}
+.career-cloud .career-word-lg{font-size:25px;font-weight:800;color:var(--violet-700)}
+.career-cloud span:nth-child(3n+1){animation-delay:-1.2s;animation-duration:4.6s}
+.career-cloud span:nth-child(3n+2){animation-delay:-2.4s;animation-duration:3.8s}
+@keyframes careerDrift{0%,100%{transform:translateY(3px)}50%{transform:translateY(-4px)}}
+@media(prefers-reduced-motion:reduce){.career-cloud span{animation:none}}
 
 /* ---------- wordcloud (p5) ---------- */
 .wc{background:var(--card-soft);border:1.5px solid var(--violet-line);border-radius:24px;
@@ -378,6 +462,8 @@ body{
 .fb-chain{display:flex;flex-wrap:wrap;align-items:center;gap:8px;font-size:20px;font-weight:700;color:var(--ink-2)}
 .fb-now .fb-chain{color:var(--violet-800)}
 .fb-chain .arr{color:var(--violet-500);font-weight:800}
+.fb-examples{display:flex;flex-wrap:wrap;gap:8px;margin-top:18px}
+.fb-examples span{padding:7px 11px;border-radius:999px;background:#fff;border:1px solid var(--violet-line);font-size:14px;font-weight:700;color:var(--violet-700)}
 .qbox{background:var(--card);border:1.5px solid var(--violet-line);border-radius:18px;padding:20px 24px;
   box-shadow:var(--shadow-sm)}
 .qbox h4{font-size:19px;font-weight:800;color:var(--violet-700);margin-bottom:12px}
@@ -483,7 +569,7 @@ body{
 .cover-sub{font-size:30px;font-weight:600;color:var(--ink-2);margin-top:22px}
 .cover-rule{width:120px;height:3px;background:linear-gradient(90deg,transparent,var(--violet),transparent);margin:34px auto}
 .cover-name{font-size:28px;font-weight:800;color:var(--ink)}
-.cover-role{font-size:20px;color:var(--muted);margin-top:10px}
+.cover-role{font-size:20px;color:var(--muted);margin-top:10px;line-height:1.6;word-break:keep-all}
 .cover-occasion{font-size:19px;color:var(--muted-2);margin-top:6px;font-weight:600}
 .cover-quote-wrap{margin-top:40px}
 .cover-quote{max-width:900px;font-size:23px;font-weight:700;color:var(--violet-800);
@@ -611,15 +697,15 @@ body.menu-open .menu{transform:none}
   <span></span><span></span><span></span>
 </button>
 
-<div class="counter"><span class="cur" id="cur">1</span><span>/</span><span class="tot" id="tot">43</span></div>
+<div class="counter"><span class="cur" id="cur">1</span><span>/</span><span class="tot" id="tot">52</span></div>
 
-<div class="hint"><kbd>←</kbd><kbd>→</kbd> 방향키로 이동</div>
+
 
 <div class="scrim" id="scrim"></div>
 <aside class="menu" id="menu" aria-label="슬라이드 목록">
   <div class="menu-top">
     <h2>전체 목록</h2>
-    <p>취업 말고 커리어 · 43 슬라이드</p>
+    <p id="menuCount">취업 말고 커리어 · 52 슬라이드</p>
   </div>
   <div class="menu-list" id="menuList"></div>
 </aside>
@@ -694,14 +780,9 @@ function twoCol(left,right,plus){
 /* ============================ slide data ============================ */
 const SLIDES = [
 /* 1 */ {part:'표지', menu:'표지 · 취업 말고 커리어', type:'cover'},
-/* 2 */ {part:'여는 이야기', menu:'테크 업계에 아는 사람이 있나요?', type:'content',
-  title:'테크 업계에 아는 사람이 있나요?', sub:'어디에서 시작하든 괜찮습니다',
-  insight:'어느 쪽이든 오늘 이 자리에 잘 오셨습니다',
-  body: cardGrid(3,[
-    {badge:'A',badgeColor:'#5B8DEF',center:true,desc:'주변에 테크 업계에서 일하는 사람이 있다. 하지만 정확히 무슨 일을 하는지는 모른다'},
-    {badge:'B',badgeColor:'var(--violet)',center:true,desc:'주변에 테크 업계에서 일하는 사람이 없다. 테크 업계가 어떤 곳인지도 막연하다'},
-    {badge:'C',badgeColor:'#C7913B',center:true,desc:'관심은 있지만 나와는 거리가 있는 업계라고 생각했다'},
-  ])},
+/* 화면 2/52 */ {part:"여는 이야기", menu:"시작 질문", type:'content', layout:'review',
+  title:"오늘 가장 궁금한 것은 무엇인가요?", sub:"채팅에 A·B·C 중 하나만 남겨주세요", insight:"마지막에 처음 질문으로 돌아와, 나의 답이 생겼는지 확인합니다",
+  body:cardGrid(3,[{"badge":"A","center":true,"desc":"AI 때문에 내 관심 직무의 일이 어떻게 바뀔까요?"},{"badge":"B","center":true,"desc":"테크 기업의 다양한 직무 중 무엇이 나와 맞을까요?"},{"badge":"C","center":true,"desc":"경험이 부족한 지금, 어떤 준비부터 해야 할까요?"}])},
 /* 3 */ {part:'여는 이야기', menu:'오늘 강의가 끝나면 3가지가 보입니다', type:'content',
   title:'오늘 강의가 끝나면 3가지가 보입니다',
   insight:'취업 설명회가 아닙니다, 커리어 설계 시간입니다',
@@ -710,220 +791,107 @@ const SLIDES = [
     {num:2,variant:'trio',center:true,title:'역할이 보입니다',desc:'테크 기업을 움직이는 다양한 역할과 진입 경로를 파악합니다'},
     {num:3,variant:'trio',center:true,hl:true,title:'오늘 할 일이 보입니다',desc:'채용공고를 읽고, 필요한 경험을 만드는 방법을 알게 됩니다'},
   ])},
-/* 4 */ {part:'여는 이야기', menu:'먼저 나의 현재 위치를 확인합니다', type:'content',
-  title:'먼저 나의 현재 위치를 확인합니다',
-  sub:'정답을 고르는 시간이 아니라, 출발점을 확인하는 시간입니다',
-  insight:'강의가 끝난 뒤 같은 질문에 다시 답해보면 나의 변화가 보입니다',
-  body: cardGrid(4,[
-    {num:1,title:'정보가 필요합니다',desc:'테크 업계와 직무가 아직 막연합니다'},
-    {num:2,title:'직무를 찾고 있습니다',desc:'관심 분야는 있지만 무엇이 맞는지 모르겠습니다'},
-    {num:3,title:'경험을 정리하고 싶습니다',desc:'프로젝트는 있지만 직무 역량으로 설명하기 어렵습니다'},
-    {num:4,hl:true,title:'실행을 시작합니다',desc:'지원할 직무와 다음 행동이 어느 정도 정해져 있습니다'},
-  ])},
-/* 4 */ {part:'여는 이야기', menu:'여러 역할을 경험한 현장 이야기', type:'content',
-  title:'여러 역할을 경험한 현장 이야기입니다', sub:'콘텐츠 기획에서 창업까지',
-  insight:'화려한 스펙보다 선택의 연속이 만든 커리어입니다',
+/* 화면 4/52 */ {part:"여는 이야기", menu:"나의 출발점", type:'content', layout:'review',
+  title:"내 경험과 질문을 한 줄씩 적어봅니다", sub:"개인 메모 · 공개하지 않아도 괜찮습니다", insight:"오늘은 내가 가진 경험을 다음 직무의 준비와 연결하는 시간입니다",
+  body:cardGrid(4,[{"num":1,"title":"이미 해본 일","desc":"수업·아르바이트·동아리에서 직접 맡은 일 하나"},{"num":2,"title":"잘했던 행동","desc":"정리·관찰·설명·분석·조율 중 기억나는 행동"},{"num":3,"title":"아직 모르는 것","desc":"관심 직무에서 확인하고 싶은 실제 업무"},{"num":4,"hl":true,"title":"강의 후 확인","desc":"이 경험을 어떤 결과물로 바꿀 수 있을까?"}])},
+/* 화면 5/52 */ {part:'여는 이야기', menu:'여러 역할을 경험한 현장 이야기', type:'content', layout:'career-intro',
+  title:'여러 역할을 경험한 현장 이야기입니다', sub:'콘텐츠 기획에서 창업, 그리고 AI 자동화 솔루션 제작 및 교육사로의 피벗까지',
+  insight:'창업 경험은 끝이 아니라, 다음 시장으로 피벗하는 근거가 되었습니다',
   body: `
-    <div class="htl" data-anim>
-      ${[['✏️','콘텐츠 기획'],['🖥️','웹에이전시 PM'],['🏢','대기업 IT·서비스 조직'],['🧑‍💻','프리랜서'],['📇','대기업'],['🚀','창업',true]]
-        .map((s,i,a)=>`<div class="htl-item ${s[2]?'hl':''}"><div class="htl-dot">${s[0]}</div><div class="htl-name">${s[1]}</div></div>${i<a.length-1?'<div class="htl-arrow">→</div>':''}`).join('')}
+    <div class="growth-chart" data-anim>
+      <svg viewBox="0 0 1400 132" role="img" aria-label="커리어 성장 선차트">
+        <defs><linearGradient id="growthFill" x1="0" y1="0" x2="0" y2="1"><stop offset="0%" stop-color="#7656d6"/><stop offset="100%" stop-color="#7656d6" stop-opacity="0"/></linearGradient></defs>
+        <path class="growth-area" d="M40 112 L300 90 L560 68 L820 48 L1080 28 L1360 10 L1360 132 L40 132 Z"/>
+        <path class="growth-line" d="M40 112 L300 90 L560 68 L820 48 L1080 28 L1360 10"/>
+        <circle class="growth-point" cx="40" cy="112" r="9"/><circle class="growth-point" cx="300" cy="90" r="9"/><circle class="growth-point" cx="560" cy="68" r="9"/><circle class="growth-point" cx="820" cy="48" r="9"/><circle class="growth-point" cx="1080" cy="28" r="9"/><circle class="growth-point" cx="1360" cy="10" r="11"/>
+      </svg>
+      <div class="growth-label" style="left:3%;top:142px">콘텐츠 기획</div>
+      <div class="growth-label" style="left:22%;top:112px">웹에이전시 PM</div>
+      <div class="growth-label" style="left:42%;top:90px">대기업</div>
+      <div class="growth-label" style="left:62%;top:70px">창업<small>시장·수익 검증</small></div>
+      <div class="growth-label" style="left:80%;top:72px">웹에이전시</div>
+      <div class="growth-label" style="left:97%;top:38px;transform:translateX(-100%);text-align:right;color:var(--violet-700)">AI 자동화 솔루션<br>제작 및 교육사</div>
     </div>
+    <div class="career-present">
     <div class="now-panel" data-anim>
       <div class="now-head">🙋 현재</div>
       <ul class="now-list">
-        <li>AI 콘텐츠 제작사 제이투컴 대표</li>
+        <li>2025년 AI 자동화 솔루션 제작 및 교육사로 피벗</li>
         <li>소프트웨어 개발사 제이브제이 대표</li>
         <li>대학 겸임교수 (생성형 AI·융합 콘텐츠·데이터 리터러시·데이터 시각화)</li>
         <li>취준생 부트캠프 멘토 및 창업 컨설턴트</li>
         <li>기업·학교·공공기관 생성형 AI 강사</li>
       </ul>
-    </div>`},
-/* 5 */ {part:'여는 이야기', menu:'여러분의 감각도 테크 역량이 됩니다', type:'content',
-  title:'여러분의 감각도 테크 역량이 될 수 있습니다', sub:'트렌드를 읽는 감각은 다양한 테크 직무로 연결됩니다',
-  insight:'기술만 아는 사람보다 사용자·데이터·위험을 이해하는 사람도 필요합니다',
-  body: `
-    <div class="wc" data-anim>
-      <span class="w-sm">텍스트힙</span><span class="w-lg">숏폼</span><span class="w-xs">럭키비키</span>
-      <span class="w-lg">갓생</span><span class="w-sm">제로클릭</span><span class="w-xs">휴먼 인 더 루프</span>
-      <span class="w-lg">중꺾마</span><span class="w-xs">요노(YONO)</span><span class="w-sm">무지출 챌린지</span>
-      <span class="w-xs">갈아타기</span><span class="w-md">도파민 디톡스</span><span class="w-sm">인스타그래머블</span>
-      <span class="w-md">현타</span><span class="w-xs">가심비</span><span class="w-sm">본캐부캐</span>
-      <span class="w-xs">밈력</span><span class="w-sm">갓생루틴</span><span class="w-md">스라밸</span>
-      <span class="w-xs">플렉스</span><span class="w-sm">직진구매</span><span class="w-xs">체리슈머</span>
-      <span class="w-md">디토소비</span><span class="w-xs">킹받네</span><span class="w-sm">만렙</span>
-      <span class="w-xs">찐텐</span><span class="w-sm">가시성비</span><span class="w-md">알잘딱깔센</span>
-      <span class="w-md">보안 엔지니어</span><span class="w-sm">개인정보보호</span><span class="w-md">AI 거버넌스</span>
-      <span class="w-sm">모델 안전성</span><span class="w-md">데이터 품질</span><span class="w-sm">데이터 거버넌스</span>
     </div>
-    ${cardGrid(3,[
-      {icon:'💬',center:true,title:'언어 감각',desc:'사람들이 지금 어떤 표현을 쓰는가'},
-      {icon:'👁️',center:true,title:'사용자 감각',desc:'무엇에 반응하고 무엇을 불편해하는가'},
-      {icon:'🧩',center:true,title:'콘텐츠 감각',desc:'어떤 형식이 공유되고 확산되는가'},
-    ])}`},
+    <div class="career-cloud" data-anim role="group" aria-label="커리어 경험 키워드">
+      <span>골프잡지사</span><span class="career-word-lg">콘텐츠 기획</span><span class="career-word-md">서비스 기획</span>
+      <span class="career-word-lg">PM</span><span class="career-word-md">PO</span><span class="career-word-md">PE</span>
+      <span class="career-word-md">프리랜서</span><span class="career-word-lg">스타트업</span><span>대표</span>
+      <span>멘토링</span><span class="career-word-md">AI 교육 강사</span><span class="career-word-lg">대학교수</span>
+    </div>
+    </div>`},
+/* 화면 6/52 */ {part:"여는 이야기", menu:"관찰을 역량으로", type:'content', layout:'review',
+  title:"일상의 관찰을 직무의 질문으로 바꿉니다", sub:"감각은 기록하고 확인할 때 경험으로 쌓입니다", insight:"채팅: 자주 쓰는 서비스에서 불편했던 순간을 한 문장으로 적어보세요",
+  body:table(["관찰한 장면","직무의 질문","첫 결과물"],[["안내를 읽고도 신청을 망설인다","기획·디자인: 어디서 이해가 막힐까?","사용자 흐름과 개선안"],["콘텐츠 반응이 예상과 다르다","마케팅·데이터: 어떤 차이가 있을까?","반응 비교와 가설"],["앱이 불필요해 보이는 권한을 요청한다","개인정보: 수집 목적과 범위를 어떻게 설명할까?","권한·목적 비교 메모"]],{})},
 /* 6 */ {part:'PART 1 · 판의 변화', menu:'PART 1 · AI 시대, 판은 어떻게 바뀌는가', type:'divider',
   kicker:'PART 1', ghost:'01',
   title:'AI 시대, 테크 업계의 판은<br><span class="hl">어떻게 바뀌고 있는가</span>',
   sub:'산업 구조 · AI 변화 · 채용 변화 · 직무 변화'},
-/* 7 */ {part:'PART 1 · 판의 변화', menu:'테크 업계는 한 종류의 회사가 아닙니다', type:'content',
-  title:'테크 업계는 한 종류의 회사가 아닙니다',
-  insight:'첫 회사의 이름보다 어떤 문제와 역할을 경험하는지가 중요합니다',
-  body: table(['회사 유형','특징','대표 환경'],[
-    [em('🏢')+'빅테크·플랫폼','직무 분화가 체계적이고 경쟁이 치열함','네이버 · 카카오 · 쿠팡 등'],
-    [em('🚀')+'스타트업','빠른 실행, 한 사람이 여러 역할 수행','토스 · 당근 · 무신사 등'],
-    [em('🖥️')+'대기업 IT·디지털 조직','안정적 환경, 산업 도메인 이해 필요','삼성SDS · LG CNS · 현대오토에버 등'],
-    [em('🎯')+'에이전시·솔루션','다양한 산업과 고객 경험을 빠르게 축적','SI·웹에이전시·SaaS·B2B 솔루션'],
-  ])},
+/* 화면 8/52 */ {part:"PART 1 · 판의 변화", menu:"회사 환경 비교", type:'content', layout:'review',
+  title:"회사 이름보다 사업과 업무 환경을 함께 봅니다", sub:"다음은 이해를 돕기 위한 분류이며, 한 회사가 여러 유형에 걸칠 수 있습니다", insight:"회사 규모만으로 안정성·성장성·직무 범위를 판단하지 마세요",
+  body:table(["환경","확인할 업무 특성","예시"],[["플랫폼·디지털 서비스","사용자 규모·제품 조직·의사결정 방식","네이버·카카오·쿠팡 등"],["성장 기업","사업 단계·역할 범위·변화 속도","토스·당근·무신사 등"],["기업 IT·디지털 전환","고객 산업·프로젝트·운영 책임","삼성SDS·LG CNS·현대오토에버 등"],["에이전시·솔루션","고객 협의·구축·납품·지속 운영","웹에이전시·SI·SaaS·B2B 솔루션"]],{})},
 /* 8 */ {part:'PART 1 · 판의 변화', menu:'AI는 직업보다 업무 단위를 먼저 바꿉니다', type:'content',
   title:'AI는 직업보다 업무 단위를 먼저 바꿉니다',
-  insight:'AI가 사람을 대체하기보다, 일의 구성을 바꾸고 있습니다',
+  sub:'관심 직무에서 자동화할 일과 직접 판단할 일을 나누어 보세요',
+  insight:'채팅으로 나눠보세요: 관심 직무에서 AI에게 맡길 일 1개, 내가 판단할 일 1개',
+  body: table(['직군','AI가 도울 수 있는 업무','사람이 판단할 부분'],[
+    ['마케팅·콘텐츠','문구·이미지 초안과 변형','타깃·메시지 적절성·성과 해석'],
+    ['데이터','쿼리·차트·분석 초안','지표 정의·데이터 품질·원인 해석'],
+    ['개발직군','정형적인 코드·테스트 초안','요구사항·구조·품질 검증'],
+    ['고객 운영','반복 문의 응답·분류','예외 처리·갈등 조율·운영 개선'],
+    ['보안·개인정보','점검 항목·문서 초안 정리','위험 평가·보호조치·사용 기준'],
+  ],{mutedCol:1}) + '<div class="source-note">업무 예시는 강의용 재구성. 자동화 가능성이 곧 직무 소멸을 뜻하지는 않습니다. 참고: <a href="https://www.ilo.org/publications/generative-ai-and-jobs-refined-global-index-occupational-exposure" target="_blank" rel="noopener">ILO · 생성형 AI와 업무 변화 (2025)</a></div>'},
+/* 9 */ {part:'PART 1 · 판의 변화', menu:'AI 경험을 판단과 결과로 설명합니다', type:'content',
+  title:'AI 사용 경험을 나의 판단과 결과로 설명하세요',
+  sub:'기업의 업무 변화에서, 내가 준비할 역량을 읽어봅니다',
+  insight:'경험을 정리할 때: AI에 맡긴 일 → 내가 검증한 것 → 확인한 결과',
   body: twoCol(
-    {icon:'✕',muted:true,title:'줄어드는 업무',list:['단순 반복 업무','정해진 규칙에 따른 데이터 처리','템플릿 기반 문서 초안','정형화된 고객 응대','자료 검색과 요약','한 가지 역할만 반복하는 업무']},
-    {icon:'✓',hl:true,title:'중요해지는 업무',list:['문제 정의와 우선순위 결정','맥락을 반영한 질문 설계','결과물 검토와 품질 판단','이해관계자 조율','사용자와 비즈니스 해석','여러 역할을 연결하는 업무']}
-  )},
-/* 9 */ {part:'PART 1 · 판의 변화', menu:'회사의 채용 기준도 바뀌고 있습니다', type:'content',
-  title:'회사의 채용 기준도 바뀌고 있습니다',
-  insight:'AI를 쓰는 사람보다 AI와 함께 성과를 내는 사람을 찾습니다',
-  body: cardGrid(4,[
-    {num:1,title:'조직은 더 작고 민첩해집니다',desc:'대규모 주니어 공채보다 필요한 역량을 갖춘 소수 인재 중심'},
-    {num:2,title:'직무 경계가 무너집니다',desc:'기획자가 데이터를 보고, 디자이너가 프롬프트를 쓰고, 개발자가 제품을 이해함'},
-    {num:3,title:'AI 협업 역량을 확인합니다',desc:'도구 사용 자체보다 문제를 정의하고 결과를 검토하는 능력'},
-    {num:4,hl:true,title:'경험의 증거를 요구합니다',desc:'학력·자격증만이 아니라 프로젝트·포트폴리오·실무 결과물 확인'},
-  ])},
-/* 10 */ {part:'PART 1 · 판의 변화', menu:'직무 안의 일이 바뀝니다', type:'content',
-  title:'직무가 사라지는 것이 아니라 직무 안의 일이 바뀝니다',
-  insight:'도구가 바뀌면 필요한 사람의 역량도 달라집니다',
-  body: table(['직군','과거의 중심 업무','AI 이후 더 중요해지는 업무'],[
-    [em('🎯')+'제품·기획','문서 작성·일정 관리','문제 정의·우선순위·데이터 해석'],
-    [em('✏️')+'디자인','툴 숙련·시안 제작','사용자 관점·심미안·큐레이션'],
-    [em('💻')+'개발','코드를 직접 작성','구조 설계·리뷰·품질 판단'],
-    [em('🧩')+'제품 엔지니어링','직무별 산출물을 순차 전달','문제 발견·설계·구현·검증'],
-    [em('📊')+'데이터','쿼리·리포트 작성','분석 질문·인사이트·의사결정'],
-    [em('📈')+'마케팅·그로스','콘텐츠 초안 제작','전략·타깃팅·실험 설계'],
-    [em('🤝')+'운영·고객경험','반복 응대·수작업 운영','프로세스 개선·고객 맥락 해석'],
-  ],{mutedCol:1})},
-/* 11 */ {part:'PART 1 · 판의 변화', menu:'전공보다 문제 해결 방식이 중요합니다', type:'content',
-  title:'AI 시대에는 전공보다 문제 해결 방식이 더 중요해집니다',
-  insight:'전공은 출발점이지만, 결과물이 가능성을 증명합니다',
-  body: `
-    <div class="flow">
-      <div class="flow-box fb-past" data-anim>
-        <span class="fb-label">과거</span>
-        <div class="fb-chain">전공 <span class="arr">→</span> 자격 <span class="arr">→</span> 직무 <span class="arr">→</span> 입사</div>
-      </div>
-      <div class="flow-varrow" data-anim>↓</div>
-      <div class="flow-row">
-        <div class="flow-box fb-now" data-anim style="grid-column:1 / 2">
-          <span class="fb-label">현재</span>
-          <div class="fb-chain">관심 문제 <span class="arr">→</span> 도구 학습 <span class="arr">→</span> 작은 결과물 <span class="arr">→</span> 프로젝트 경험 <span class="arr">→</span> 직무 역량 증명</div>
-        </div>
-        <div class="flow-varrow" data-anim style="transform:rotate(-90deg)">↓</div>
-        <div class="qbox" data-anim>
-          <h4>'현재' 방식에서, 회사가 확인하는 질문</h4>
-          <ul>
-            <li>어떤 문제를 발견했는가</li>
-            <li>왜 그 문제를 선택했는가</li>
-            <li>무엇을 직접 했는가</li>
-            <li>어떤 결과와 학습이 있었는가</li>
-          </ul>
-        </div>
-      </div>
-    </div>`},
-/* 12 */ {part:'PART 2 · 직무와 진입 경로', menu:'PART 2 · 어떤 직무와 진입 경로가 있는가', type:'divider',
-  kicker:'PART 2', ghost:'02',
-  title:'테크 업계에는 어떤 직무와<br><span class="hl">진입 경로가 있는가</span>',
-  sub:'제품·개발·디자인·데이터·마케팅·보안 직무 · 선택 기준 · 진입 가능성'},
-/* 13 */ {part:'PART 2 · 직무와 진입 경로', menu:'테크 서비스는 여러 직군이 함께 만듭니다', type:'content',
-  title:'테크 서비스는 여러 직군이 함께 만듭니다',
-  insight:'개발자만 있는 산업이 아닙니다. 각 직군이 연결되어 하나의 서비스를 만듭니다',
-  body: table(['직군','대표 직무','핵심 역할'],[
-    [em('🎯')+'제품·기획','서비스기획자·PM·PO','문제 정의·요구사항·우선순위'],
-    [em('✏️')+'디자인','UX·UI 디자이너·UX 리서처','사용자 경험·화면·사용성'],
-    [em('💻')+'개발','프론트엔드·백엔드·모바일·풀스택','시스템과 기능 구현'],
-    [em('🧩')+'제품 엔지니어링','Product Engineer(PE)','문제 정의·설계·구현·검증'],
-    [em('📊')+'데이터','분석가·엔지니어·사이언티스트','수집·분석·의사결정 지원'],
-    [em('📈')+'마케팅·그로스','콘텐츠·퍼포먼스·그로스 마케터','고객 획득·전환·성장'],
-    [em('🤝')+'운영·고객경험','서비스 운영·CRM·CX','운영 안정성·고객 관계·개선'],
-    [em('🛡️')+'보안·개인정보·AI 거버넌스','보안 엔지니어·개인정보보호·AI 리스크','데이터 보호·위험 관리·책임 있는 기술 사용'],
-  ])},
-/* 14 */ {part:'PART 2 · 직무와 진입 경로', menu:'테크 기업을 만드는 다양한 역할', type:'content',
-  title:'테크 기업은 다양한 역할이 함께 만듭니다', sub:'제품을 발견하고, 설계하고, 구현하고, 성장시키는 역할',
-  insight:'테크 기업의 경쟁력은 특정 직무 하나가 아니라, 서로 다른 전문성이 하나의 고객 가치를 만드는 데서 나옵니다',
-  body: `<div class="tags" data-anim>${['서비스기획자','PM','PO','UX·UI 디자이너','데이터 분석가','콘텐츠 마케터','그로스 마케터','서비스 운영','CRM','CX'].map(t=>`<span class="tag">${t}</span>`).join('')}<span class="tag tag--hl">Product Engineer(PE)</span></div>`
-    + cardGrid(6,[
-      {num:1,center:true,desc:'어떤 문제를 해결할지 결정'},
-      {num:2,center:true,desc:'사용자가 무엇을 원하는지 파악'},
-      {num:3,center:true,desc:'개발할 기능과 정책 정리'},
-      {num:4,center:true,desc:'여러 부서의 요구 조율'},
-      {num:5,center:true,desc:'데이터로 개선 방향 도출'},
-      {num:6,center:true,desc:'고객과 서비스의 관계 관리'},
-    ])},
-/* 15 */ {part:'PART 2 · 직무와 진입 경로', menu:'전공보다 역할과 경험이 중요합니다', type:'content',
-  title:'테크 기업은 전공보다 역할과 경험을 봅니다', sub:'각 직무의 문제를 이해하고 결과물로 증명해야 함',
-  insight:'보여줄 직무 경험이 없으면 어려운 것이지, 특정 전공이 아니라서 불가능한 것은 아닙니다',
-  body: `<div class="tags" data-anim>${['서비스기획자','PM','PO','UX·UI 디자이너','데이터 분석가','콘텐츠 마케터','그로스 마케터','서비스 운영','CRM','CX'].map(t=>`<span class="tag">${t}</span>`).join('')}<span class="tag tag--hl">Product Engineer(PE)</span></div>`
-    + cardGrid(4,[
-      {num:1,title:'전공 ≠ 직무',desc:'전공과 직무가 일대일로 연결되지 않는 역할이 많아지고 있음'},
-      {num:2,title:'경험 → 결과물',desc:'수업·동아리·프로젝트 경험을 직무 결과물로 바꿀 수 있음'},
-      {num:3,title:'역량 확인',desc:'기업은 포트폴리오·과제·인턴 경험으로 역량을 확인함'},
-      {num:4,hl:true,title:'진입장벽↓',desc:'AI 도구로 조사·분석·문서화·프로토타입 제작의 진입장벽이 낮아짐'},
-    ])},
-/* 16 */ {part:'PART 2 · 직무와 진입 경로', menu:'개발은 여러 테크 직무 중 하나의 선택지입니다', type:'content',
-  title:'개발은 여러 테크 직무 중 하나의 선택지입니다',
-  sub:'개발에 관심이 있다면 도전할 수 있지만, 모든 사람이 개발자가 될 필요는 없습니다',
-  insight:'AI 시대의 테크 커리어는 개발자만의 길이 아니라, 각자의 강점으로 문제를 해결하는 여러 경로입니다',
-  body: twoCol(
-    {icon:'🧭',title:'개발을 선택하는 사람에게',list:['작동하는 결과물을 직접 만들고 싶은가','오류 원인을 추적하고 구조를 이해하는가','기술을 계속 배우는 과정이 즐거운가','코드와 시스템으로 문제를 해결하고 싶은가']},
-    {icon:'✓',hl:true,title:'다른 선택지도 충분히 중요합니다',list:['문제를 정의하고 우선순위를 정하는 기획','사용자 경험을 설계하는 디자인','데이터로 원인과 방향을 찾는 분석','고객·시장·위험을 이해하는 마케팅·보안']}
-  )},
-/* 17 */ {part:'PART 2 · 직무와 진입 경로', menu:'직무마다 보여줘야 할 결과물이 다릅니다', type:'content',
-  title:'직무마다 보여줘야 할 결과물이 다릅니다',
-  sub:'개발 포트폴리오는 하나의 예시일 뿐, 모든 직무의 기준은 아닙니다',
-  insight:'중요한 것은 직무 이름이 아니라, 그 직무의 문제를 이해하고 결과물로 증명하는 것입니다',
-  body: `<div class="twocol">
-    ${colBox({icon:'📋',title:'개발 포트폴리오에서 보여줄 것',extra:`<ol class="card__ol" style="margin-top:8px">
-      <li>어떤 문제를 해결하려 했는가</li>
-      <li>어떤 기술을 선택했고 왜 선택했는가</li>
-      <li>어떤 기능을 직접 구현했는가</li>
-      <li>어떤 오류가 발생했는가</li>
-      <li>오류를 어떻게 해결했는가</li>
-      <li>AI가 만든 코드를 어떻게 검토했는가</li>
-      <li>다시 만든다면 무엇을 개선할 것인가</li></ol>`})}
-    <div class="gb">
-      <div class="gb-box gb-bad" data-anim>
-        <div class="gb-tag">✕ 나쁜 설명</div>
-        <div class="gb-text">"React로 웹사이트를 만들었습니다"</div>
-      </div>
-      <div class="gb-box gb-good" data-anim>
-        <div class="gb-tag">✓ 좋은 설명</div>
-        <div class="gb-text">"대학생의 일정 공유 문제를 해결하기 위해 React와 Firebase로 팀 일정 관리 서비스를 구현했고, 실시간 동기화 오류를 데이터 구조 변경으로 해결했습니다"</div>
-      </div>
-    </div>
-  </div><div class="example" data-anim><div class="ex-q">다른 직무의 결과물 예시</div><div class="ex-skills"><b>기획</b> 문제 정의·정책서 · <b>디자인</b> 사용자 흐름·프로토타입 · <b>데이터</b> 분석 리포트·실험 결과 · <b>마케팅</b> 캠페인·성과 분석 · <b>보안</b> 위험 분석·대응 기준</div></div>`},
-/* 18 */ {part:'PART 2 · 직무와 진입 경로', menu:'AI와 함께 역할이 넓어집니다', type:'content',
-  title:'하나의 서비스 문제를 여러 직군이 함께 해결합니다',
-  sub:'AI는 각 단계의 속도를 높이고, 사람은 방향·품질·책임을 판단합니다',
-  insight:'직무를 이해하는 가장 좋은 방법은 하나의 문제를 끝까지 따라가 보는 것입니다. 데이터 분석뿐 아니라 보호와 거버넌스도 서비스 완성도의 일부입니다',
-  body: table(['해결 단계','주요 역할','AI가 돕는 일','사람이 책임지는 판단'],[
-    [em('🎯')+'문제 정의','PM·기획','사용자 의견·시장 자료 정리','어떤 문제를 풀지, 성공 기준은 무엇인지'],
-    [em('🔍')+'원인 분석','데이터·리서치','데이터 정리·가설 초안','무엇이 사실이고 어떤 원인이 중요한지'],
-    [em('✏️')+'해결안 설계','디자인·기획','아이디어·시안 생성','사용자에게 가장 적합한 경험인지'],
-    [em('💻')+'구현·검증','개발·PE','코드·테스트 초안','안전하게 작동하는지, 무엇을 개선할지'],
-    [em('📈')+'확산·개선','마케팅·운영','콘텐츠 변형·문의 분류','누구에게 어떻게 전달하고 다음 실험은 무엇인지'],
-    [em('🛡️')+'보호·책임 검토','개인정보·보안·AI 거버넌스','위험 항목·정책 초안·데이터 흐름 정리','개인정보·저작권·편향·보안 위험을 허용할 수 있는지'],
-  ],{mutedCol:2})},
-/* 19 */ {part:'PART 2 · 직무와 진입 경로', menu:'AI 결과를 검증하는 책임이 필요합니다', type:'content',
-  title:'AI를 잘 쓰는 사람은 결과를 검증하는 사람입니다',
-  sub:'속도보다 정확성·보안·책임을 함께 판단해야 합니다',
-  insight:'AI가 만든 결과물의 마지막 책임은 도구가 아니라 사람에게 있습니다',
-  body: cardGrid(4,[
-    {icon:'🔍',title:'사실을 확인합니다',desc:'출처·수치·코드가 실제로 맞는지 검증합니다'},
-    {icon:'🔐',title:'위험을 점검합니다',desc:'개인정보·저작권·보안 문제가 없는지 확인합니다'},
-    {icon:'🧭',title:'맥락을 판단합니다',desc:'우리 사용자와 목표에 적합한 결과인지 살펴봅니다'},
-    {icon:'✋',hl:true,title:'결과에 책임집니다',desc:'AI를 사용했더라도 최종 결정과 결과는 내가 설명합니다'},
-  ])},
+    {icon:'🏢',title:'기업 사례 · Klarna 고객 서비스',list:['2025년 6월까지 최근 12개월 고객 채팅의 69%를 AI가 처리했다고 공시','AI 활용과 사람의 고객 지원을 병행하는 접근을 설명','반복 응대의 자동화 속에서도 서비스 품질과 고객 경험을 함께 살펴야 함']},
+    {icon:'📝',hl:true,title:'학생의 준비로 바꾸면',list:['연습: 가상 고객 문의 10개를 AI로 분류','판단: 오분류·예외·사람에게 연결할 기준 확인','결과물: 응답 초안 + 오류·수정 기록','설명: 왜 수정했고, 무엇이 나아졌는가']}
+  ) + '<div class="source-note">출처: <a href="https://www.sec.gov/Archives/edgar/data/2003292/000200329225000036/klarnagroupplcf-1a4.htm" target="_blank" rel="noopener">Klarna · 2025 SEC 공시</a> (회사 자체 집계). 오른쪽은 강의자의 준비 제안이며 공식 채용요건이 아닙니다.</div>'},
+/* 화면 11/52 */ {part:"PART 1 · 판의 변화", menu:"직군별 업무 변화", type:'content', layout:'review',
+  title:"자동화되는 업무와 커지는 책임을 함께 봅니다", sub:"같은 직군 안에서도 반복 업무·판단 업무의 비중은 달라집니다", insight:"진로를 고를 때는 업무의 변화와 실제 채용요건을 함께 확인합니다",
+  body:table(["직군","AI가 지원하는 작업","책임지고 설명할 부분"],[["기획·디자인","문서·시안 초안","문제·우선순위·사용성"],["개발직군","코드·테스트 초안","구조·품질·운영 제약"],["데이터","쿼리·차트 초안","지표·품질·해석"],["마케팅·운영","콘텐츠 변형·문의 분류","성과·고객 맥락·예외"],["보안·개인정보·AI 거버넌스","점검 항목·정책 초안","위험·보호조치·책임 기준"]],{}) + "<div class=\"source-note\">업무 예시는 강의용 재구성. Product Engineer는 기업에 따라 제품 책임을 넓게 맡는 개발 역할로 사용되며, 통일된 별도 직군 명칭은 아닙니다.</div>"},
+/* 화면 12/52 */ {part:"PART 1 · 판의 변화", menu:"준비의 세 요소", type:'content', layout:'review',
+  title:"전공·기초지식·경험을 함께 준비합니다", sub:"전공과 직무가 항상 일치하지는 않지만, 직무별 최소 요건은 확인해야 합니다", insight:"공고의 필수 조건과 우대사항을 나누고, 나의 부족한 부분을 구체화하세요",
+  body:cardGrid(4,[{"icon":"📚","title":"기초지식","desc":"직무에서 반복해서 쓰는 개념과 도구를 익힙니다"},{"icon":"📋","title":"지원요건","desc":"학위·자격·경력 등 명시된 필수 조건을 확인합니다"},{"icon":"🛠️","title":"경험의 증거","desc":"직접 판단하고 실행한 과정을 결과물로 남깁니다"},{"icon":"🔎","hl":true,"title":"현실적인 경로","desc":"신입·인턴·보조 역할 등 현재 가능한 기회를 살펴봅니다"}])},
+/* 화면 13/52 */ {part:"PART 2 · 직무와 진입 경로", menu:"직군 지도", type:'content', layout:'review',
+  title:"테크 기업의 역할을 네 방향으로 봅니다", sub:"PART 2 · 직군 지도를 보고 나의 관심 후보를 찾습니다", insight:"네 방향은 우열이 아니라 서로 연결되는 역할입니다",
+  body:cardGrid(4,[{"icon":"🎯","title":"제품과 경험","desc":"기획·디자인·개발이 문제를 서비스로 구체화"},{"icon":"📊","title":"데이터와 판단","desc":"분석·엔지니어링·리서치가 근거를 제공"},{"icon":"📣","title":"고객과 성장","desc":"마케팅·운영·고객경험이 전달과 개선을 담당"},{"icon":"🛡️","title":"보호와 신뢰","desc":"보안·개인정보·거버넌스가 위험과 기준을 관리"}])},
+/* 화면 14/52 */ {part:"PART 2 · 직무와 진입 경로", menu:"직무별 책임", type:'content', layout:'review',
+  title:"직무 이름을 실제 책임으로 읽어봅니다", sub:"기업에 따라 직무명과 역할 범위는 달라집니다", insight:"직무명만 검색하지 말고, 주요업무와 협업 대상을 함께 읽어보세요",
+  body:table(["직군","대표 직무","주요 책임"],[["제품·기획","서비스기획·PM·PO","문제와 우선순위"],["디자인","UX·UI·리서치","경험과 사용성"],["개발","프론트엔드·백엔드·PE 등","기술 구현과 운영"],["데이터","분석·엔지니어링·사이언스","데이터와 의사결정"],["마케팅·운영","콘텐츠·그로스·CX·CRM","고객 획득·관계·개선"],["보안·개인정보","보안 엔지니어·개인정보보호","시스템·데이터 보호"],["AI·데이터 거버넌스","AI 리스크·모델 평가·데이터 품질","기준·평가·품질 관리"]],{"compact":true}) + "<div class=\"source-note\">신규 책임이 항상 별도 신입 채용으로 이어지는 것은 아닙니다. 기존 보안·데이터·정책 조직에서 담당하기도 합니다.</div>"},
+/* 화면 15/52 */ {part:"PART 2 · 직무와 진입 경로", menu:"나의 역할 선택", type:'content', layout:'review',
+  title:"하나의 문제, 여러분은 어떤 역할을 맡고 싶나요?", sub:"가상 사례 · 학교 행사 신청 도중 포기하는 사람이 많습니다", insight:"채팅: 맡고 싶은 역할 하나와 먼저 확인할 질문 하나를 남겨주세요",
+  body:cardGrid(5,[{"icon":"🎯","title":"기획·디자인","desc":"신청 과정에서 어느 부분이 불편할까?"},{"icon":"📊","title":"데이터","desc":"어느 단계에서 이탈하는지 확인할 수 있을까?"},{"icon":"💻","title":"개발","desc":"오류나 느린 응답이 발생할까?"},{"icon":"📣","title":"마케팅·운영","desc":"안내가 대상에게 잘 전달됐을까?"},{"icon":"🛡️","title":"보호·거버넌스","desc":"필요한 정보만 적절하게 수집할까?"}])},
+/* 화면 16/52 */ {part:"PART 2 · 직무와 진입 경로", menu:"경험 다시 읽기", type:'content', layout:'review',
+  title:"지금 가진 경험을 직무 언어로 바꿉니다", sub:"새 경험을 찾기 전에, 이미 했던 일을 다시 읽어보세요", insight:"활동 이름보다 내가 맡은 행동과 남긴 근거를 설명합니다",
+  body:table(["기존 경험","직무와 연결할 행동","정리할 근거"],[["아르바이트","고객 문의 분류·운영 개선","반복 문제와 개선 메모"],["수업 팀 과제","자료 검증·역할 조율","선택 이유와 협업 기록"],["동아리 행사","대상 파악·안내 개선","피드백과 수정 전후"],["개인 학습","도구 실습·오류 해결","실험 과정과 배운 점"]],{})},
+/* 화면 17/52 */ {part:"PART 2 · 직무와 진입 경로", menu:"관심 후보 두 개", type:'content', layout:'review',
+  title:"관심 직군 후보를 두 개 골라봅니다", sub:"오늘의 선택은 탐색을 위한 가설입니다", insight:"개인 메모: 후보 A·B와 각각 끌리는 이유를 한 줄씩 적어보세요",
+  body:twoCol({"icon":"🧭","title":"후보 A · 익숙한 강점","list":["이미 해본 행동과 닮은 직무","반복해도 흥미가 남는 업무","더 알아보고 싶은 책임"]},{"icon":"🌱","hl":true,"title":"후보 B · 새로운 관심","list":["아직 경험은 없지만 궁금한 직무","실제 업무를 확인할 질문","작게 시도해볼 방법"]})},
+/* 화면 18/52 */ {part:"PART 2 · 직무와 진입 경로", menu:"직군별 결과물", type:'content', layout:'review',
+  title:"직군마다 해결하는 문제와 결과물이 다릅니다", sub:"가상 과제: 학교 행사 신청 경험을 개선한다면", insight:"관심 직군 하나를 골라, 그 직군이 만들 결과물을 생각해보세요",
+  body:table(["직군","해결할 문제","결과물 예시"],[["기획","중요한 요구가 불분명하다","문제 정의·우선순위·정책서"],["디자인","신청 흐름이 이해하기 어렵다","사용자 흐름·개선 화면"],["데이터","이탈 원인을 모른다","지표 정의·분석 리포트"],["개발","신청 오류가 발생한다","수정 코드·테스트 기록"],["마케팅·운영","안내와 문의 대응이 어렵다","안내 개선안·응대 절차"],["보안·개인정보·거버넌스","수집·사용·접근 기준이 불명확하다","데이터 흐름도·보호·검토 기준"]],{"compact":true})},
+/* 화면 19/52 */ {part:"PART 2 · 직무와 진입 경로", menu:"결과물의 연결", type:'content', layout:'review',
+  title:"여러 직군의 결과물은 하나의 결정으로 연결됩니다", sub:"같은 행사 신청 문제를 함께 해결하는 예시", insight:"보안·개인정보 검토는 기획부터 운영까지 함께 진행합니다",
+  body:table(["진행","함께 보는 것","결정과 결과물"],[["문제 발견","기획·운영·데이터: 이탈과 문의","개선 목표·성공 기준"],["해결안 비교","디자인·기획·개발: 흐름과 제약","대안 비교·수정 범위"],["실행과 확인","개발·디자인·운영: 오류와 사용성","테스트·안내·운영 기록"],["효과 검토","데이터·마케팅·기획: 변화와 반응","다음 개선 결정"],["전 과정 보호","보안·개인정보·거버넌스: 수집·권한·위험","최소 수집·검토·접근 기준"]],{})},
+/* 화면 20/52 */ {part:"PART 2 · 직무와 진입 경로", menu:"AI 결과 검증", type:'content', layout:'review',
+  title:"AI의 제안을 그대로 실행해도 될까요?", sub:"30초 검토 · 아래 문장은 오류를 포함한 가상의 AI 답변입니다", insight:"어떤 근거가 빠졌나요? 무엇을 먼저 확인할지 채팅에 남겨주세요",
+  body:twoCol({"icon":"🤖","title":"검토할 AI 제안","list":["지난주 신청 80명, 이번 주 100명","신청 완료율이 25% 올랐습니다","새 안내 문구의 효과가 확실합니다","다음에는 연락처도 더 수집합시다"]},{"icon":"🔎","hl":true,"title":"확인할 질문","list":["방문자 수가 없는데 완료율을 알 수 있나?","인원 증가만으로 원인을 확정할 수 있나?","기간·대상·유입 조건은 같은가?","연락처 추가 수집이 꼭 필요한가?"]})},
 /* 19 */ {part:'PART 2 · 직무와 진입 경로', menu:'나와 맞는 직무를 찾으세요', type:'content',
-  title:'인기 있는 직무보다 나와 맞는 직무를 찾으세요',
-  insight:'직무는 전공만으로 결정되지 않습니다, 반복해서 잘하고 싶은 활동에서 좁혀집니다',
+  title:'참고 | 관심 활동과 직무를 연결해보세요',
+  sub:'17/52에서 고른 후보를 찾아, 실제 업무를 더 확인하는 참고표입니다', insight:'',
   body: table(['내가 즐기는 활동','연결 가능성이 높은 직무'],[
     [em('🧩')+'복잡한 내용을 구조화하고 정리한다','서비스기획자·PM·PO'],
     [em('🤝')+'여러 사람의 의견을 듣고 조율한다','PM·프로젝트 매니저·서비스 운영'],
@@ -941,240 +909,98 @@ const SLIDES = [
   ],{firstcol:false,compact:true})},
 /* 20 */ {part:'PART 2 · 직무와 진입 경로', menu:'직무는 네 기준의 교집합에서', type:'content',
   title:'직무는 네 가지 기준의 교집합에서 선택합니다',
-  insight:'직무의 이미지가 아니라 실제 업무를 기준으로 선택해야 합니다',
+  insight:'네 기준을 채용공고와 작은 실험에 대입해보면, 막연한 직무 이미지가 실제 선택 기준으로 바뀝니다',
   body: cardGrid(4,[
-    {num:1,title:'흥미',desc:'계속 배우고 싶은가'},
-    {num:2,title:'강점',desc:'비교적 잘하거나 빠르게 성장하는가'},
-    {num:3,title:'업무 방식',desc:'실제 일하는 과정이 나와 맞는가'},
-    {num:4,hl:true,title:'시장성',desc:'채용 수요와 성장 경로가 있는가'},
+    {num:1,title:'흥미',desc:'그 직무의 핵심 업무를 3개월 이상 반복해도 계속 궁금한가?',foot:'확인: 관련 공고 3개 읽고 반복 업무 표시'},
+    {num:2,title:'강점',desc:'남보다 빠르게 구조화·설명·분석·실행할 수 있는 활동은 무엇인가?',foot:'확인: 과거 경험에서 잘했던 행동 3개 기록'},
+    {num:3,title:'업무 방식',desc:'혼자 깊이 파고드는가, 사람을 조율하는가, 빠르게 실험하는가?',foot:'확인: 하루 업무 흐름과 협업 방식을 상상'},
+    {num:4,hl:true,title:'시장성',desc:'채용 수요가 있고, 1~2년 뒤 더 큰 책임으로 확장할 수 있는가?',foot:'확인: 신입·주니어 공고와 성장 경로 비교'},
   ]) + `<div class="example" data-anim><div class="ex-q">예시: "발표를 좋아하니 마케터가 맞다"로 끝내지 않습니다</div>
-    <div class="ex-skills"><b>→</b> 타깃 분석이 좋은가 · 데이터를 보는 것이 가능한가 · 콘텐츠를 반복 개선할 수 있는가 · 성과 압박을 감당할 수 있는가</div></div>`},
-/* 21 */ {part:'PART 2 · 직무와 진입 경로', menu:'연봉은 확인해야 할 조건입니다', type:'content',
-  title:'연봉은 선택 기준이 아니라 확인해야 할 조건입니다',
-  insight:'연봉이 높은 직무보다, 시장 가치를 높일 수 있는 직무가 중요합니다',
-  body: twoCol(
-    {icon:'💰',title:'연봉을 볼 때 함께 확인할 것',mini:['회사 규모와 산업','직무의 희소성','개인의 경험과 포트폴리오','성과급·스톡옵션·복지 포함 여부','성장 속도와 다음 이직 가능성','조사 연도와 데이터 출처']},
-    {icon:'📊',hl:true,title:'직무별 경향',miniOne:['개발·데이터 직군은 기술 숙련도에 따른 격차가 큼','제품·기획 직군은 경험과 책임 범위에 따른 격차가 큼','디자인·마케팅·운영 직군은 산업과 회사 규모의 영향이 큼']},
-    true)},
+    <div class="ex-skills"><b>→</b> 타깃 분석이 좋은가 · 데이터를 보는 것이 가능한가 · 콘텐츠를 반복 개선할 수 있는가 · 성과 압박을 감당할 수 있는가<br><b>→</b> 네 질문에 답한 뒤 작은 콘텐츠 실험 1개를 실행하고 결과를 기록합니다</div></div>`},
+/* 화면 23/52 */ {part:"PART 2 · 직무와 진입 경로", menu:"회사 선택 조건", type:'content', layout:'review',
+  title:"보상·생활 조건·성장 환경을 함께 비교합니다", sub:"내가 지속할 수 있는 조건도 중요한 선택 기준입니다", insight:"연봉만으로 결정하지 않되, 필요한 보상과 생활 조건을 낮춰 보지 마세요",
+  body:cardGrid(4,[{"icon":"💰","title":"보상","desc":"기본급·변동급·복지와 지급 조건"},{"icon":"🏠","title":"생활","desc":"통근·근무시간·계약 형태·생활비"},{"icon":"🛠️","title":"업무","desc":"직접 맡을 역할·책임·도구"},{"icon":"🌱","hl":true,"title":"학습 환경","desc":"피드백·동료·교육·다음 역할"}])},
 /* 22 */ {part:'PART 3 · 회사가 원하는 신입', menu:'PART 3 · 회사는 어떤 신입을 원하는가', type:'divider',
   kicker:'PART 3', ghost:'03',
   title:'회사는 어떤<br><span class="hl">신입을 원하는가</span>',
   sub:'AI 협업 · 기술 대화 · 문서 · 판단 · 협업'},
-/* 23 */ {part:'PART 3 · 회사가 원하는 신입', menu:'맥락을 주고 결과를 판단합니다', type:'content',
-  title:'AI 시대의 핵심 인재는 맥락을 주고 결과를 판단합니다',
-  insight:'일을 시키는 능력보다, 무엇이 좋은 결과인지 판단하는 능력이 중요합니다',
-  body: cardGrid(3,[
-    {icon:'💬',center:true,title:'맥락을 전달하는 사람',desc:'목적·배경·대상·제약 조건을 명확히 설명함'},
-    {icon:'🔎',center:true,title:'결과를 판단하는 사람',desc:'AI 결과물이 맞는지, 쓸 만한지, 위험하지 않은지 검토함'},
-    {icon:'👥',center:true,hl:true,title:'사람을 연결하는 사람',desc:'서로 다른 요구와 관점을 하나의 방향으로 정렬함'},
-  ])},
-/* 24 */ {part:'PART 3 · 회사가 원하는 신입', menu:'모든 직군은 기술과 대화할 수 있어야 합니다', type:'content',
-  title:'모든 직군은 기술과 대화할 수 있어야 합니다',
-  sub:'개발자가 되는 것이 아니라, 나의 직무에서 기술의 가능성과 한계를 판단하는 능력',
-  insight:'기술을 깊이 구현하는 직무도, 기술을 이해하고 함께 결정하는 직무도 모두 테크 커리어입니다',
-  body: `<div class="tags" data-anim>${['요구사항','API','데이터베이스(DB)','프론트엔드','백엔드','서버·클라이언트','버그·에러·예외','배포','버전 관리(Git)','테스트·QA'].map(t=>`<span class="tag">${t}</span>`).join('')}<span class="tag tag--hl">Product Engineer(PE)</span></div>`
-    + table(['수준','설명','대상 / 비고'],[
-      [em('✕')+'기초 부족','서버·데이터베이스·API의 역할을 구분하기 어려움','회의에서 질문과 판단이 어려움'],
-      [em('✓')+'협업 가능 수준','기술의 가능 여부와 제약을 이해하고 질문함','신입·주니어 기획·디자인·데이터 직무의 목표'],
-      [em('🔼')+'심화 이해','아키텍처·성능·기술 부채를 함께 논의함','시니어·PO 수준에서 요구'],
-    ],{hlRow:1})},
-/* 25 */ {part:'PART 3 · 회사가 원하는 신입', menu:'서비스기획자·PM의 실제 하루', type:'content',
-  title:'🕐 예) 서비스기획자·PM의 실제 하루',
-  insight:'문서를 쓰는 이유는 팀이 같은 결정을 내리게 하기 위해서입니다',
-  body: table(['시간','업무','실제로 하는 판단'],[
-    ['09:00','데일리 스크럼','진행 상황과 장애 요소 확인'],
-    ['10:00','요구사항·화면 정책 작성','무엇을 만들고 무엇을 제외할지 결정'],
-    ['13:00','사업·마케팅·CS 요구 수렴','요구사항 우선순위 조정'],
-    ['15:00','개발·디자인 협의','구현 범위와 일정 조율'],
-    ['16:00','데이터·지표 확인','다음 개선 과제 선정'],
-    ['17:00','백로그 정리','다음 스프린트 범위 결정'],
-  ])},
-/* 26 */ {part:'PART 3 · 회사가 원하는 신입', menu:'Product Engineer의 실제 하루', type:'content',
-  title:'🧑‍💻 예) Product Engineer의 실제 하루',
-  insight:'PE는 코딩만 하는 사람이 아니라 문제를 발견하고, 설계하고, 구현하고, 검증하는 사람입니다',
-  body: table(['시간','업무','실제로 하는 판단'],[
-    ['09:00','사용자 피드백·오류 로그 확인','어떤 문제가 반복되고 누구에게 영향을 주는지 파악'],
-    ['10:00','문제 원인 분석·우선순위 결정','지금 해결할 문제와 나중에 해결할 문제 구분'],
-    ['11:00','AI와 구현 방법 탐색','제안된 기술과 코드가 실제 구조에 맞는지 검토'],
-    ['13:00','기능 설계·데이터 구조 검토','사용자 흐름과 시스템 구조를 함께 설계'],
-    ['15:00','코드 구현·리뷰·테스트','빠르게 만들되 오류·보안·확장성을 확인'],
-    ['17:00','배포 결과 확인·회고','사용자 반응을 보고 다음 개선 과제 선정'],
-  ])},
-/* 27 */ {part:'PART 3 · 회사가 원하는 신입', menu:'채용공고는 회사의 문제입니다', type:'content',
-  title:'채용공고는 회사의 문제를 적어놓은 문서입니다',
-  insight:'채용공고를 읽는 것은 조건 확인이 아니라 회사의 문제를 읽는 일입니다',
-  body: table(['항목','읽어야 할 질문'],[
-    ['<span class="em-key">💼 주요업무</span>','<span class="em-key">입사하면 실제로 무엇을 하는가</span>'],
-    [em('✅')+'자격요건','반드시 필요한 최소 역량은 무엇인가'],
-    [em('👤')+'우대사항','어떤 경험이 있으면 차별화되는가'],
-    [em('🔧')+'사용 도구','어떤 실무 환경에서 일하는가'],
-    [em('💬')+'반복 단어','회사가 가장 중요하게 보는 역량은 무엇인가'],
-  ]) + `<div class="example" data-anim><div class="ex-q">예시: "사용자 데이터를 분석해 서비스 개선 과제를 도출하고, 개발·디자인 조직과 협업합니다"</div>
-    <div class="ex-skills"><b>추출할 역량 →</b> 데이터 해석 · 문제 정의 · 서비스 개선 · 협업 · 커뮤니케이션</div></div>`},
-/* 28 */ {part:'PART 3 · 회사가 원하는 신입', menu:'채용공고를 3분 안에 분석해봅니다', type:'content',
-  title:'실습 | 채용공고를 3분 안에 분석해봅니다',
-  sub:'공고를 읽는 데서 끝나지 않고, 나의 다음 경험으로 바꿔봅니다',
-  insight:'반복되는 단어는 회사가 중요하게 보는 역량의 힌트입니다',
-  body: `<div class="twocol">
-    ${colBox({icon:'⏱️',title:'3분 분석 순서',steps:[
-      {i:'1️⃣',k:'반복 단어 ·',v:'가장 자주 등장하는 역량을 3개 찾기'},
-      {i:'2️⃣',k:'필수 조건 ·',v:'신입에게 반드시 필요한 최소 역량 표시하기'},
-      {i:'3️⃣',k:'<span class="em-key">산출물 ·</span>',v:'<span class="em-key">그 역량을 보여줄 결과물 한 가지 정하기</span>'},
-      {i:'4️⃣',k:'<span class="em-key">다음 행동 ·</span>',v:'<span class="em-key">이번 주에 할 수 있는 작은 실험으로 바꾸기</span>'},
-    ]})}
-    ${colBox({hl:true,icon:'📝',title:'실제 문장을 이렇게 바꿔 읽습니다',miniOne:['공고 문장: 사용자 데이터를 분석해 서비스 개선 과제를 도출하고 개발·디자인 조직과 협업','추출 역량: 데이터 해석 · 문제 정의 · 협업','보여줄 결과물: 서비스 개선 분석 1장','이번 주 행동: 관심 서비스 사용자 3명 인터뷰']})}
-  </div>`},
-/* 29 */ {part:'PART 3 · 회사가 원하는 신입', menu:'좋은 보고서는 결정을 만듭니다', type:'content',
-  title:'채용공고에서 요구한 역량은 실제 업무에서 이렇게 드러납니다',
-  sub:'데이터 해석 · 문제 정의 · 협업 역량은 보고서와 의사결정 과정에서 확인됩니다',
-  insight:'보고서의 목적은 조사를 보여주는 것이 아니라 다음 결정을 돕는 것입니다',
-  body: `<div class="twocol" style="grid-template-columns:1.05fr .95fr">
-    <div style="display:flex;flex-direction:column;gap:14px">
-      ${cardGrid(1,[
-        {num:'01',title:'목적이 명확합니다',foot:`<span style="color:var(--muted)">나쁜 제목 · "서비스 현황 보고"</span><br><span style="color:var(--violet-700);font-weight:700">좋은 제목 · "DAU 20% 하락 원인 분석 및 개선안"</span>`},
-      ]).replace('cards cards--1','cards')}
-      ${cardGrid(1,[
-        {num:'02',title:'읽는 사람 기준으로 씁니다',desc:'자료 나열이 아니라 <b style="color:var(--violet-700)">결론 → 이유 → 근거</b> 순서'},
-      ]).replace('cards cards--1','cards')}
-      ${cardGrid(1,[
-        {num:'03',title:'다음 행동이 보입니다',foot:`<span style="color:var(--muted)">나쁜 결론 · "검토 바랍니다"</span><br><span style="color:var(--violet-700);font-weight:700">좋은 결론 · "A안 채택 요청 — 예상 효과와 리스크 첨부"</span>`},
-      ]).replace('cards cards--1','cards')}
-    </div>
-    <div style="display:flex;flex-direction:column;gap:12px">
-      <div class="col col--hl" data-anim style="gap:8px">
-        <div class="col__title" style="font-size:20px">💡 의사결정 인사이트</div>
-        <div class="card__desc" style="font-size:17px">결국 의사결정은 데이터와 근거 위에서 이뤄집니다. 좋은 보고서는 정보를 나열하는 문서가 아니라, 데이터를 해석해 다음 결정을 가능하게 만드는 도구입니다</div>
-      </div>
-      <div class="qbox" data-anim>
-        <h4>📄 보고서에 꼭 있어야 할 근거</h4>
-        <ul><li>무엇이 변했는가 (사실·지표)</li><li>왜 그런가 (원인·해석)</li><li>그래서 무엇을 할 것인가 (대안·액션)</li></ul>
-      </div>
-      <div class="qbox" data-anim>
-        <h4>🔀 의사결정 흐름</h4>
-        <div class="dflow"><span class="node">데이터</span><span class="arr">→</span><span class="node">해석</span><span class="arr">→</span><span class="node">판단</span><span class="arr">→</span><span class="node">실행</span></div>
-      </div>
-    </div>
-  </div>`},
-/* 29 */ {part:'PART 3 · 회사가 원하는 신입', menu:'AI 시대의 신입은 학습 루프를 만듭니다', type:'content',
-  title:'AI 시대의 신입은 학습 루프를 만듭니다',
-  sub:'배운 것을 결과물로 만들고, 피드백을 받아 다음 버전으로 개선하는 반복 구조',
-  insight:'학습은 많이 보는 것이 아니라, 질문 → 시도 → 공유 → 개선을 한 바퀴 돌 때 일어납니다',
-  body: `<div class="twocol">
-    ${colBox({icon:'🔁',title:'한 사이클의 실행 순서',steps:[
-      {i:'❓',k:'질문 ·',v:'관심 서비스의 불편을 한 문장으로 정의합니다'},
-      {i:'⚡',k:'시도 ·',v:'AI와 도구를 활용해 첫 결과물을 빠르게 만듭니다'},
-      {i:'🗣️',k:'공유 ·',v:'사용자·동료에게 보여주고 피드백을 받습니다'},
-      {i:'🔧',k:'개선 ·',v:'피드백을 반영해 두 번째 버전과 회고를 남깁니다'},
-    ]})}
-    ${colBox({hl:true,icon:'🧩',title:'예시: 배달 앱 개선 실험',sub:'하나의 관심을 작은 결과물로 바꾸는 방식',miniOne:['질문: 왜 사용자는 재주문하지 않을까?','시도: 사용자 3명 인터뷰 + 개선 화면 1장','공유: 친구·멘토에게 보여주고 피드백 기록','개선: 수정안과 배운 점을 포트폴리오에 남김']})}
-  </div>`},
-/* 30 */ {part:'PART 3 · 회사가 원하는 신입', menu:'사례 · 배달의민족이 찾는 인재상', type:'content',
-  title:'사례 | 배달의민족이 찾는 인재상',
-  sub:'채용공고의 평면적인 요구사항을 실제 업무·판단·산출물로 입체화해 읽습니다',
-  insight:'신입에게는 기본기와 성장 가능성을, 경력에게는 주도적인 문제 해결과 실행을 기대합니다. 중요한 것은 키워드를 외우는 것이 아니라, 그 요구를 어떤 행동과 결과물로 증명할지 해석하는 것입니다',
-  body: `<div class="case-read-note" data-anim><strong>평면 → 입체</strong> 채용공고의 키워드를 실제 업무, 판단, 결과물로 바꿔 읽어보세요.</div><div class="cards cards--6" style="grid-template-columns:repeat(3,1fr);gap:16px">
-    <div class="card card--hl" data-anim><div class="card__icon">🎯</div><div class="card__label">제품·서비스 기획</div><div class="card__title">고객 문제를 발견하고 우선순위를 정하는 사람</div><div class="card__desc">신입은 사용자 관점과 논리적 사고를, 경력은 데이터·비즈니스 기반의 주도적 기획과 실행을 보여줍니다.</div></div>
-    <div class="card" data-anim><div class="card__icon">💻</div><div class="card__label">개발·Product Engineer</div><div class="card__title">기본기를 바탕으로 끝까지 작동하는 결과를 만드는 사람</div><div class="card__desc">코드 작성뿐 아니라 구조·품질·보안·확장성을 판단하고 제품 개선까지 연결합니다.</div></div>
-    <div class="card" data-anim><div class="card__icon">✏️</div><div class="card__label">디자인</div><div class="card__title">사용자 경험을 구체적인 화면과 흐름으로 만드는 사람</div><div class="card__desc">신입은 관찰과 표현의 기본기를, 경력은 복잡한 문제를 자율적으로 해결하고 다양한 직군과 협업하는 역량을 보여줍니다.</div></div>
-    <div class="card" data-anim><div class="card__icon">📊</div><div class="card__label">데이터·분석</div><div class="card__title">숫자에서 사업의 다음 질문을 찾는 사람</div><div class="card__desc">신입은 분석 기초와 질문하는 힘을, 경력은 핵심 지표·실험·의사결정으로 연결하는 경험을 갖춥니다.</div></div>
-    <div class="card" data-anim><div class="card__icon">📣</div><div class="card__label">마케팅·콘텐츠</div><div class="card__title">고객의 언어로 가치를 전달하고 실험하는 사람</div><div class="card__desc">신입은 타깃과 메시지를 이해하는 감각을, 경력은 캠페인 전략·성과 분석·개선을 주도하는 역량을 보여줍니다.</div></div>
-    <div class="card card--hl" data-anim><div class="card__icon">🤝</div><div class="card__label">공통 인재상</div><div class="card__title">자율적으로 움직이되 팀으로 성과를 만드는 사람</div><div class="card__desc">규율 위의 자율 · 스타보다 팀워크 · 진지함과 위트 · 열심만큼 성과</div></div>
-  </div><div class="source-note">출처: <a href="https://career.woowahan.com/" target="_blank">우아한형제들 인재영입</a> (공식 채용 페이지, 2026.09.09 확인). 직군별 문장은 공개 직무 설명을 신입·경력 관점으로 요약한 내용입니다.</div>`},
-/* 31 */ {part:'PART 3 · 회사가 원하는 신입', menu:'사례 · 카카오가 찾는 인재상', type:'content',
-  title:'사례 | 카카오가 찾는 인재상',
-  sub:'신입 공채와 경력 공고에서 공통으로 보이는 기대 역량',
-  insight:'카카오는 새로운 기술을 탐색하고, 다양한 생각을 나누며, 실제 결과로 연결하는 사람을 찾습니다',
-  body: `<div class="cards cards--6" style="grid-template-columns:repeat(3,1fr);gap:16px">
-    <div class="card card--hl" data-anim><div class="card__icon">🌱</div><div class="card__label">신입 크루</div><div class="card__title">기본기를 바탕으로 배우고 도전하는 사람</div><div class="card__desc">2026 신입 크루 공채와 신입 기술 공고에서 보이듯, 기초 역량과 새로운 기술·업무에 대한 도전이 중요합니다.</div></div>
-    <div class="card" data-anim><div class="card__icon">🤖</div><div class="card__label">테크·AI</div><div class="card__title">기술을 사용자 경험과 서비스 가치로 연결하는 사람</div><div class="card__desc">ML·LLM·추천·SRE 등 전문성을 바탕으로 안정적이고 확장 가능한 서비스를 만듭니다.</div></div>
-    <div class="card" data-anim><div class="card__icon">🎨</div><div class="card__label">디자인</div><div class="card__title">복잡한 문제를 사용자 경험으로 풀어내는 사람</div><div class="card__desc">AI 서비스 UI·인터랙션처럼 기술과 디자인이 만나는 문제를 고민하고 실험합니다.</div></div>
-    <div class="card" data-anim><div class="card__icon">🤝</div><div class="card__label">협업</div><div class="card__title">다양한 생각을 나누고 함께 결과를 만드는 사람</div><div class="card__desc">기획·개발·데이터·마케팅 등 서로 다른 직군과 원활하게 협업합니다.</div></div>
-    <div class="card" data-anim><div class="card__icon">⚡</div><div class="card__label">자율적 실행</div><div class="card__title">문제를 스스로 정의하고 끝까지 실행하는 사람</div><div class="card__desc">지시받은 일을 처리하는 데 그치지 않고, 불편을 발견해 개선을 주도합니다.</div></div>
-    <div class="card card--hl" data-anim><div class="card__icon">🚀</div><div class="card__label">신입·경력 공통</div><div class="card__title">새로운 가능성을 실제 서비스로 만드는 사람</div><div class="card__desc">신입은 성장 가능성과 기본기를, 경력은 전문성·주도성·확장된 책임을 증명합니다.</div></div>
-  </div><div class="source-note">출처: <a href="https://careers.kakao.com/jobs?skillSet=&page=1&company=KAKAO&part=TECHNOLOGY&employeeType=&keyword=" target="_blank">카카오 영입 · 진행 중 공고</a>, <a href="https://careers.kakao.com/index?t_src=mainpage" target="_blank">카카오 영입 메인</a> (공식 채용 페이지, 2026.09.09 확인).</div>`},
-/* 32 */ {part:'PART 3 · 회사가 원하는 신입', menu:'AI 시대에 필요한 인재는 어떤 사람인가', type:'content',
-  title:'AI 시대에 필요한 인재는 어떤 사람인가',
-  sub:'기업 사례에서 공통으로 보이는 다섯 가지 역량',
-  insight:'이 역량은 말로 설명하는 것이 아니라, 작은 결과물과 문제 해결 경험으로 증명해야 합니다',
-  body: cardGrid(6,[
-    {icon:'🔍',title:'문제를 발견합니다',desc:'사용자와 현장의 불편을 관찰하고, 해결할 문제를 구체화합니다'},
-    {icon:'🤖',title:'AI를 활용합니다',desc:'AI를 목적에 맞는 도구로 사용해 탐색과 실행의 속도를 높입니다'},
-    {icon:'⚖️',title:'결과를 검증합니다',desc:'사실·품질·보안·맥락을 확인하고 최종 판단에 책임집니다'},
-    {icon:'🤝',title:'사람과 협업합니다',desc:'다른 직군의 관점과 요구를 듣고 하나의 방향으로 정렬합니다'},
-    {icon:'🔁',hl:true,title:'반복해서 개선합니다',desc:'작게 만들고 공유하고 피드백을 받아 다음 버전으로 발전시킵니다'},
-  ])},
+/* 화면 25/52 */ {part:"PART 3 · 회사가 원하는 신입", menu:"업무 행동 세 가지", type:'content', layout:'review',
+  title:"같은 AI 도구를 써도, 일하는 방식은 다릅니다", sub:"학생이 연습할 수 있는 업무 습관 세 가지", insight:"AI 활용 경험은 목적·검토·협의 과정을 함께 설명하세요",
+  body:cardGrid(3,[{"num":1,"center":true,"title":"맥락을 줍니다","desc":"행사 대상·목표·제약을 정리한 뒤 안내 초안 요청","foot":"남길 것: 요청 배경과 기준"},{"num":2,"center":true,"title":"판단합니다","desc":"사실·표현·개인정보를 확인하고 수정","foot":"남길 것: 오류와 수정 이유"},{"num":3,"center":true,"hl":true,"title":"협의합니다","desc":"운영 담당자와 검토하고 최종 안내 확정","foot":"남길 것: 의견과 합의 기록"}])},
+/* 24 */ {part:'PART 3 · 회사가 원하는 신입', menu:'직무에 필요한 기술 이해를 갖춥니다', type:'content',
+  title:'내 직무에서 기술의 가능성과 한계를 판단합니다',
+  sub:'AI·데이터·성과·보호 기준을 이해하고, 직무에 맞게 깊이를 더합니다',
+  insight:'관심 공고에서 기술 용어 1개를 골라, 그 기술로 무엇을 판단해야 하는지 적어보세요',
+  body: table(['공통 질문','업무에서 확인할 것','학생이 해볼 준비'],[
+    ['AI 결과를 믿어도 될까?','오류·근거·적용 범위','답변의 출처와 오류 비교'],
+    ['데이터를 써도 될까?','품질·권한·개인정보','가상 데이터 흐름과 위험 정리'],
+    ['실제로 효과가 있을까?','목표·지표·전후 차이','작은 실험의 평가 기준 작성'],
+    ['예외가 생기면 어떻게 할까?','사람의 검토·협의·승인','예외 사례와 대응 기준 작성'],
+  ]) + '<div class="example" data-anim><div class="ex-q">직무별 심화 예시</div><div class="ex-skills">기획 · API와 서비스 흐름 / 데이터 · SQL과 품질 / 마케팅 · 실험과 성과 / 보안 · 접근권한과 로그<br>지원 직무에서 쓰는 이유와 필요한 수준을 확인합니다.</div></div>'},
+/* 화면 27/52 */ {part:"PART 3 · 회사가 원하는 신입", menu:"PM의 하루", type:'content', layout:'review',
+  title:"예시 | 서비스기획자·PM의 하루", sub:"가상 업무 · 행사 신청 이탈을 줄이기 위한 판단", insight:"핵심 책임: 무엇을 개선하고, 어떤 기준으로 효과를 확인할 것인가",
+  body:table(["시간","업무","판단·결과물"],[["09:00","문의·이탈 현황 확인","문제 가설과 확인할 데이터"],["10:30","데이터·운영·디자인과 원인 검토","성공 기준과 우선순위"],["13:00","개발·보안·개인정보 담당과 협의","가능한 범위·필요한 수집·위험"],["15:00","해결안과 운영 절차 정리","요구사항·담당·검토 기준"],["17:00","실행 준비와 다음 검토 일정","진행 여부·확인할 지표"]],{})},
+/* 화면 28/52 */ {part:"PART 3 · 회사가 원하는 신입", menu:"PE의 하루", type:'content', layout:'review',
+  title:"예시 | Product Engineer의 하루", sub:"같은 행사 신청 문제 · 제품 구현과 검증을 맡는 역할의 예시", insight:"핵심 책임: 요구를 작동하는 기능으로 만들고 오류·품질을 확인한다",
+  body:table(["시간","업무","판단·결과물"],[["09:00","문의·오류 로그 확인","어떤 오류가 신청을 막는가"],["10:30","PM·디자인과 범위 협의","수정할 기능과 테스트 기준"],["13:00","AI 지원을 받아 구현","제안 코드의 적합성·직접 수정"],["15:00","동료와 테스트·보호조치 검토","오류·접근권한·데이터 처리 확인"],["17:00","적용 결과와 운영 상태 확인","남은 문제·다음 개선"]],{}) + "<div class=\"source-note\">PE의 명칭과 책임 범위는 회사마다 다릅니다. 일정은 실제 특정 직원의 기록이 아닌 교육용 예시입니다.</div>"},
+/* 화면 29/52 */ {part:"PART 3 · 회사가 원하는 신입", menu:"AI 거버넌스의 하루", type:'content', layout:'review',
+  title:"예시 | AI 거버넌스 담당자의 하루", sub:"같은 행사 서비스에 AI 문의 응답을 도입한다면 · 가상 업무", insight:"핵심 책임: AI를 어떤 조건에서 사용하고, 언제 사람이 검토할지 정한다",
+  body:table(["시간","업무","판단·결과물"],[["09:00","AI 도입 목적과 사용 범위 확인","대상·사용자 영향·책임자"],["10:30","데이터·응답 위험 파악","개인정보·오답·편향 시나리오"],["13:00","운영·법무·보안과 협의","사용 조건·사람에게 연결할 기준"],["15:00","기획·개발과 통제 방안 검토","고지·접근권한·로그·평가 기준"],["17:00","검토 기록과 재평가 계획","개선 요청·운영 중 확인할 사항"]],{}) + "<div class=\"source-note\">회사에 따라 보안·법무·데이터 조직이 나누어 맡거나 경력 역할로 채용합니다. 명칭만으로 신입 진입 가능성을 판단하지 마세요.</div>"},
+/* 화면 30/52 */ {part:"PART 3 · 회사가 원하는 신입", menu:"공고 읽는 기준", type:'content', layout:'review',
+  title:"채용공고의 요구를 나의 준비로 번역합니다", sub:"다음 화면에서 실제 경력 공고와 학생의 연습 범위를 나누어 봅니다", insight:"반복 단어의 빈도만 보지 말고 필수 조건과 업무의 맥락을 함께 읽으세요",
+  body:table(["공고의 항목","확인할 질문","준비로 바꾸기"],[["주요업무","어떤 문제를 책임지는가?","작게 연습할 문제 선택"],["필수 조건","지원에 꼭 필요한 경험은?","현재 충족 여부 확인"],["우대사항","어떤 경험이 추가 강점인가?","다음 경험 후보 정리"],["도구·협업","어떤 환경·사람과 일하는가?","필요한 기초와 협의 방식"],["반복 표현","문맥상 어떤 역량을 강조하는가?","행동과 결과물로 해석"]],{})},
+/* 화면 31/52 */ {part:"PART 3 · 회사가 원하는 신입", menu:"경력 공고 해석 실습", type:'content', layout:'review',
+  title:"실습 | 경력 공고에서 준비 방향을 읽어봅니다", sub:"인바디헬스케어 · 데이터 보안 / 즉시 지원 기준과 학습 목표를 구분합니다", insight:"개인 실습은 경력 요건을 대체하지 않습니다. 신입 지원 시에는 신입·인턴 공고를 따로 확인하세요",
+  body:twoCol({"icon":"📋","title":"실제 공고의 요구 · 요약","list":["강조 표현: 데이터 보안·거버넌스·개인정보","본문 필수: 관련 경력 5년 이상, SQL/Python, 파이프라인 설계·운영","업무 결과: 데이터 흐름·보호·접근 관리 체계","역량: 데이터 처리·위험 이해·여러 직군과 조율"]},{"icon":"📝","hl":true,"title":"학생의 연습으로 바꾸면","list":["결과물: 가상 서비스의 데이터 흐름도 1장","내용: 수집 목적·이동·접근·보관과 위험","다음 행동: 흐름을 그리고 보호 방법 조사","채팅: 내가 더 배워야 할 개념 1개"]}) + "<div class=\"source-note\"><a href=\"https://www.wanted.co.kr/wd/382294\" target=\"_blank\" rel=\"noopener\">원문 공고 보기</a> · 2026.09.11 확인. 상단은 경력 1~5년, 본문은 5년 이상으로 표시가 다릅니다. 지원 전 기업에 확인하세요. 왼쪽은 요약, 오른쪽은 강의용 학습 제안입니다.</div>"},
+/* 화면 32/52 */ {part:"PART 3 · 회사가 원하는 신입", menu:"결정을 돕는 문서", type:'content', layout:'review',
+  title:"결과물은 읽는 사람의 결정을 도와야 합니다", sub:"가상 데이터 흐름도에서 위험을 발견했다면", insight:"같은 사실을 누구에게 보여주는지에 따라 설명의 깊이와 요청을 바꿉니다",
+  body:table(["독자","필요한 설명","결정 요청"],[["운영 담당","어떤 업무·사용자에게 영향이 있는가","처리 절차와 예외 대응 검토"],["보안·개인정보 담당","어떤 정보가 어디로 이동하는가","위험과 보호 방법 검토"],["기획·개발 담당","어떤 흐름·기능을 수정해야 하는가","구현 범위와 테스트 협의"],["책임자","근거·대안·남은 위험은 무엇인가","실행 우선순위와 담당 결정"]],{}) + "<div class=\"example\" data-anim><div class=\"ex-q\">문서 한 장의 구조</div><div class=\"ex-skills\">발견한 사실 → 근거 → 대안 → 검토받을 질문<br>확인된 사실과 아직 검증하지 못한 가설을 구분합니다.</div></div>"},
+/* 화면 33/52 */ {part:"PART 3 · 회사가 원하는 신입", menu:"학습 루프", type:'content', layout:'review',
+  title:"피드백으로 두 번째 결과물을 만듭니다", sub:"학습 루프 · 앞에서 만든 데이터 흐름도를 개선한다면", insight:"피드백을 받은 뒤 바뀐 내용과 이유를 남기는 것이 한 사이클입니다",
+  body:cardGrid(4,[{"num":1,"title":"질문","desc":"정보가 어디로 이동하는지 설명할 수 있을까?"},{"num":2,"title":"첫 버전","desc":"가상 서비스의 흐름·목적·위험을 한 장으로 정리"},{"num":3,"title":"검토","desc":"동료에게 빠진 경로와 이해하기 어려운 부분 질문"},{"num":4,"hl":true,"title":"두 번째 버전","desc":"수정 전후와 남은 질문을 기록"}])},
+/* 화면 34/52 */ {part:"PART 3 · 회사가 원하는 신입", menu:"배민 문화와 준비", type:'content', layout:'review',
+  title:"사례 | 배달의민족의 문화를 행동으로 읽습니다", sub:"공식 문화 자료와 직군별 준비 예시를 구분해서 봅니다", insight:"신입·경력별 지원 조건은 개별 공고에서 확인합니다",
+  body:cardGrid(6,[{"icon":"📖","label":"공식 문화 자료","title":"원칙과 책임을 함께","desc":"공개된 ‘송파구에서 일을 더 잘하는 11가지 방법’은 자율·결정의 책임·고객을 다룹니다."},{"icon":"🎯","label":"기획 · 해석 예시","title":"선택의 근거","desc":"요구사항을 비교하고 우선순위를 정한 기록"},{"icon":"✏️","label":"디자인 · 해석 예시","title":"고객의 불편","desc":"관찰에서 찾은 문제와 수정한 사용자 흐름"},{"icon":"📊","label":"데이터 · 해석 예시","title":"판단을 돕는 근거","desc":"지표·가설·해석의 한계를 함께 정리"},{"icon":"📣","label":"마케팅·운영 · 해석 예시","title":"반응과 개선","desc":"고객 반응을 확인하고 안내·절차를 개선"},{"icon":"💻","label":"개발 · 해석 예시","title":"결과에 대한 책임","desc":"기술 선택·테스트·운영 문제를 설명"}]) + "<div class=\"source-note\">문화 참고: <a href=\"https://woowahan-cdn.woowahan.com/_/_/src/static/download/poster_CMYK.pdf\" target=\"_blank\" rel=\"noopener\">우아한형제들 · 일하는 방법 공개 자료 (2018)</a>. 다섯 직군의 결과물은 강의자의 해석이며 공식 채용요건이 아닙니다. <a href=\"https://career.woowahan.com/\" target=\"_blank\" rel=\"noopener\">현재 채용공고 확인</a></div>"},
+/* 화면 35/52 */ {part:"PART 3 · 회사가 원하는 신입", menu:"카카오 자료 읽기", type:'content', layout:'review',
+  title:"사례 | 카카오 자료를 구분해서 읽습니다", sub:"신입 모집·개별 직무·조직 문화를 같은 기준으로 섞지 않습니다", insight:"채팅: 문화에 공감한다는 말 대신, 내 경험 중 무엇으로 설명할 수 있을까요?",
+  body:cardGrid(6,[{"icon":"🌱","label":"신입 · 공식 모집","title":"신입 모집 안내","desc":"2026 신입 크루 공채 안내가 있습니다. 지원 가능 직무와 조건은 모집별로 확인합니다."},{"icon":"📋","label":"개별 직무 · 공식 공고","title":"신입·경력 구분","desc":"LLM Research Engineer는 신입/경력으로 안내됩니다. 이 조건을 전 직군에 일반화하지 않습니다."},{"icon":"🏢","label":"문화 · 공식 보고서","title":"Kakao ON","desc":"2024 ESG 보고서는 회사의 일하는 방식을 소개합니다. 문화와 자격요건은 구분합니다."},{"icon":"🧠","label":"강의자의 준비 제안","title":"왜 선택했는가","desc":"기획·디자인·데이터 등 내 직무의 대안 비교를 기록합니다."},{"icon":"🤝","label":"강의자의 준비 제안","title":"어떻게 함께했는가","desc":"의견 차이를 조율하고 수정한 경험을 설명합니다."},{"icon":"🔁","label":"강의자의 준비 제안","title":"무엇을 배웠는가","desc":"첫 시도에서 얻은 피드백과 다음 버전을 보여줍니다."}]) + "<div class=\"source-note\">공식 출처: <a href=\"https://pf.kakao.com/_rehCxd/110704252\" target=\"_blank\" rel=\"noopener\">신입 공채 안내</a> · <a href=\"https://careers.kakao.com/jobs/P-14403\" target=\"_blank\" rel=\"noopener\">직무 공고</a> · <a href=\"https://www.kakaocorp.com/media/esg-resource/pdf/Kakao_ESGReport2024_KR.pdf\" target=\"_blank\" rel=\"noopener\">2024 ESG 보고서</a>. 확인 2026.09.11. 현재 모집 상태는 원문에서 재확인합니다.</div>"},
+/* 32 */ {part:'PART 3 · 회사가 원하는 신입', menu:'인재상을 작은 경험으로 바꿉니다', type:'content',
+  title:'기업이 원하는 역량을 작은 경험으로 바꿉니다',
+  sub:'시장 자료를 참고해 묶은 다섯 역량 · 나의 관심 직무에 적용하기',
+  insight:'이번 달에 만들 결과물 1개를 고르세요. 무엇을 판단했는지 설명할 수 있어야 합니다',
+  body: cardGrid(5,[
+    {icon:'🧠',center:true,title:'분석적 사고',desc:'문제와 근거를 구조화합니다',foot:'결과물: 문제·원인·근거 1장'},
+    {icon:'💡',center:true,title:'창의적 해결',desc:'대안을 비교하고 선택합니다',foot:'결과물: 대안 2개와 선택 이유'},
+    {icon:'🤖',center:true,title:'AI·기술 활용',desc:'도구를 쓰고 결과를 검증합니다',foot:'결과물: 초안·오류·수정 기록'},
+    {icon:'🌱',center:true,title:'학습과 적응',desc:'피드백으로 다음 버전을 만듭니다',foot:'결과물: 전후 비교와 회고'},
+    {icon:'🤝',center:true,hl:true,title:'협업과 책임',desc:'의견·품질·위험을 함께 판단합니다',foot:'결과물: 합의·검토·조치 기록'},
+  ]) + '<div class="source-note">참고: <a href="https://www.weforum.org/publications/the-future-of-jobs-report-2025/in-full/3-skills-outlook/" target="_blank" rel="noopener">WEF · Future of Jobs 2025, Skills outlook</a>. 다섯 묶음과 결과물 예시는 강의자의 재구성이며 보고서의 공식 순위가 아닙니다.</div>'},
 /* 33 */ {part:'PART 4 · 경험 만들기', menu:'PART 4 · 어떤 경험을 만들어야 하는가', type:'divider',
   kicker:'PART 4', ghost:'04',
   title:'지금부터 어떤 경험을<br><span class="hl">만들어야 하는가</span>',
   sub:'채용공고 · 프로젝트 · 포트폴리오 · 실행 로드맵'},
-/* 34 */ {part:'PART 4 · 경험 만들기', menu:'좋은 경험의 조건을 먼저 확인합니다', type:'content',
-  title:'경험의 종류보다 좋은 경험의 조건이 중요합니다',
-  sub:'사이드 프로젝트·공모전·인턴·개인 프로젝트 모두 같은 기준으로 봅니다',
-  insight:'활동의 개수보다 무엇을 발견하고, 어떤 판단을 했으며, 무엇이 달라졌는지가 중요합니다',
-  body: cardGrid(5,[
-    {icon:'🔍',title:'실제 문제',desc:'누군가의 불편이나 기회를 관찰했는가'},
-    {icon:'👤',title:'나의 역할',desc:'팀 안에서 내가 직접 맡은 일이 분명한가'},
-    {icon:'⚖️',title:'나의 판단',desc:'대안을 비교하고 선택한 근거가 있는가'},
-    {icon:'📈',title:'변화와 결과',desc:'사용자·지표·과정에서 달라진 점이 있는가'},
-    {icon:'🔁',hl:true,title:'회고와 개선',desc:'다시 한다면 무엇을 바꿀지 설명할 수 있는가'},
-  ])},
-/* 35 */ {part:'PART 4 · 경험 만들기', menu:'예시 · 작은 경험을 직무 역량으로 바꾸기', type:'content',
-  title:'예시 | 작은 경험을 직무 역량으로 바꾸는 과정',
-  sub:'※ 실제 수강생 사례를 확보하면 이 페이지의 예시를 교체할 수 있습니다',
-  insight:'작은 결과물도 문제·역할·판단·결과가 연결되면 직무 경험으로 설명할 수 있습니다',
-  body: `<div class="twocol">
-    ${colBox({icon:'🧑‍🎓',title:'예시 수강생의 출발점',miniOne:['비전공자라 직무 경험이 부족함','평소 자주 쓰는 배달 앱의 불편을 발견함','서비스기획 직무에 관심은 있지만 보여줄 결과물이 없음']})}
-    ${colBox({hl:true,icon:'🧩',title:'작은 결과물로 전환',steps:[
-      {i:'🔍',k:'문제 ·',v:'재주문 과정에서 메뉴 비교가 어렵다는 가설 설정'},
-      {i:'📝',k:'실행 ·',v:'사용자 3명 인터뷰와 개선 화면 1장 제작'},
-      {i:'🗣️',k:'공유 ·',v:'친구·멘토 피드백을 받고 수정 이유 기록'},
-      {i:'📁',k:'증명 ·',v:'문제부터 개선안까지 포트폴리오 한 장으로 정리'},
-    ]})}
-  </div>`},
-/* 31 */ {part:'PART 4 · 경험 만들기', menu:'좋은 포트폴리오는 사고 과정을', type:'content',
-  title:'좋은 포트폴리오는 사고 과정을 보여줍니다',
-  insight:'결과물이 작아도 문제 해결 과정이 선명하면 좋은 포트폴리오가 됩니다',
-  body: twoCol(
-    {title:'사고 과정의 흐름',sub:'문제를 정의하고 해결책을 찾아가는 과정',steps:[
-      {i:'🔍',k:'문제 ·',v:'어떤 불편이나 기회를 발견했는가'},
-      {i:'👥',k:'역할 ·',v:'팀에서 내가 담당한 것은 무엇인가'},
-      {i:'⚙️',k:'실행 ·',v:'실제로 무엇을 만들고 수행했는가'},
-      {i:'🔁',k:'회고 ·',v:'다시 한다면 무엇을 바꿀 것인가'},
-    ]},
-    {hl:true,title:'사고 과정을 보여주는 근거',sub:'과정과 판단의 근거를 남겨 결과물로 증명',steps:[
-      {i:'✏️',k:'근거 ·',v:'인터뷰·관찰·데이터로 무엇을 확인했는가'},
-      {i:'⚖️',k:'판단 ·',v:'어떤 대안을 비교하고 선택했는가'},
-      {i:'📈',k:'결과 ·',v:'무엇이 달라졌는가'},
-      {i:'📄',k:'결과물 ·',v:'요구사항 목록·키워드 표·분석 문서·포트폴리오'},
-    ]}
-  )},
-/* 32 */ {part:'PART 4 · 경험 만들기', menu:'이번 주부터 6개월까지 로드맵', type:'content',
-  title:'이번 주부터 6개월까지 실행 로드맵',
-  insight:'결과물이 작아도 문제 해결 과정이 선명하면 좋은 포트폴리오가 됩니다',
-  body: table(['시점','실행','남길 결과물'],[
-    [em('🚩')+'오늘','관심 직무 채용공고 1개 저장·분석','요구 역량 목록'],
-    [em('🔍')+'이번 주','같은 직무 공고 3개 비교','반복 키워드 표'],
-    [em('📊')+'1개월','관심 서비스 또는 데이터 분석 1개','분석 문서'],
-    [em('🔧')+'3개월','사이드 프로젝트·공모전 1개','포트폴리오'],
-    [em('🏆')+'6개월','인턴·현장실습·부트캠프 도전','실무 경험'],
-  ])},
-/* 33 */ {part:'PART 4 · 경험 만들기', menu:'취업은 여러 커리어 방식 중 하나', type:'content',
-  title:'취업은 여러 커리어 방식 중 하나입니다',
-  insight:'한 번의 취업보다 이동 가능한 역량이 중요합니다',
-  body: table(['커리어 방식','특징','필요한 준비'],[
-    [em('💼')+'취업','조직 안에서 역할과 성장 경로를 경험','직무 역량·협업·포트폴리오'],
-    [em('🚀')+'창업','문제와 시장을 직접 선택','고객 검증·실행·수익 구조'],
-    [em('🧑‍💻')+'프리랜서','전문성을 서비스로 제공','포트폴리오·영업·계약'],
-    [em('🎯')+'프로젝트형 근로','프로젝트 단위로 여러 조직과 협업','특정 역량·평판·네트워크'],
-    [em('🔀')+'하이브리드','직장·강의·콘텐츠·프로젝트 병행','시간 관리·개인 브랜드·전문성'],
-  ])},
+/* 화면 38/52 */ {part:"PART 4 · 경험 만들기", menu:"좋은 경험 고르기", type:'content', layout:'review',
+  title:"경험을 고를 때 다섯 조건을 확인합니다", sub:"프로젝트를 시작하기 전에, 실제로 경험할 수 있는지 점검합니다", insight:"활동 이름보다 내가 맡을 일과 검토받을 기회가 중요합니다",
+  body:cardGrid(5,[{"icon":"🔍","title":"실제 문제","desc":"누구의 어떤 불편을 다루나?"},{"icon":"👤","title":"나의 역할","desc":"내가 직접 맡을 일이 있나?"},{"icon":"⚖️","title":"판단 기회","desc":"대안을 비교하고 선택하나?"},{"icon":"📈","title":"확인 방법","desc":"변화를 어떻게 확인하나?"},{"icon":"🔁","title":"피드백","desc":"누구에게 보여주고 개선하나?"}])},
+/* 화면 39/52 */ {part:"PART 4 · 경험 만들기", menu:"데이터 직무 전환", type:'content', layout:'review',
+  title:"사례 | 스타벅스 매니저에서 데이터 직무로", sub:"제 수강생의 실제 사례입니다", insight:"이동 자체보다, 각 경험에서 다음 역할에 연결할 근거를 찾습니다",
+  body:twoCol({"icon":"☕","title":"29세 스튜어디스를 준비하던 취준생","list":["스타벅스 매니저로 근무","부트캠프 후 테크기업 취업","15개월간 일하고 공부한 뒤 광고회사로 이동","데이터 직무 전환 후 최근 보안 분야에도 관심"]},{"icon":"📊","hl":true,"title":"경험을 설명하는 방법 · 재구성","list":["관찰: 현장에서 어떤 질문을 발견했나","학습: 필요한 분석 방법을 어떻게 배웠나","검증: 데이터로 무엇을 확인했나","증명: 결과와 한계를 어떻게 기록했나"]}) + "<div class=\"source-note\">왼쪽은 강사가 제공한 경력 정보입니다. 오른쪽은 학습·검증·인사이트 도출 경험을 설명하기 위한 교육용 재구성이며, 확인되지 않은 수치·성과는 제시하지 않습니다.</div>"},
+/* 화면 40/52 */ {part:"PART 4 · 경험 만들기", menu:"경험 설명 연습", type:'content', layout:'review',
+  title:"예시 | 경험을 문제 해결 과정으로 설명합니다", sub:"아래 두 사례는 설명 연습을 위한 가상 사례입니다", insight:"문제 → 나의 판단 → 실행 → 확인한 결과 → 회고",
+  body:twoCol({"icon":"🔁","title":"사이드 프로젝트 회고","list":["문제: 행사 신청 안내가 어렵다는 의견","판단: 기능 추가보다 안내 수정 우선","실행: 표현과 순서를 바꿔 다시 확인","회고: 이해가 나아졌는지 검증할 기준 보완"]},{"icon":"🚀","hl":true,"title":"창업 경험 정리","list":["문제: 고객이 원하는 서비스가 불명확","판단: 큰 제작 전 작은 제안으로 확인","실행: 질문·문의·거절 이유를 기록","회고: 시장 반응을 바탕으로 제안 수정"]}) + "<div class=\"source-note\">‘면접에 도움이 됐다’ 같은 효과를 가상의 사실로 단정하지 않습니다. 실제 포트폴리오에서는 확인한 결과와 미확인 부분을 구분합니다.</div>"},
+/* 화면 41/52 */ {part:"PART 4 · 경험 만들기", menu:"경험 확장 로드맵", type:'content', layout:'review',
+  title:"경험은 다음 단계로 확장할 수 있습니다", sub:"이번 주부터 6개월까지 · 여건에 맞게 조정하는 예시 경로", insight:"기간보다 각 단계의 결과와 피드백을 확인하세요",
+  body:table(["단계","할 일","다음 단계로 넘어갈 근거"],[["이번 주","관심 직무 공고 비교","지원요건과 학습 질문"],["1개월","작은 실습 1개","초안·검토·수정 기록"],["3개월","협업 프로젝트 등으로 확장","역할·판단·피드백"],["6개월","인턴·현장실습·지원 등 탐색","요건 충족 여부와 개선 계획"]],{}) + "<div class=\"source-note\">일정은 예시이며 취업을 보장하는 경로가 아닙니다. 학업·생활·비용·모집 시기에 맞춰 조정합니다.</div>"},
+/* 화면 42/52 */ {part:"PART 4 · 경험 만들기", menu:"일하는 방식 비교", type:'content', layout:'review',
+  title:"같은 역량도 일하는 방식에 따라 달라집니다", sub:"취업·창업·프리랜서·프로젝트형 활동을 현실적으로 비교합니다", insight:"활동 방식은 내가 감당할 책임과 필요한 지원을 보고 선택합니다",
+  body:table(["방식","주로 책임질 것","확인할 조건"],[["취업","조직 내 역할·협업·성과","보상·업무 범위·피드백"],["창업","고객·실행·수익·지속 운영","시간·자금·시장 검증"],["프리랜서","전문 서비스·고객·납기","계약·영업·수입 변동"],["프로젝트·병행","정해진 범위·여러 역할","시간·계약·이해 충돌"]],{})},
 /* 34 */ {part:'PART 5 · 멘토의 이야기', menu:'PART 5 · 커리어의 전환점에서 배운 것', type:'divider',
   kicker:'PART 5', ghost:'05',
-  title:'멘토 김희정,<br><span class="hl">커리어의 전환점에서 배운 것</span>',
-  sub:'선택 · 성장 · 실패 · 생존 노하우'},
+  title:'김희정<br><span class="hl">커리어의 전환점에서 배운 것</span>',
+  sub:'직장·창업 경험을 AI 시대의 다음 역할로 연결한 과정'},
 /* 35 */ {part:'PART 5 · 멘토의 이야기', menu:'내 커리어도 선택의 연속이었습니다', type:'content',
   title:'내 커리어도 선택의 연속이었습니다',
-  insight:'완벽한 계획은 없었습니다, 다음 선택에 필요한 근거를 만들었습니다',
+  insight:'두 번째 창업의 경험을 바탕으로 시장의 변화를 읽고, 교육과 솔루션을 함께 제공하는 AI 자동화 사업으로 피벗했습니다',
   body: table(['시기','선택','당시의 이유'],[
     ['20대 초','콘텐츠 기획','글과 콘텐츠가 좋았음'],
     ['20대 중','웹에이전시 PM','디지털 산업의 가능성을 느낌'],
@@ -1182,63 +1008,36 @@ const SLIDES = [
     ['30대 중','프리랜서','일하는 방식의 자율성을 원했음'],
     ['30대 후','대기업','산업과 서비스 운영 경험을 넓히고 싶었음'],
     ['40대 초','첫 번째 창업','스타트업으로 시장 가능성을 확인하고, 기획·개발·운영·고객 대응까지 A to Z를 직접 경험함'],
-    ['40대 중','두 번째 창업','실제 수익과 시장 반응을 확인하며 사업의 지속 가능성에 대한 확신을 얻음'],
+    ['40대 중','두 번째 창업 · 웹에이전시','웹에이전시에서 수익과 시장 반응을 확인하고, 2025년 AI 자동화 솔루션 제작 및 교육사로 피벗함'],
   ],{hlRow:6})},
-/* 36 */ {part:'PART 5 · 멘토의 이야기', menu:'전환점에서는 세 가지 신호를', type:'content',
-  title:'커리어 전환은 세 가지 신호에서 시작됐습니다',
-  sub:'일반 직장인으로 기반을 쌓고, 성장과 시장의 신호를 확인했습니다',
-  insight:'방향은 감각으로 발견하지만, 다음 선택은 성장과 시장의 데이터로 결정했습니다',
-  body: cardGrid(3,[
-    {label:'다양한 직장 경험',icon:'🧱',title:'기반을 쌓는 시간',desc:'여러 조직과 역할을 경험하며 직무 역량과 협업 방식을 쌓고, 다음 선택에 필요한 근거를 축적함'},
-    {label:'대기업',icon:'📈',title:'성장 신호',desc:'더 큰 문제와 책임을 경험하며 내가 어떤 환경에서 더 성장하는지 확인함'},
-    {label:'창업',icon:'📊',hl:true,title:'데이터 신호',desc:'실제 수익과 고객 반응이 움직이는지 확인하며 시장 가능성과 지속 가능성을 판단함'},
+/* 36 */ {part:'PART 5 · 멘토의 이야기', menu:'경험에서 변화의 신호를 읽습니다', type:'content',
+  title:'경험을 바탕으로 AI 시대의 다음 역할을 찾았습니다',
+  sub:'웹에이전시에서 AI 자동화 솔루션 제작과 교육으로 · 나의 피벗 경험',
+  insight:'여러분도 관심 직무의 변화 1개를 찾고, 이번 주에 해볼 작은 실험으로 연결해보세요',
+  body: cardGrid(4,[
+    {icon:'🧱',title:'경험이 기반',desc:'직장생활과 두 번의 창업에서 실행력·시장 반응·수익을 확인했습니다'},
+    {icon:'🧭',title:'변화를 읽기',desc:'AI 자동화의 흐름을 읽고, 기존 경험을 다음 사업의 기반으로 삼았습니다'},
+    {icon:'🛠️',title:'역할을 바꾸기',desc:'2025년 AI 자동화 솔루션 제작과 교육을 함께 제공하는 방향으로 피벗했습니다'},
+    {icon:'🎓',hl:true,title:'가르치며 배우기',desc:'교육을 준비하고 질문을 만나며 현장의 필요를 이해하고 계속 배웁니다'},
   ])},
-/* 37 */ {part:'PART 5 · 멘토의 이야기', menu:'연봉보다 배움의 밀도', type:'content',
-  title:'주니어 때는 연봉보다 배움의 밀도가 중요합니다',
-  insight:'지금이 가장 많이 배우고 시도할 수 있는 시기입니다',
-  body: `<div class="regret-row">
-    <div class="regret-box" data-anim><span class="rb-emoji">🚩</span><div><div class="rb-title">후회한 선택</div><div class="rb-sub">배움보다 높은 연봉을 먼저 쫓은 이직</div></div></div>
-    <div class="regret-box" data-anim><span class="rb-emoji">📉</span><div><div class="rb-title">당시의 결과</div><div class="rb-sub">연봉은 올랐지만 새로운 역할과 결과물이 충분히 쌓이지 않음</div></div></div>
-  </div>
-  <div class="lessons-label" data-anim>💡 이후의 교훈</div>
-  <div class="lessons">
-    <div class="lesson l1"><span class="lesson-num">01</span><p>성장 없는 연봉 상승은 오래가기 어렵습니다</p></div>
-    <div class="lesson l2"><span class="lesson-num">02</span><p>주니어 때는 좋은 동료와 어려운 문제를 만나는 것이 중요합니다</p></div>
-    <div class="lesson l3"><span class="lesson-num">03</span><p>다음 이직에서 설명할 수 있는 경험을 남겨야 합니다</p></div>
-  </div>`},
-/* 38 */ {part:'PART 5 · 멘토의 이야기', menu:'현장에서 배운 것, 세 가지', type:'content',
-  title:'현장에서 배운 것, 세 가지만 기억하세요',
-  insight:'오늘 온 것만으로 끝내지 말고, 작은 결과물 하나를 남기세요',
-  body: cardGrid(3,[
-    {icon:'❓',center:true,title:'지금 잘 모르는 것이 당연합니다',desc:'모르면서 질문하고 부딪히는 것이 이 시기의 일입니다'},
-    {icon:'🤝',center:true,title:'직무보다 사람과 협업을 먼저 배우세요',desc:'모든 결과물은 다른 사람과의 연결 속에서 만들어집니다'},
-    {icon:'✅',center:true,hl:true,title:'작은 것 하나를 끝내보세요',desc:'작은 프로젝트 하나가 커리어의 근육을 만듭니다',chip:'🙋 Chang\'s'},
-  ])},
+/* 화면 46/52 */ {part:"PART 5 · 멘토의 이야기", menu:"학습 환경 확인", type:'content', layout:'review',
+  title:"좋은 학습 환경은 질문으로 확인합니다", sub:"회사·인턴·프로젝트를 선택할 때 물어볼 것", insight:"생활과 보상 조건을 확인한 뒤, 실제로 배울 수 있는 환경인지 살펴보세요",
+  body:cardGrid(4,[{"num":1,"title":"누가 피드백하나요?","desc":"결과물을 언제, 누구와 검토하는가"},{"num":2,"title":"무엇을 맡게 되나요?","desc":"보조 업무부터 책임을 넓혀갈 수 있는가"},{"num":3,"title":"어떤 기준으로 평가하나요?","desc":"목표·품질·성과 기준이 명확한가"},{"num":4,"hl":true,"title":"질문과 개선이 가능한가요?","desc":"모르는 것을 묻고 다시 시도할 수 있는가"}])},
+/* 화면 47/52 */ {part:"PART 5 · 멘토의 이야기", menu:"막혔을 때의 질문", type:'content', layout:'review',
+  title:"준비하다 막히면 다음 질문으로 돌아옵니다", sub:"현장에서 배운 조언을 나의 상황에 적용해봅니다", insight:"막힌 이유를 작게 나누면 도움을 요청할 지점도 보입니다",
+  body:cardGrid(3,[{"icon":"❓","center":true,"title":"무엇을 모르는가","desc":"막연한 불안을 확인할 질문 하나로"},{"icon":"🤝","center":true,"title":"누구에게 물을까","desc":"동료·교수·현직자에게 구체적인 결과물로"},{"icon":"✅","center":true,"title":"어디까지 끝낼까","desc":"이번 주 안에 검토받을 범위로"}])},
 /* 39 */ {part:'OUTRO · 행동 정리', menu:'OUTRO · 오늘의 핵심을 행동으로', type:'divider',
   kicker:'OUTRO', ghost:'✦',
   title:'오늘의 핵심을<br><span class="hl">행동으로 정리합니다</span>'},
-/* 40 */ {part:'OUTRO · 행동 정리', menu:'오늘의 핵심 3줄', type:'content', stagedBody:true,
-  title:'오늘의 핵심 3줄', sub:'박스를 클릭하면 하나씩 나타납니다',
-  body: `<div class="cards cards--3">
-    ${kCard({icon:'🏗️',sublabel:'테크 기업의 본질',title:'테크 기업은 기술로 고객의 문제를 해결하는 조직입니다',foot:'개발자만이 아니라 문제 정의·경험 설계·데이터·성장·보안을 담당하는 다양한 역할이 함께 움직입니다'})}
-    ${kCard({icon:'🚪',sublabel:'기회의 확장',title:'테크 기업에는 문제를 발견하고 해결하는 다양한 역할이 필요합니다',foot:'개발·기획·디자인·데이터·마케팅·보안이 각자의 전문성으로 고객 가치를 만듭니다'})}
-    ${kCard({icon:'🎯',hl:true,pill:'⭐ 핵심 메시지 ⭐',sublabel:'증명의 기준',title:'가능성은 말이 아니라 작은 결과물과 문제 해결 경험으로 증명해야 합니다',foot:'작은 프로젝트·실험·분석 결과가 가장 설득력 있는 포트폴리오가 됩니다'})}
-  </div>`},
-/* 41 */ {part:'OUTRO · 행동 정리', menu:'오늘 30분 안에 할 일', type:'content',
-  title:'오늘 30분 안에 할 일', sub:'관심 직무의 채용공고 1개를 저장하세요',
-  insight:'강의는 들어도 행동하지 않으면 달라지지 않습니다',
-  body: cardGrid(3,[
-    {icon:'🌐',label:'어디서',title:'원티드 · 잡코리아 · 사람인 · 링크드인',desc:'네 곳 중 한 곳에서'},
-    {icon:'⏰',label:'어떻게',ol:['관심 직무를 검색합니다','신입·주니어 공고를 하나 선택합니다','주요업무의 동사(구축·분석·도출·지원 등의 행동)에 표시합니다','자격요건과 우대사항을 구분합니다','부족한 역량 하나를 적습니다']},
-    {icon:'☕',hl:true,label:'남길 결과',list:['관심 직무 1개','채용공고 1개','반복 역량 3개','이번 달 만들 결과물 1개']},
-  ])},
-/* 42 */ {part:'OUTRO · 행동 정리', menu:'내 커리어 액션 플랜', type:'content',
-  title:'내 커리어 액션 플랜',
-  insight:'계획을 크게 세우기보다 다음 행동을 작게 정하세요',
-  body: `<div class="ws">
-    ${[['🎯','관심 직무'],['📋','분석할 채용공고'],['🧩','지금 부족한 역량 1개'],['🛠️','이번 달 만들 결과물 1개'],['🚀','이번 주 첫 행동',true]]
-      .map(r=>`<div class="ws-row ${r[2]?'hl':''}" data-anim><span class="ws-emoji">${r[0]}</span><span class="ws-label">${r[1]}</span><span class="ws-blank"></span></div>`).join('')}
-  </div>`},
+/* 화면 49/52 */ {part:"OUTRO · 행동 정리", menu:"세 질문의 답", type:'content', layout:'review',
+  title:"오늘의 세 질문에 다시 답해봅니다", sub:"시작할 때 고른 A·B·C를 떠올려보세요", insight:"채팅: 처음보다 구체적으로 답할 수 있는 질문 하나를 골라주세요",
+  body:cardGrid(3,[{"badge":"A","center":true,"title":"무엇이 바뀌나","desc":"직무 안의 자동화 업무와 판단 책임을 구분"},{"badge":"B","center":true,"title":"무엇이 나와 맞나","desc":"흥미·강점·업무 방식·시장성으로 탐색"},{"badge":"C","center":true,"title":"어떻게 준비하나","desc":"요건을 확인하고 작은 결과물·피드백으로 증명"}])},
+/* 화면 50/52 */ {part:"OUTRO · 행동 정리", menu:"첫 30분", type:'content', layout:'review',
+  title:"30분 안에 첫 준비를 시작합니다", sub:"다음 화면의 개인 계획을 채우기 위한 시간 배분", insight:"공고를 찾지 못했다면 오늘은 관심 직무와 확인할 질문부터 정해도 좋습니다",
+  body:cardGrid(3,[{"num":"10분","center":true,"title":"공고 한 개","desc":"신입·인턴 등 현재 가능한 공고 선택"},{"num":"10분","center":true,"title":"요구 읽기","desc":"필수 조건과 내가 보완할 것 표시"},{"num":"10분","center":true,"title":"실행 정하기","desc":"결과물 하나와 첫 행동을 적기"}])},
+/* 화면 51/52 */ {part:"OUTRO · 행동 정리", menu:"나의 실행 계획", type:'content', layout:'review',
+  title:"내 커리어 액션 플랜", sub:"개인 메모를 열고 아래 다섯 칸을 직접 채워보세요", insight:"공유할 수 있다면 ‘이번 주 첫 행동’만 채팅에 남겨주세요",
+  body:table(["항목","나에게 할 질문"],[["관심 직무","어떤 문제를 맡고 싶은가?"],["분석할 공고","현재 지원요건을 확인할 공고는?"],["보완할 역량 1개","아직 설명하거나 수행하기 어려운 것은?"],["이번 달 결과물 1개","무엇을 만들어 피드백받을까?"],["이번 주 첫 행동","언제, 무엇을, 어디까지 할까?"]],{})},
 /* 43 */ {part:'OUTRO · 행동 정리', menu:'감사합니다 · Q&A', type:'closing',
   title:'감사합니다', sub:'궁금한 것, 무엇이든 물어보세요',
   insight:'정답 없는 질문도 괜찮습니다, 같이 생각해보겠습니다',
@@ -1262,8 +1061,13 @@ const SLIDES = [
 /* ============================ render ============================ */
 function renderSlide(s, idx){
   const el = document.createElement('section');
-  el.className = 'slide';
+  el.className = 'slide' + (s.layout === 'review' ? ' s-review' : '');
+  if(s.layout === 'career-intro') el.classList.add('s-career-intro');
   el.dataset.idx = idx;
+  if(s.title && s.title.includes('네 가지 기준')) el.classList.add('s-career-criteria');
+  if(s.title && s.title.includes('AI 시대에 필요한 인재')) el.classList.add('s-ai-talent');
+  if(s.title && (s.title.includes('전공보다 역할과 경험') || s.title.includes('직무마다 보여줘야 할 결과물'))) el.classList.add('s-role-proof');
+  if(s.title && (s.title.includes('인기 있는 직무보다') || s.title.includes('관심 활동과 직무'))) el.classList.add('s-job-fit');
   if(s.title && (s.title.includes('배달의민족이') || s.title.includes('카카오가'))) el.classList.add('s-company-case');
 
   if(s.type === 'cover'){
@@ -1273,7 +1077,7 @@ function renderSlide(s, idx){
       <div data-anim class="cover-sub">AI 시대, 나에게 맞는 테크 커리어 찾기</div>
       <div data-anim class="cover-rule"></div>
       <div data-anim class="cover-name">김희정</div>
-      <div data-anim class="cover-role">AI 콘텐츠 제작사 대표 · 생성형 AI 강사 · 대학 겸임교수</div>
+      <div data-anim class="cover-role">동양미래대학교, 숭의여자대학교 겸임교수<br>AI 자동화 솔루션 제작 및 교육사 대표 · 생성형 AI 강사</div>
       <div data-anim class="cover-occasion">2026 성신여자대학교 직무 멘토링 특강</div>
       <div data-anim class="cover-quote-wrap"><div class="cover-quote">"오늘은 취업 정보를 나열하는 시간이 아니라, 여러분의 커리어 선택지를 넓히는 시간입니다."</div></div>`;
     return el;
@@ -1316,6 +1120,7 @@ function renderSlide(s, idx){
 const deck = document.getElementById('deck');
 const slideEls = SLIDES.map((s,i)=>{ const el = renderSlide(s,i); deck.appendChild(el); return el; });
 document.getElementById('tot').textContent = SLIDES.length;
+document.getElementById('menuCount').textContent = `취업 말고 커리어 · ${SLIDES.length} 슬라이드`;
 
 /* ============================ navigation ============================ */
 let cur = 0;
